@@ -2,6 +2,18 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22639577&assignment_repo_type=AssignmentRepo)
 # QM 2023 Capstone Project
 
+**Team Name:** Stat 2
+__Cryptocurrency Volatility, Policy Uncertainty & Macro Shocks (2020–2026)__
+
+**Research Topic:** Economic policy uncertainty & regulatory changes as cryptocurrency return volatility drivers.
+
+**Research Question:** How have economic policy uncertainty and regulatory shocks (e.g., SEC actions, interest rate changes) affected cryptocurrency return volatility from 2020–2026?
+
+**Datasets:**
+- CoinGecko: daily price, trading volume, market capitalization for top 50 cryptocurrencies (2020–2026).
+- Economic Policy Uncertainty Index: monthly uncertainty scores.
+- FRED: Fed Funds Rate, VIX (market fear gauge).
+
 Semester-long capstone for Statistics II: Data Analytics.
 
 ## Project Structure
