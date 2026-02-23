@@ -3,6 +3,13 @@
 # QM 2023 Capstone Project
 
 **Team Name:** Stat 2
+**Members:**
+- Luke
+- Ben
+- Katie
+- James
+- Dani
+
 __Cryptocurrency Volatility, Policy Uncertainty & Macro Shocks (2020–2026)__
 
 **Research Topic:** Economic policy uncertainty & regulatory changes as cryptocurrency return volatility drivers.
@@ -28,20 +35,3 @@ Semester-long capstone for Statistics II: Data Analytics.
 - **tests/** — Autograding test suite
 
 Run `python code/config_paths.py` to verify paths.
-
-# QM 2023 Capstone Project: Stats 2
-
-## Team Members:
-- Ben 
-- Katie 
-- Luke 
--
--
-
-# Research Question:
-How has economic policy uncertainty and regulatory shocks (e.g., SEC actions, interest rate changes) affected cryptocurrency return volatility from 2020-2026?
-
-# Dataset Overview
-Primary - Coingecko. Open Dataset Catalog. It provides daily prices, volume, market cap for 100+ tokens.
-Supplementary - Economic Policy Uncertainty Index. policyuncertainty.com. Contains monthly uncertainty scores.
-FRED. pandas-datareader API. FED Funds Rate, VIX(marekt fear gauge).
