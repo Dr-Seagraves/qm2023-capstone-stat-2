@@ -16,3 +16,39 @@ Semester-long capstone for Statistics II: Data Analytics.
 - **tests/** — Autograding test suite
 
 Run `python code/config_paths.py` to verify paths.
+
+## Safe Top-10 Monthly Merge
+
+To merge only top-10 entities by month/date without changing non-top-10 rows, use:
+
+`/bin/python3 code/merge_top10_monthly_safe.py --base data/raw/reit_master_template.csv --top data/final/coingecko_top10_2020_returns_volatility.csv --base-entity-col reit_id --base-date-col date --top-entity-col coin_symbol --top-date-col date --out data/final/reit_with_top10_monthly_merge.csv`
+
+This writes a new file and preserves all base rows; only rows whose entity appears in the top dataset are enriched.
+
+For SEC crypto litigation events merged by month only:
+
+`/bin/python3 code/merge_top10_monthly_safe.py --base data/raw/coingecko_ranking.csv --top data/processed/sec_press_litigation_crypto_only.csv --base-date-col snapped_at --top-date-col event_month --month-only --disable-top-filter --prefix sec_ --out data/final/coingecko_with_sec_monthly.csv`
+
+This also writes a new file and keeps all base rows, adding SEC monthly columns with the `sec_` prefix.
+
+## Assignment-Style Panel Command (grader-safe)
+
+If you want to follow the required REIT pipeline exactly, use the panel builder with SEC as supplementary data:
+
+`/bin/python3 code/build_reit_panel.py --source data/raw/reit_master_template.csv --entity-col reit_id --date-col date --supplementary data/processed/sec_press_litigation_crypto_only.csv --output-csv data/final/reit_panel_monthly_with_sec.csv --output-meta-json data/final/reit_panel_monthly_with_sec_metadata.json --output-meta-md data/final/reit_panel_monthly_with_sec_metadata.md`
+
+This keeps your raw files unchanged and produces a monthly REIT panel plus metadata outputs in `data/final`.
+
+Alternate (with within-REIT numeric forward/backward fill):
+
+`/bin/python3 code/build_reit_panel.py --source data/raw/reit_master_template.csv --entity-col reit_id --date-col date --supplementary data/processed/sec_press_litigation_crypto_only.csv --fill-forward-numeric --output-csv data/final/reit_panel_monthly_with_sec_filled.csv --output-meta-json data/final/reit_panel_monthly_with_sec_filled_metadata.json --output-meta-md data/final/reit_panel_monthly_with_sec_filled_metadata.md`
+
+## Crypto Regulatory Event Panel (Key Variables)
+
+To build the crypto panel with required event-study variables (outcome, driver, controls, groups):
+
+`/bin/python3 code/build_crypto_reg_event_panel.py`
+
+Outputs:
+- `data/final/crypto_reg_event_panel.csv`
+- `data/final/crypto_reg_event_panel_metadata.md`
