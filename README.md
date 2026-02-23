@@ -3,6 +3,7 @@
 # QM 2023 Capstone Project
 
 **Team Name:** Stat 2
+
 **Members:**
 - Luke
 - Ben
