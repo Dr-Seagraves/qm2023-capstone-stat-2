@@ -5,11 +5,11 @@
 **Team Name:** Stat 2
 
 **Members:**
-- Luke
-- Ben
-- Katie
-- James
-- Dani
+- Luke Birdseye
+- Ben Brown
+- Katie Koonts
+- James Gawey
+- Dani Gamboa
 
 __Cryptocurrency Volatility, Policy Uncertainty & Macro Shocks (2020–2026)__
 
