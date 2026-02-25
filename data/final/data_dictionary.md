@@ -8,7 +8,8 @@ This data dictionary documents the cleaned CoinGecko panel and macro control fil
 - data/processed/vix_cleaned.csv
 - data/processed/ffeffective_rate_cleaned.csv
 - data/processed/epu_index_cleaned.csv
-- data/final/crypto_reg_event_panel_with_macro.csv
+- data/processed/crypto_reg_event_panel.csv
+- data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv
 
 Current dataset coverage:
 
@@ -55,7 +56,7 @@ Current dataset coverage:
 | observation_date | Observation date for the EPU index. | Date (YYYY-MM-DD) | FRED USEPUINDXD CSV (data/raw/USEPUINDXD.csv) | Calendar date |
 | epu_index | Economic Policy Uncertainty Index for the United States. | Float | FRED USEPUINDXD series | Index points |
 
-### data/final/crypto_reg_event_panel_with_macro.csv
+### data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv
 
 | Variable | Description | Type | Source | Units |
 |---|---|---|---|---|
@@ -63,6 +64,8 @@ Current dataset coverage:
 | vix | VIX close value. | Float | data/processed/vix_cleaned.csv | Index points |
 | ffeffective_rate | Effective Federal Funds Rate. | Float | data/processed/ffeffective_rate_cleaned.csv | Percent |
 | epu_index | Economic Policy Uncertainty Index for the United States. | Float | data/processed/epu_index_cleaned.csv | Index points |
+| outcome_vol_blank_reason | Short flag explaining blank outcome_realized_vol_30d values (`no_prior_ret_yet` or `-`). | String | Derived from outcome_realized_vol_30d missingness in event panel | Categorical text |
+| btc_corr_blank_reason | Short flag explaining blank control_btc_corr_30d values (`no_paired_ret_yet` or `-`). | String | Derived from control_btc_corr_30d missingness in event panel | Categorical text |
 
 ## Cleaning Decisions Summary
 
@@ -86,9 +89,22 @@ Macro control cleaning (code/clean_macro_series.py) additionally indicates:
 - Drop duplicate dates (keep last) and sort by date ascending.
 - Outputs: data/processed/vix_cleaned.csv (1,569 rows), data/processed/ffeffective_rate_cleaned.csv (2,241 rows), and data/processed/epu_index_cleaned.csv (2,246 rows).
 
-Macro merge step (data/final/crypto_reg_event_panel_with_macro.csv) additionally indicates:
+Macro merge step (data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv) additionally indicates:
 
 - Daily left merge of VIX, effective Fed Funds, and EPU onto the crypto event panel by date.
+
+## Variable Interpretation (Event Panel)
+
+- outcome_realized_vol_30d:
+	- Meaning: 30-day realized volatility from daily returns.
+	- Why blanks: no prior return observations yet.
+
+- driver_sec_event_indicator:
+	- Meaning: binary SEC-event flag (1 = SEC crypto-related event date, 0 = non-event date).
+
+- control_btc_corr_30d:
+	- Meaning: rolling 30-day correlation between each coin's returns and BTC returns.
+	- Why many blanks: no paired return observations yet, or not enough paired observations.
 
 ## Team Sign-off
 

@@ -28,7 +28,7 @@ Current M1 status for supplementary data:
   - `data/processed/vix_cleaned.csv` (1,569 rows; 2020-01-02 to 2026-02-18)
   - `data/processed/ffeffective_rate_cleaned.csv` (2,241 rows; 2020-01-01 to 2026-02-18)
   - `data/processed/epu_index_cleaned.csv` (2,246 rows; 2020-01-01 to 2026-02-23)
-- **Merged macro spreadsheet generated:** `data/final/crypto_reg_event_panel_with_macro.csv` (19,852 rows)
+- **Merged macro spreadsheet generated:** `data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv` (19,852 rows)
 - **Merged columns:** `date`, `vix`, `ffeffective_rate`, `epu_index`
 
 ---
@@ -76,7 +76,7 @@ Most row reduction from raw to cleaned is attributable to the **date restriction
 1. **Upstream construction merge (completed):** per-coin historical files are combined and enriched with CoinGecko rank/name metadata by coin symbol (`code/merge_raw_by_coingecko_rank.py`).
 2. **Cleaning stage (completed):** missing-value and date-window filters applied (`code/clean_coingecko_data.py`).
 3. **Supplementary macro cleaning (completed):** `code/clean_macro_series.py` cleans VIX, Fed Funds, and EPU raw files.
-4. **Panel + macro merge (completed):** macro controls merged onto crypto panel in `data/final/crypto_reg_event_panel_with_macro.csv`.
+4. **Panel + macro merge (completed):** macro controls merged onto crypto panel in `data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv`.
 
 ### Join details
 
@@ -92,7 +92,7 @@ Most row reduction from raw to cleaned is attributable to the **date restriction
 - **After upstream merge output (raw panel):** 99,447 rows
 - **After M1 cleaning output (processed panel):** 74,490 rows
 - **After macro cleaning:** VIX 1,569 rows; Fed Funds 2,241 rows; EPU 2,246 rows
-- **After panel+macro merge output:** 19,852 rows (`data/final/crypto_reg_event_panel_with_macro.csv`)
+- **After panel+macro merge output:** 19,852 rows (`data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv`)
 - **Reasonableness checks:**
   - 50 entities and 2,192 dates in cleaned panel imply a balanced maximum of 109,600 rows; observed 74,490 confirms an **unbalanced** panel, which is expected for crypto listing/history variation.
   - Key uniqueness check passed (0 duplicate entity-date rows).
@@ -113,7 +113,7 @@ Additional final outputs now available:
 - **Macro controls merged file:** `data/final/macro_controls_merged.csv`
   - 2,241 daily rows (2020-01-01 to 2026-02-18)
   - Includes `vix` and `ffeffective_rate` by `date`
-- **Crypto panel with macro controls:** `data/final/crypto_reg_event_panel_with_macro.csv`
+- **Crypto panel with macro controls:** `data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv`
   - 19,852 rows (2020-02-19 to 2026-02-18)
   - 12 columns (base panel + `vix` + `ffeffective_rate`)
 

@@ -34,7 +34,7 @@
   - Caveat: filtering to 6 years improves focus but removes pre-2020 history; noted in ethical considerations.
 
 - **Task:** Clean VIX and Effective Federal Funds Rate raw files.
-- **Prompt:** "with the vix and the ffedective rate files clean them (blank files, date...) and create two cleaned files in the processed data folder"
+- **Prompt:** "with the vix and the ffedective rate files clean them (blank files, parse dates, etc.) and create two cleaned files in the processed data folder"
 - **AI Output:** Produced/used `code/clean_macro_series.py`, which:
   - Reads `data/raw/VIX.csv` and `data/raw/FFEffective Rate.csv`.
   - Keeps only valid date + numeric rows.
@@ -97,14 +97,35 @@
 - **Critique:**
   - Correct: we simplified the final data file.
 
+- **Task:** Clean Economic Policy Uncertainty (EPU) Index data and integrate into final panel with macro controls.
+- **Prompt:** "do you see the economic policy uncertainty index data" → "i've got the economic uncertainty index on the website from fred how do i upload it to here" → "its there its under raw data and its called USEPUINDXD" → "ok good can you clean that data" → "yes do all that please" → "i just renamed it to the USEPUINDXD.csv" → "i just uploaded the new version of the USEPUINDXD.csv, i originally uploaded the wrong one. so can you go and clean the new one that i just uploaded"
+- **AI Output:** 
+  - Updated `code/clean_macro_series.py` to detect and clean EPU raw files `USEPUINDXD.csv`).
+  - Applied same cleaning logic as VIX/Fed: drop missing values, parse dates, drop duplicates, sort by date.
+  - Generated `data/processed/epu_index_cleaned.csv` (2020-01-01 to 2026-02-18).
+  - Updated `code/merge_final_with_macro_controls.py` to include EPU in the left merge onto crypto panel.
+  - Updated documentation:
+    - `data/final/data_dictionary.md` to include EPU variable definition and cleaning details.
+    - `data/M1_data_quality_report.md` to reflect EPU in supplementary sources, cleaning log, and merge strategy.
+    - `data/final/Top 10 Panel/crypto_reg_event_panel_metadata.md` to list EPU as a macro control.
+- **Verification:**
+  - Confirmed raw file `data/raw/USEPUINDXD.csv` exists.
+  - Ran cleaning script and confirmed output: 2,246 cleaned rows spanning 2020-01-01 to 2026-02-18.
+  - Ran merge script and confirmed everything worked.
+  - Verified all documentation files were updated with correct row counts and date ranges.
+- **Critique:**
+  - Correct: EPU data was successfully cleaned and integrated into the analysis pipeline.
+  - Improvement: The second upload corrected the date range—new file starts from 2020-01-01.
+
 ## Summary
 
-- **Total AI use in this assignment stage:** 7 major uses (merge pipeline support, cleaning pipeline support, VIX/Fed macro cleaning, VIX/Fed macro merge, data dictionary, data quality report, final dataset export without blank `coin_id`).
+- **Total AI use in this assignment stage:** 8 major uses (merge pipeline support, cleaning pipeline support, VIX/Fed macro cleaning, VIX/Fed macro merge, data dictionary, data quality report, final dataset export without blank `coin_id`, EPU data cleaning and integration).
 - **Primary use cases:**
   1. Data engineering support (multi-file merge into one raw panel).
   2. Data cleaning pipeline support (missingness/date filter/type handling).
-  3. Structured technical writing from project requirements.
-  4. Data documentation using dataset metrics.
+  3. Macro control data integration (VIX, Fed Funds, EPU).
+  4. Structured technical writing from project requirements.
+  5. Data documentation using dataset metrics.
 - **Verification method used by team:**
   - Script runs against repository requirements.
   - Manual checklist against assignment requirements.

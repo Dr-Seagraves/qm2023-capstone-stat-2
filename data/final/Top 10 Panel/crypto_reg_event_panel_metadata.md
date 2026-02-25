@@ -8,7 +8,6 @@
 - Outcome: `outcome_realized_vol_30d` (from rolling_vol_30d)
 - Driver: `driver_sec_event_indicator` (1 if date is an SEC event_date else 0)
 - Controls: `control_market_cap`, `control_total_volume`, `control_btc_corr_30d`
-- Macro Controls (in `crypto_reg_event_panel_with_macro.csv`): `vix`, `ffeffective_rate`, `epu_index`
 - Group variable: `token_group` in {defi, centralized_exchange, stablecoin}
 
 ## Grouping Rule

@@ -3,13 +3,13 @@
 Merge cleaned macro controls (VIX, Effective Fed Funds Rate, EPU) onto final crypto panel.
 
 Inputs:
-  - data/final/crypto_reg_event_panel.csv
+    - data/processed/crypto_reg_event_panel.csv
   - data/processed/vix_cleaned.csv
   - data/processed/ffeffective_rate_cleaned.csv
     - data/processed/epu_index_cleaned.csv
 
 Output:
-  - data/final/crypto_reg_event_panel_with_macro.csv
+    - data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv
 """
 
 from __future__ import annotations
@@ -20,19 +20,22 @@ import pandas as pd
 
 from config_paths import FINAL_DATA_DIR, PROCESSED_DATA_DIR
 
-FINAL_PANEL_INPUT = FINAL_DATA_DIR / "crypto_reg_event_panel.csv"
+FINAL_PANEL_INPUT = PROCESSED_DATA_DIR / "crypto_reg_event_panel.csv"
+LEGACY_FINAL_PANEL_INPUT = FINAL_DATA_DIR / "crypto_reg_event_panel.csv"
 VIX_INPUT = PROCESSED_DATA_DIR / "vix_cleaned.csv"
 FED_INPUT = PROCESSED_DATA_DIR / "ffeffective_rate_cleaned.csv"
 EPU_INPUT = PROCESSED_DATA_DIR / "epu_index_cleaned.csv"
-OUTPUT_FILE = FINAL_DATA_DIR / "crypto_reg_event_panel_with_macro.csv"
+OUTPUT_FILE = FINAL_DATA_DIR / "Top 10 Panel" / "crypto_reg_event_panel_with_macro.csv"
 
 
 def main() -> None:
-    for path in [FINAL_PANEL_INPUT, VIX_INPUT, FED_INPUT, EPU_INPUT]:
+    panel_input = FINAL_PANEL_INPUT if FINAL_PANEL_INPUT.exists() else LEGACY_FINAL_PANEL_INPUT
+
+    for path in [panel_input, VIX_INPUT, FED_INPUT, EPU_INPUT]:
         if not path.exists():
             raise FileNotFoundError(f"Missing required input file: {path}")
 
-    panel = pd.read_csv(FINAL_PANEL_INPUT)
+    panel = pd.read_csv(panel_input)
     vix = pd.read_csv(VIX_INPUT)
     fed = pd.read_csv(FED_INPUT)
     epu = pd.read_csv(EPU_INPUT)
@@ -76,6 +79,13 @@ def main() -> None:
         left_on="date",
         right_on="observation_date",
     ).drop(columns=["observation_date"])
+
+    merged["outcome_vol_blank_reason"] = merged["outcome_realized_vol_30d"].isna().map(
+        {True: "no_prior_ret_yet", False: "-"}
+    )
+    merged["btc_corr_blank_reason"] = merged["control_btc_corr_30d"].isna().map(
+        {True: "no_paired_ret_yet", False: "-"}
+    )
 
     merged["date"] = merged["date"].dt.strftime("%Y-%m-%d")
 
