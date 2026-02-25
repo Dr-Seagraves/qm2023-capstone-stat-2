@@ -13,8 +13,8 @@ Inputs:
   - data/processed/sec_press_litigation_crypto_only.csv
 
 Outputs:
-  - data/final/crypto_reg_event_panel.csv
-  - data/final/crypto_reg_event_panel_metadata.md
+    - data/processed/crypto_reg_event_panel.csv
+    - data/final/Top 10 Panel/crypto_reg_event_panel_metadata.md
 """
 
 from __future__ import annotations
@@ -33,8 +33,8 @@ from config_paths import FINAL_DATA_DIR, PROCESSED_DATA_DIR
 
 RETURNS_INPUT = FINAL_DATA_DIR / "coingecko_top10_2020_returns_volatility.csv"
 SEC_INPUT = PROCESSED_DATA_DIR / "sec_press_litigation_crypto_only.csv"
-OUTPUT_FILE = FINAL_DATA_DIR / "crypto_reg_event_panel.csv"
-METADATA_FILE = FINAL_DATA_DIR / "crypto_reg_event_panel_metadata.md"
+OUTPUT_FILE = PROCESSED_DATA_DIR / "crypto_reg_event_panel.csv"
+METADATA_FILE = FINAL_DATA_DIR / "Top 10 Panel" / "crypto_reg_event_panel_metadata.md"
 
 
 STABLECOIN_SYMBOLS = {

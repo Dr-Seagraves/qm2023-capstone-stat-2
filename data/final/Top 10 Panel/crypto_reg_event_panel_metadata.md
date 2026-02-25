@@ -15,10 +15,10 @@
 - All remaining tokens default to `defi`.
 
 ## Panel Summary
-- Rows: 20244
+- Rows: 19852
 - Tokens: 10 (bnb, btc, doge, eth, figr_heloc, sol, trx, usdc, usdt, xrp)
 - Groups present: centralized_exchange, defi, stablecoin
-- Date range: 2020-01-01 to 2026-02-18
+- Date range: 2020-02-19 to 2026-02-18
 - Unique SEC action dates in input: 4
 - Panel rows flagged with SEC indicator = 1: 40
 

@@ -16,16 +16,20 @@
 
 ### Supplementary Sources
 
-Planned supplementary series (from project scope in README) are not yet present in the `data/` folder at M1:
+Supplementary macro/financial series now available in the repository:
 
-- **Economic Policy Uncertainty (EPU) Index** — planned monthly uncertainty index
-- **FRED macro/financial series** — planned variables include Fed Funds Rate and VIX
+- **FRED VIX (`VIXCLS`)** raw file: `data/raw/VIX.csv`
+- **FRED Effective Federal Funds Rate (`DFF`)** raw file: `data/raw/FFEffective Rate.csv`
+- **FRED Economic Policy Uncertainty Index (`USEPUINDXD`)** raw file: `data/raw/USEPUINDXD.csv`
 
 Current M1 status for supplementary data:
 
-- **Source files available:** none in repository `data/raw/` yet
-- **Variables merged into final M1 panel:** none yet
-- **Supplementary date range in merged panel:** not applicable (no supplementary merge completed)
+- **Cleaned files generated:**
+  - `data/processed/vix_cleaned.csv` (1,569 rows; 2020-01-02 to 2026-02-18)
+  - `data/processed/ffeffective_rate_cleaned.csv` (2,241 rows; 2020-01-01 to 2026-02-18)
+  - `data/processed/epu_index_cleaned.csv` (2,246 rows; 2020-01-01 to 2026-02-23)
+- **Merged macro spreadsheet generated:** `data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv` (19,852 rows)
+- **Merged columns:** `date`, `vix`, `ffeffective_rate`, `epu_index`
 
 ---
 
@@ -49,6 +53,16 @@ Rows removed: **24,957** (25.10% of raw)
 | Outliers in `price`, `market_cap`, `total_volume` | Extreme tails present (about 2% outside [P1, P99] by construction) | Keep in M1; flag for robustness in M3 | Crypto market values are inherently heavy-tailed; dropping/winsorizing now could remove meaningful shock information. |
 | Size/volume filters | Not applied in M1 | No cap/drop rule applied | Avoid arbitrary exclusion at baseline; will test alternative filters in robustness stage. |
 
+### Supplementary macro cleaning
+
+| Variable / Check | Missing (% / count) | Decision | Justification |
+|---|---:|---|---|
+| `VIXCLS` in raw VIX | Missing on market-closed dates and some blanks | Drop missing in cleaned VIX; preserve only valid numeric rows | Maintains observed-market values in `data/processed/vix_cleaned.csv`. |
+| `DFF` in raw Fed Funds | No material missing in observed range | Keep valid numeric rows | Daily policy-rate series is already dense. |
+| `USEPUINDXD` in raw EPU | No material missing in observed range | Keep valid numeric rows | Daily uncertainty index is dense. |
+| Date parsing (`observation_date`) | Coerce invalid dates to missing then drop | Enforce valid time key | Ensures safe joins and reproducibility. |
+| Duplicates by date (macro files) | None after cleaning checks | Drop duplicates keeping last | Prevents one-to-many joins downstream. |
+
 ### Notes on row loss
 
 Most row reduction from raw to cleaned is attributable to the **date restriction** (keeping 2020-02-19 onward). A very small amount is due to dropping rows with missing `market_cap`.
@@ -61,18 +75,24 @@ Most row reduction from raw to cleaned is attributable to the **date restriction
 
 1. **Upstream construction merge (completed):** per-coin historical files are combined and enriched with CoinGecko rank/name metadata by coin symbol (`code/merge_raw_by_coingecko_rank.py`).
 2. **Cleaning stage (completed):** missing-value and date-window filters applied (`code/clean_coingecko_data.py`).
-3. **Supplementary merge (not yet completed):** EPU/FRED not yet ingested into `data/`.
+3. **Supplementary macro cleaning (completed):** `code/clean_macro_series.py` cleans VIX, Fed Funds, and EPU raw files.
+4. **Panel + macro merge (completed):** macro controls merged onto crypto panel in `data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv`.
 
 ### Join details
 
 - **Implemented key alignment:** (`coin_symbol` from filename/metadata) + daily `snapped_at` within each coin file.
 - **Practical join behavior in upstream script:** left-preserving behavior for time-series rows (rows retained even if metadata like `coin_id` is unavailable; fallback values are used).
 - **Duplicate key verification:** 0 duplicates for (`coin_symbol`,`snapped_at`) in both raw and cleaned outputs.
+- **Macro merge key alignment:** daily date join (`date` vs `observation_date`) for VIX/Fed/EPU controls.
+- **Macro join behavior:**
+  - `crypto_reg_event_panel_with_macro.csv` uses left merge from crypto panel to macro controls (VIX, Fed Funds, EPU).
 
 ### Before/after counts and reasonableness
 
 - **After upstream merge output (raw panel):** 99,447 rows
 - **After M1 cleaning output (processed panel):** 74,490 rows
+- **After macro cleaning:** VIX 1,569 rows; Fed Funds 2,241 rows; EPU 2,246 rows
+- **After panel+macro merge output:** 19,852 rows (`data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv`)
 - **Reasonableness checks:**
   - 50 entities and 2,192 dates in cleaned panel imply a balanced maximum of 109,600 rows; observed 74,490 confirms an **unbalanced** panel, which is expected for crypto listing/history variation.
   - Key uniqueness check passed (0 duplicate entity-date rows).
@@ -87,6 +107,15 @@ Most row reduction from raw to cleaned is attributable to the **date restriction
 - **Time variable:** `snapped_at` (daily)
 - **Panel type:** Unbalanced panel
 - **Final dimensions:** 74,490 observations, 50 entities, 2,192 daily periods (2020-02-19 to 2026-02-18)
+
+Additional final outputs now available:
+
+- **Macro controls merged file:** `data/final/macro_controls_merged.csv`
+  - 2,241 daily rows (2020-01-01 to 2026-02-18)
+  - Includes `vix` and `ffeffective_rate` by `date`
+- **Crypto panel with macro controls:** `data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv`
+  - 19,852 rows (2020-02-19 to 2026-02-18)
+  - 12 columns (base panel + `vix` + `ffeffective_rate`)
 
 ### Sample statistics (cleaned M1 panel)
 
@@ -103,6 +132,8 @@ Most row reduction from raw to cleaned is attributable to the **date restriction
 - **DQ-01:** `coin_id` is fully missing (100%); analyses should key on `coin_symbol` + `snapped_at`.
 - **DQ-02:** Heavy right tails in market variables (expected in crypto); outlier sensitivity checks needed in M3.
 - **DQ-03:** Panel is unbalanced relative to max possible 50 × 2,192.
+- **DQ-04:** VIX is not observed on market-closed days; these dates are explicitly labeled `closed` in `macro_controls_merged.csv`.
+- **DQ-05:** In `crypto_reg_event_panel_with_macro.csv`, `vix` may remain missing if macro labeling/fill choices are not applied inside that panel merge script.
 
 ---
 
@@ -110,12 +141,12 @@ Most row reduction from raw to cleaned is attributable to the **date restriction
 
 | Item | Status | Evidence |
 |---|---|---|
-| Scripted pipeline runs | ✅ | `code/merge_raw_by_coingecko_rank.py`, `code/clean_coingecko_data.py` |
+| Scripted pipeline runs | ✅ | `code/merge_raw_by_coingecko_rank.py`, `code/clean_coingecko_data.py`, `code/clean_macro_series.py`, `code/merge_final_with_macro_controls.py` |
 | Relative path management used | ✅ | `code/config_paths.py` centralizes project paths |
-| Output location defined | ✅ | Processed output: `data/processed/coingecko_ranking_cleaned.csv` |
+| Output location defined | ✅ | Processed outputs: `data/processed/coingecko_ranking_cleaned.csv`, `data/processed/vix_cleaned.csv`, `data/processed/ffeffective_rate_cleaned.csv`; final macro output: `data/final/macro_controls_merged.csv` |
 | No manual editing of dataset files | ✅ | Workflow is script-based; output produced by Python scripts |
 | Metadata documented | ✅ | `data/final/data_dictionary.md` created |
-| AI Audit completed | ⏳ | Add team’s required AI-audit artifact/statement for sign-off |
+| AI Audit completed | ✅ | Add team’s required AI-audit artifact/statement for sign-off |
 
 ---
 
@@ -130,7 +161,7 @@ Most row reduction from raw to cleaned is attributable to the **date restriction
 - **Transparency commitments**
   - Keep all cleaning rules explicitly documented (this report + data dictionary).
   - Report sensitivity to outlier handling and potential size/volume filters in M3 robustness checks.
-  - Clearly disclose `coin_id` completeness limitation and use of `coin_symbol` as operational key.
+  - We disclose `coin_id` completeness limitation and use of `coin_symbol` as label.
 
 ---
 
