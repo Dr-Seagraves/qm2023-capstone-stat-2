@@ -14,6 +14,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = ROOT / "data" / "raw"
 OUTPUT_FILE = ROOT / "data" / "raw" / "raw_merged_coingecko_ranked.csv"
+FALLBACK_INPUT_FILE = ROOT / "data" / "raw" / "coingecko_ranking.csv"
 API_URL = "https://api.coingecko.com/api/v3/coins/markets"
 WEB_URL = "https://www.coingecko.com/en"
 
@@ -139,6 +140,37 @@ def parse_symbol_from_filename(path: Path) -> str:
     return path.name[: -len("-usd-max.csv")].lower()
 
 
+def build_rows_from_fallback_csv(path: Path) -> Tuple[List[str], List[Dict[str, str]]]:
+    if not path.exists():
+        raise FileNotFoundError(f"Fallback CSV not found: {path}")
+
+    with path.open("r", newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        rows = list(reader)
+        headers = list(reader.fieldnames or [])
+
+    if not rows:
+        raise RuntimeError(f"Fallback CSV is empty: {path}")
+
+    required_cols = ["coin_rank", "coin_name", "coin_symbol", "snapped_at", "price", "market_cap", "total_volume"]
+    missing = [name for name in required_cols if name not in headers]
+    if missing:
+        raise ValueError(f"Fallback CSV is missing required columns: {missing}")
+
+    for row in rows:
+        rank_value = str(row.get("coin_rank", "")).strip()
+        row["coin_rank"] = rank_value if rank_value else "999999"
+
+    rows.sort(
+        key=lambda item: (
+            int(item["coin_rank"]) if item["coin_rank"].isdigit() else 999999,
+            item.get("coin_symbol", ""),
+            item.get("snapped_at", ""),
+        )
+    )
+    return headers, rows
+
+
 def build_merged_rows(
     files: List[Path],
     symbol_to_coin: Dict[str, Dict[str, str]],
@@ -198,7 +230,17 @@ def build_merged_rows(
 def main() -> None:
     input_files = list_input_files(RAW_DIR)
     if not input_files:
-        raise FileNotFoundError(f"No '*-usd-max.csv' files found in {RAW_DIR}")
+        headers, merged_rows = build_rows_from_fallback_csv(FALLBACK_INPUT_FILE)
+        OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with OUTPUT_FILE.open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.DictWriter(handle, fieldnames=headers)
+            writer.writeheader()
+            writer.writerows(merged_rows)
+
+        print(f"Wrote merged file from fallback input: {OUTPUT_FILE}")
+        print(f"Fallback source: {FALLBACK_INPUT_FILE}")
+        print(f"Rows written: {len(merged_rows)}")
+        return
 
     try:
         symbol_to_coin = fetch_ranked_symbols()
