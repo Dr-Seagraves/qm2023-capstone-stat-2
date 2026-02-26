@@ -9,7 +9,7 @@ Inputs:
     - data/processed/epu_index_cleaned.csv
 
 Output:
-    - data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv
+    - data/final/crypto_analysis_panel.csv
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ LEGACY_FINAL_PANEL_INPUT = FINAL_DATA_DIR / "crypto_reg_event_panel.csv"
 VIX_INPUT = PROCESSED_DATA_DIR / "vix_cleaned.csv"
 FED_INPUT = PROCESSED_DATA_DIR / "ffeffective_rate_cleaned.csv"
 EPU_INPUT = PROCESSED_DATA_DIR / "epu_index_cleaned.csv"
-OUTPUT_FILE = FINAL_DATA_DIR / "Top 10 Panel" / "crypto_reg_event_panel_with_macro.csv"
+OUTPUT_FILE = FINAL_DATA_DIR / "crypto_analysis_panel.csv"
 
 
 def main() -> None:
@@ -86,6 +86,9 @@ def main() -> None:
     merged["btc_corr_blank_reason"] = merged["control_btc_corr_30d"].isna().map(
         {True: "no_paired_ret_yet", False: "-"}
     )
+
+    merged["coin_rank_sort"] = pd.to_numeric(merged["coin_rank"], errors="coerce")
+    merged = merged.sort_values(["date", "coin_rank_sort"], kind="mergesort").drop(columns=["coin_rank_sort"])
 
     merged["date"] = merged["date"].dt.strftime("%Y-%m-%d")
 

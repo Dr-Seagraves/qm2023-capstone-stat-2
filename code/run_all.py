@@ -14,14 +14,11 @@ PYTHON = sys.executable
 
 SCRIPTS = [
     "code/config_paths.py",
-    "code/merge_raw_by_coingecko_rank.py",
-    "code/clean_coingecko_data.py",
-    "code/clean_macro_series.py",
-    "code/fetch_sec_releases_raw.py",
-    "code/clean_sec_releases_raw.py",
-    "code/build_coingecko_top10_returns_volatility.py",
-    "code/build_crypto_reg_event_panel.py",
-    "code/merge_final_with_macro_controls.py",
+    "code/fetch_coingecko_data.py",
+    "code/fetch_sec_data.py",
+    "code/fetch_macro_data.py",
+    "code/fetch_crypto_event_data.py",
+    "code/merge_final_panel.py",
 ]
 
 

@@ -9,7 +9,7 @@ This data dictionary documents the cleaned CoinGecko panel and macro control fil
 - data/processed/ffeffective_rate_cleaned.csv
 - data/processed/epu_index_cleaned.csv
 - data/processed/crypto_reg_event_panel.csv
-- data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv
+- data/final/crypto_analysis_panel.csv
 
 Current dataset coverage:
 
@@ -56,7 +56,7 @@ Current dataset coverage:
 | observation_date | Observation date for the EPU index. | Date (YYYY-MM-DD) | FRED USEPUINDXD CSV (data/raw/USEPUINDXD.csv) | Calendar date |
 | epu_index | Economic Policy Uncertainty Index for the United States. | Float | FRED USEPUINDXD series | Index points |
 
-### data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv
+### data/final/crypto_analysis_panel.csv
 
 | Variable | Description | Type | Source | Units |
 |---|---|---|---|---|
@@ -89,7 +89,7 @@ Macro control cleaning (code/clean_macro_series.py) additionally indicates:
 - Drop duplicate dates (keep last) and sort by date ascending.
 - Outputs: data/processed/vix_cleaned.csv (1,569 rows), data/processed/ffeffective_rate_cleaned.csv (2,241 rows), and data/processed/epu_index_cleaned.csv (2,246 rows).
 
-Macro merge step (data/final/Top 10 Panel/crypto_reg_event_panel_with_macro.csv) additionally indicates:
+Macro merge step (data/final/crypto_analysis_panel.csv) additionally indicates:
 
 - Daily left merge of VIX, effective Fed Funds, and EPU onto the crypto event panel by date.
 
