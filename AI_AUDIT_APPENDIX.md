@@ -73,9 +73,9 @@
   - Correct: structure and required sections were complete.
   - Limitation identified: `coin_id` is 100% missing in the current processed data; retained and flagged transparently (we clarified that by explaining that getting APIs meant to pay for them, so we fixed that by importing the data one by one, manually).
 
-- **Task:** Create `data/M1_data_quality_report.md` with all required sections for M1.
+- **Task:** Create `M1_data_quality_report.md` with all required sections for M1.
 - **Prompt:** "i need help creating a Data Quality Report... Required sections: Data Sources, Data Cleaning Decisions, Merge Strategy, Final Dataset Summary, Reproducibility Checklist, Ethical Considerations"
-- **AI Output:** Drafted and created `data/M1_data_quality_report.md` including:
+- **AI Output:** Drafted and created `M1_data_quality_report.md` including:
   - Primary source coverage and row counts (raw vs cleaned).
   - Missingness/duplicates/type checks and cleaning decisions.
   - Merge strategy description and before/after row-count checks.
@@ -103,11 +103,11 @@
   - Updated `code/clean_macro_series.py` to detect and clean EPU raw files `USEPUINDXD.csv`).
   - Applied same cleaning logic as VIX/Fed: drop missing values, parse dates, drop duplicates, sort by date.
   - Generated `data/processed/epu_index_cleaned.csv` (2020-01-01 to 2026-02-18).
-  - Updated `code/merge_final_with_macro_controls.py` to include EPU in the left merge onto crypto panel.
+  - Updated merge logic (`code/merge_final_with_macro_controls.py`, exposed via `code/merge_final_panel.py`) to include EPU in the left merge onto crypto panel.
   - Updated documentation:
     - `data/final/data_dictionary.md` to include EPU variable definition and cleaning details.
-    - `data/M1_data_quality_report.md` to reflect EPU in supplementary sources, cleaning log, and merge strategy.
-    - `data/final/Top 10 Panel/crypto_reg_event_panel_metadata.md` to list EPU as a macro control.
+    - `M1_data_quality_report.md` to reflect EPU in supplementary sources, cleaning log, and merge strategy.
+    - `data/final/crypto_analysis_panel_metadata.md` to list EPU as a macro control.
 - **Verification:**
   - Confirmed raw file `data/raw/USEPUINDXD.csv` exists.
   - Ran cleaning script and confirmed output: 2,246 cleaned rows spanning 2020-01-01 to 2026-02-18.
@@ -117,15 +117,55 @@
   - Correct: EPU data was successfully cleaned and integrated into the analysis pipeline.
   - Improvement: The second upload corrected the date range—new file starts from 2020-01-01.
 
+- **Task:** Add and use the official `M1 Assignment Description.pdf` to align repository deliverables with required locations and naming.
+- **Prompt:** "reorganize files to match assignment format"
+- **AI Output:**
+  - Reviewed `M1 Assignment Description.pdf` requirements.
+  - Mapped repository structure against required M1 structure.
+  - Confirmed required deliverables/locations used for M1 submission (`README.md`, `M1_data_quality_report.md`, `data/final/data_dictionary.md`, `AI_AUDIT_APPENDIX.md`).
+- **Verification:**
+  - Checked assignment tree and required filenames against actual repository paths.
+  - Confirmed deliverables exist at required root/final locations.
+- **Critique:**
+  - Correct: this ensured project organization follows assignment instructions rather than the prior layout.
+
+- **Task:** Adapt existing files/code/data to M1-required format without deleting core data.
+- **Prompt:** "could you re organize everything so it matches the location and everything as it is instructed in m1 assignment description?"
+- **AI Output:**
+  - Reorganized outputs into M1-required locations.
+  - Added M1 entrypoint script names:
+    - `code/fetch_coingecko_data.py`
+    - `code/fetch_sec_data.py`
+    - `code/fetch_macro_data.py`
+    - `code/fetch_crypto_event_data.py`
+    - `code/merge_final_panel.py`
+- **Verification:**
+  - Ran full pipeline (`python code/run_all.py`) and confirmed successful completion.
+  - Confirmed final outputs generated in expected M1 locations.
+- **Critique:**
+  - Correct: improved clarity and assignment alignment while keeping prior work intact.
+
+- **Task:** Reorder final crypto analysis panel for clarity by date then coin ranking.
+- **Prompt:** "in the crypto analysis panel could you please reorder the spreadsheet by 1. date & by 2. coin ranking for clarity?"
+- **AI Output:**
+  - Updated `code/merge_final_with_macro_controls.py` to sort final merged panel by `date` then numeric `coin_rank` before saving.
+  - Regenerated `data/final/crypto_analysis_panel.csv` with deterministic ordering.
+- **Verification:**
+  - Ran `python code/merge_final_panel.py`.
+  - Checked top rows and validated sorted order.
+- **Critique:**
+  - Correct: improves readability and consistency of the final panel without changing values.
+
 ## Summary
 
-- **Total AI use in this assignment stage:** 8 major uses (merge pipeline support, cleaning pipeline support, VIX/Fed macro cleaning, VIX/Fed macro merge, data dictionary, data quality report, final dataset export without blank `coin_id`, EPU data cleaning and integration).
+- **Total AI use in this assignment stage:** 11 major uses (merge pipeline support, cleaning pipeline support, VIX/Fed macro cleaning, VIX/Fed macro merge, data dictionary, data quality report, final dataset export without blank `coin_id`, EPU data cleaning and integration, M1 assignment alignment, repository format adapted to M1 structure, final panel standardization).
 - **Primary use cases:**
   1. Data engineering support (multi-file merge into one raw panel).
   2. Data cleaning pipeline support (missingness/date filter/type handling).
   3. Macro control data integration (VIX, Fed Funds, EPU).
-  4. Structured technical writing from project requirements.
-  5. Data documentation using dataset metrics.
+  4. Repository structure and deliverable compliance with assignment specification.
+  5. Structured technical writing from project requirements.
+  6. Data documentation using dataset metrics.
 - **Verification method used by team:**
   - Script runs against repository requirements.
   - Manual checklist against assignment requirements.
