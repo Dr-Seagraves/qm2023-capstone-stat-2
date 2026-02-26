@@ -27,6 +27,7 @@ How have economic policy uncertainty and regulatory shocks (for example, SEC act
 3. Macro stress indicators (VIX, Fed Funds changes) explain part of cross-time volatility variation.
 
 ## Repository Structure
+```text
 QM-2023-Capstone-Repo/
 ├── code/
 │   ├── config_paths.py
@@ -50,6 +51,7 @@ QM-2023-Capstone-Repo/
 ├── README.md
 ├── M1_data_quality_report.md
 └── AI_AUDIT_APPENDIX.md
+```
 
 ## How to Run
 1. Clone repository and open in GitHub Codespaces.
