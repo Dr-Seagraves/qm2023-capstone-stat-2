@@ -10,6 +10,12 @@ Inputs:
 
 Output:
     - data/final/crypto_analysis_panel.csv
+
+Notes:
+    - VIX is not published on market-closed days (weekends/holidays).
+    - Before merging, macro controls are expanded to all panel dates using
+      forward fill so each crypto observation date has the latest available
+      macro reading.
 """
 
 from __future__ import annotations
@@ -26,6 +32,21 @@ VIX_INPUT = PROCESSED_DATA_DIR / "vix_cleaned.csv"
 FED_INPUT = PROCESSED_DATA_DIR / "ffeffective_rate_cleaned.csv"
 EPU_INPUT = PROCESSED_DATA_DIR / "epu_index_cleaned.csv"
 OUTPUT_FILE = FINAL_DATA_DIR / "crypto_analysis_panel.csv"
+
+
+def expand_to_panel_dates(series: pd.DataFrame, value_col: str, panel_dates: pd.Series) -> pd.DataFrame:
+    """Expand a macro series to panel dates and forward-fill non-trading gaps."""
+    expanded = (
+        series[["observation_date", value_col]]
+        .drop_duplicates(subset=["observation_date"], keep="last")
+        .sort_values("observation_date")
+        .set_index("observation_date")
+        .reindex(panel_dates)
+        .ffill()
+        .reset_index()
+        .rename(columns={"index": "observation_date"})
+    )
+    return expanded
 
 
 def main() -> None:
@@ -59,22 +80,28 @@ def main() -> None:
     fed = fed.dropna(subset=["observation_date", "ffeffective_rate"]).drop_duplicates(subset=["observation_date"], keep="last")
     epu = epu.dropna(subset=["observation_date", "epu_index"]).drop_duplicates(subset=["observation_date"], keep="last")
 
+    panel_dates = pd.Index(panel["date"].dropna().drop_duplicates().sort_values(), name="observation_date")
+
+    vix_expanded = expand_to_panel_dates(vix, "vix", panel_dates)
+    fed_expanded = expand_to_panel_dates(fed, "ffeffective_rate", panel_dates)
+    epu_expanded = expand_to_panel_dates(epu, "epu_index", panel_dates)
+
     merged = panel.merge(
-        vix[["observation_date", "vix"]],
+        vix_expanded,
         how="left",
         left_on="date",
         right_on="observation_date",
     ).drop(columns=["observation_date"])
 
     merged = merged.merge(
-        fed[["observation_date", "ffeffective_rate"]],
+        fed_expanded,
         how="left",
         left_on="date",
         right_on="observation_date",
     ).drop(columns=["observation_date"])
 
     merged = merged.merge(
-        epu[["observation_date", "epu_index"]],
+        epu_expanded,
         how="left",
         left_on="date",
         right_on="observation_date",
