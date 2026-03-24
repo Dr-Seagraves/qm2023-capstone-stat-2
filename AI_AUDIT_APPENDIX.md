@@ -221,11 +221,41 @@
 - **Verification:** Confirmed all four components exported successfully.
 - **Critique:** Decomposition should be analyzed before modeling.
 
-- **Task (M2 Narrative Summary):** Polish M2 summary using accurate terminology while keeping it aligned to group ideas.
+- **Task (Plot 9: SEC Event-Window Volatility Profile):** Create inference-oriented event-window comparison.
+- **Prompt:** "for plot 9, use SEC event dates and create an event-window volatility profile from day -15 to +15 around each event, then save it in results/figures"
+- **AI Output:** It added Plot 9 code in `capstone_eda.ipynb`, aligned SEC event dates to panel dates, computed mean `outcome_realized_vol_30d` by relative event day, and exported `results/figures/M2_plot9_event_window_volatility_profile.png`.
+- **Verification:** Confirmed the event-window table was built correctly and the Plot 9 file exported at 300 DPI.
+- **Critique:** Event-window averages are descriptive and should be followed by controlled M3 estimation.
+
+- **Task (Plot 10: VIX Regime Group Comparison):** Compare volatility across low/mid/high VIX regimes by token group.
+- **Prompt:** "for plot 10, split `vix` into low/mid/high regimes, compare mean `outcome_realized_vol_30d` by `token_group`, and export the grouped bar chart"
+- **AI Output:** It added Plot 10 code in `capstone_eda.ipynb`, formed VIX regime buckets, aggregated mean volatility by regime and `token_group`, and exported `results/figures/M2_plot10_vix_regime_group_comparison.png`.
+- **Verification:** Confirmed all token groups were included and high-VIX means were highest for `defi` and `centralized_exchange`.
+- **Critique:** Regime comparisons are useful for heterogeneity but remain non-causal.
+
+- **Task (Plot 11: Macro Lead-Lag Profile):** Compare lead-lag correlation structure of volatility with VIX and EPU.
+- **Prompt:** "for plot 11, compute lead-lag correlations from -30 to +30 between daily average `outcome_realized_vol_30d` and both `vix` and `epu_index`, then plot both profiles"
+- **AI Output:** It added Plot 11 code in `capstone_eda.ipynb`, calculated lagged correlations for `vix` and `epu_index` against daily mean volatility, and exported `results/figures/M2_plot11_macro_lead_lag_profile.png`.
+- **Verification:** Confirmed the VIX profile peaks around lag 9 and EPU correlations remain much smaller.
+- **Critique:** Lead-lag correlations guide lag selection but should be validated with fixed-effects models.
+
+- **Task (Plot 12: Coin-Level Macro Sensitivity Betas):** Compare standardized VIX and EPU sensitivities coin by coin.
+- **Prompt:** "for plot 12, estimate coin-by-coin standardized sensitivities of `outcome_realized_vol_30d` to `vix` and `epu_index` using OLS, and plot them side by side"
+- **AI Output:** It added Plot 12 code in `capstone_eda.ipynb`, ran per-coin standardized regressions for `vix` and `epu_index`, plotted the coefficients, and exported `results/figures/M2_plot12_coin_macro_sensitivity_betas.png`.
+- **Verification:** Confirmed all coin rows were estimated and plotted, and VIX absolute sensitivity exceeded EPU across coins.
+- **Critique:** Standardized beta comparisons are clear, but linear assumptions may hide nonlinear responses.
+
+- **Task (Plot 13: Event vs Non-Event Volatility by Coin):** Compare mean volatility on SEC event days vs non-event days for each coin.
+- **Prompt:** "for plot 13, compare event-day versus non-event-day mean `outcome_realized_vol_30d` for each coin and visualize the difference with a dumbbell plot"
+- **AI Output:** It added Plot 13 code in `capstone_eda.ipynb`, computed coin-level event and non-event mean volatility, built a dumbbell comparison figure, and exported `results/figures/M2_plot13_event_vs_nonevent_coin_dumbbell.png`.
+- **Verification:** Confirmed event and non-event means were correctly mapped per coin and the plot exported successfully.
+- **Critique:** Event versus non-event comparisons are intuitive but should be tested with additional controls in M3.
+
+- **Task (M2 Narrative Summary):** Polish M2 summary using accurate terminology while keeping it aligned to group ideas and updated plot findings.
 - **Prompt:** "we wrote our M2 summary. now please using the same fields used in all plots help polish the wording to reinforce findings, hypotheses, and data-quality mitigations"
-- **AI Output:** It updated `M2_EDA_summary.md` and `results/reports/M2_EDA_summary.md` with more accurate terminology.
-- **Verification:** Double-checked group ideas stay in the summary. Verified wording sounds more accurate.
-- **Critique:** None.
+- **AI Output:** It updated `M2_EDA_summary.md` and `results/reports/M2_EDA_summary.md` with refined language and new comparative findings from the latest plot set.
+- **Verification:** Double-checked that findings in both summary files are synchronized with generated plot outputs and reported metrics.
+- **Critique:** Summary claims remain descriptive and should be validated in M3 with formal model tests.
 
 ## Responsibility Statement
 

@@ -2,12 +2,10 @@
 
 ## Key Findings
 
-- The strongest control correlation with volatility is `control_btc_corr_30d` ($r=0.253$), while `ffeffective_rate` is the strongest negative macro correlate ($r=-0.257$), which means that both market regime and macro changes matter for crypto risk.
-- Missing data in the main variables is low (`outcome_realized_vol_30d`: 1.51%, `control_btc_corr_30d`: 1.37%) and they are found mostly at the start of the sample because of lookback requirements, so list deletions should still keep most observations for M3.
-- SEC-event indicator correlation with volatility is small and negative at lag 0 ($r=-0.008$), decays toward zero by longer lags, and is near zero by lag 12 ($r=0.0005$), suggesting weak average unconditional effects.
-- Lag testing across 0, 1, 2, 3, 6, and 12 days shows the strongest absolute SEC-event relationship at lag 0 ($r=-0.008$), making contemporaneous or short-lag specifications the primary M3 candidates.
-- Group heterogeneity remains present: `stablecoin` ($r=-0.026$), `centralized_exchange` ($r=-0.022$), and `defi` ($r=-0.010$) show different driver sensitivities, motivating group-interaction specifications.
-- Volatility is right-skewed with elevated tail risk (median $=0.0298$, 90th percentile $=0.0648$, 99th percentile $=0.1362$), consistent with crisis clustering and non-Gaussian residual risk.
+- Volatility moves in tandem with both market and macroeconomic trends: `control_btc_corr_30d` has the strongest positive association with volatility ($r=0.253$), while `ffeffective_rate` is the strongest negative macro correlate ($r=-0.257$), which makes them both good candidates to be included in M3.
+- SEC-event effects are weak and in unconditional diagnostics: the strongest SEC-event correlation appears at lag 0 ($r=-0.008$), with event-window means showing no volatility spike (pre: $0.0336$, event: $0.0308$, post: $0.0324$).
+- Cross-sectional heterogeneity is significant, but macro stress is the main channel: high-VIX regimes raise volatility most for `defi` and `centralized_exchange` (high-low gaps around $0.0129$ and $0.0128$), and VIX's relationship is stronger that EPU's in lead-lag/sensitivity checks (best VIX lag $=9$, $r=0.308$; EPU peak $|r|=0.040$).
+- Distribution and data-quality diagnostics support feasible modeling with robust inference: volatility is right-skewed with heavy tails (median $=0.0298$, 99th percentile $=0.1362$), while missingness in core variables remains low (`outcome_realized_vol_30d`: 1.51%, `control_btc_corr_30d`: 1.37%) and mostly due to initial lookback issues.
 
 ## Hypotheses For M3
 
