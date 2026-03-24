@@ -3,7 +3,7 @@
 ## Key Findings
 
 - The strongest control correlation with volatility is `control_btc_corr_30d` ($r=0.253$), while `ffeffective_rate` is the strongest negative macro correlate ($r=-0.257$), indicating that market regime and macro tightening both matter for crypto risk.
-- After SEC source backfill, the panel now includes 16 in-sample SEC event dates across 2020-2026 (3 in 2020, 1 in 2021, 3 in 2022, 4 in 2023, 2 in 2024, 1 in 2025, 2 in 2026), improving historical coverage for M3.
+- Missing data in the main rolling-window variables is low (`outcome_realized_vol_30d`: 1.51%, `control_btc_corr_30d`: 1.37%) and mostly appears at the start of the sample because of lookback requirements, so listwise deletion should still keep most observations for M3.
 - SEC-event indicator correlation with volatility is small and negative at lag 0 ($r=-0.008$), decays toward zero by longer lags, and is near zero by lag 12 ($r=0.0005$), suggesting weak average unconditional effects.
 - Lag testing across 0, 1, 2, 3, 6, and 12 days shows the strongest absolute SEC-event relationship at lag 0 ($r=-0.008$), making contemporaneous or short-lag specifications the primary M3 candidates.
 - Group heterogeneity remains present: `stablecoin` ($r=-0.026$), `centralized_exchange` ($r=-0.022$), and `defi` ($r=-0.010$) show different driver sensitivities, motivating group-interaction specifications.
