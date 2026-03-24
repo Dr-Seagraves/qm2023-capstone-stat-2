@@ -131,19 +131,27 @@ def parse_rss_items(xml_text: str, source_type: str) -> List[Dict[str, str]]:
 
 def parse_press_releases(html: str) -> List[Dict[str, str]]:
     rows: List[Dict[str, str]] = []
-    item_pattern = re.compile(r"<li[^>]*class=\"[^\"]*news-release[^\"]*\"[^>]*>(.*?)</li>", re.IGNORECASE | re.DOTALL)
-    link_pattern = re.compile(r"<a[^>]+href=\"([^\"]+)\"[^>]*>(.*?)</a>", re.IGNORECASE | re.DOTALL)
-    date_pattern = re.compile(r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}", re.IGNORECASE)
 
-    for block in item_pattern.findall(html):
+    # New SEC newsroom pages are table-based and include one row per release.
+    row_pattern = re.compile(r"<tr[^>]*class=\"[^\"]*pr-list-page-row[^\"]*\"[^>]*>(.*?)</tr>", re.IGNORECASE | re.DOTALL)
+    time_pattern = re.compile(r"<time[^>]*>(.*?)</time>", re.IGNORECASE | re.DOTALL)
+    link_pattern = re.compile(r"<a[^>]+href=\"([^\"]*?/newsroom/press-releases/[^\"]+)\"[^>]*>(.*?)</a>", re.IGNORECASE | re.DOTALL)
+    release_pattern = re.compile(r"views-field-field-release-number[^>]*>\s*([^<]+?)\s*</td>", re.IGNORECASE | re.DOTALL)
+
+    for block in row_pattern.findall(html):
         link_match = link_pattern.search(block)
         if not link_match:
             continue
 
         href = link_match.group(1).strip()
         title = strip_tags(link_match.group(2))
-        date_match = date_pattern.search(strip_tags(block))
-        event_date = parse_date(date_match.group(0)) if date_match else ""
+
+        time_match = time_pattern.search(block)
+        raw_date_text = strip_tags(time_match.group(1)) if time_match else ""
+        event_date = parse_date(raw_date_text)
+
+        release_match = release_pattern.search(block)
+        release_id = strip_tags(release_match.group(1)) if release_match else ""
 
         if href.startswith("/"):
             href = f"https://www.sec.gov{href}"
@@ -154,8 +162,8 @@ def parse_press_releases(html: str) -> List[Dict[str, str]]:
                 "event_date": event_date,
                 "title": title,
                 "url": href,
-                "release_id": "",
-                "raw_date_text": date_match.group(0) if date_match else "",
+                "release_id": release_id,
+                "raw_date_text": raw_date_text,
             }
         )
 
@@ -223,6 +231,49 @@ def fetch_rss_with_retry(url: str, user_agent: str, retries: int = 3, sleep_sec:
     raise RuntimeError(f"Failed to fetch {url}: {last_error}")
 
 
+def fetch_paginated_rows(
+    base_url: str,
+    user_agent: str,
+    parser_func,
+    max_pages: int = 250,
+    stop_after_no_new_pages: int = 6,
+) -> List[Dict[str, str]]:
+    rows: List[Dict[str, str]] = []
+    seen_keys = set()
+    no_new_pages = 0
+
+    for page in range(max_pages):
+        page_url = base_url if page == 0 else f"{base_url}?page={page}"
+        try:
+            html = fetch_with_retry(page_url, user_agent=user_agent)
+        except RuntimeError:
+            if page == 0:
+                raise
+            break
+
+        parsed = parser_func(html)
+        added = 0
+        for row in parsed:
+            key = (row.get("source_type", ""), row.get("url", ""), row.get("title", ""))
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+            rows.append(row)
+            added += 1
+
+        if added == 0:
+            no_new_pages += 1
+        else:
+            no_new_pages = 0
+
+        if no_new_pages >= stop_after_no_new_pages:
+            break
+
+        time.sleep(0.15)
+
+    return rows
+
+
 def deduplicate(rows: List[Dict[str, str]]) -> List[Dict[str, str]]:
     seen = set()
     unique_rows: List[Dict[str, str]] = []
@@ -281,19 +332,32 @@ def main() -> None:
 
     rows: List[Dict[str, str]] = []
 
+    # RSS gives quick recent coverage, while paginated HTML backfills historical years.
     try:
         press_rss = fetch_rss_with_retry(PRESS_RSS_URL, user_agent=args.user_agent)
         rows.extend(parse_rss_items(press_rss, "sec_press_release"))
     except RuntimeError:
-        press_html = fetch_with_retry(PRESS_URL, user_agent=args.user_agent)
-        rows.extend(parse_press_releases(press_html))
+        pass
 
     try:
         litigation_rss = fetch_rss_with_retry(LITIGATION_RSS_URL, user_agent=args.user_agent)
         rows.extend(parse_rss_items(litigation_rss, "sec_litigation_release"))
     except RuntimeError:
-        litigation_html = fetch_with_retry(LITIGATION_URL, user_agent=args.user_agent)
-        rows.extend(parse_litigation_releases(litigation_html))
+        pass
+
+    # Fetch press releases by year (2020-2026) for historical coverage
+    print("Fetching press releases by year...")
+    for year in range(2020, 2027):
+        year_url = f"{PRESS_URL}?year={year}"
+        print(f"  Fetching press releases for {year}...")
+        rows.extend(fetch_paginated_rows(year_url, args.user_agent, parse_press_releases, max_pages=250, stop_after_no_new_pages=3))
+
+    # Fetch litigation releases by year (2020-2026) for historical coverage
+    print("Fetching litigation releases by year...")
+    for year in range(2020, 2027):
+        year_url = f"{LITIGATION_URL}?year={year}"
+        print(f"  Fetching litigation releases for {year}...")
+        rows.extend(fetch_paginated_rows(year_url, args.user_agent, parse_litigation_releases, max_pages=300, stop_after_no_new_pages=3))
 
     rows = deduplicate(rows)
 
