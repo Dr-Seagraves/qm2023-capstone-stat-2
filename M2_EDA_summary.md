@@ -2,7 +2,7 @@
 
 ## Key Findings
 
-- Volatility moves in tandem with both market and macroeconomic trends: `control_btc_corr_30d` has the strongest positive association with volatility ($r=0.253$), while `ffeffective_rate` is the strongest negative macro correlate ($r=-0.257$), which makes them both good candidates to be included in M3.
+- Volatility moves in tandem with both market regimes and macroeconomic trends: `control_btc_corr_30d` has the strongest positive association with volatility ($r=0.253$), while `ffeffective_rate` is the strongest negative macro correlate ($r=-0.257$), which makes them both good candidates to be included in M3.
 - SEC-event effects are weak and in unconditional diagnostics: the strongest SEC-event correlation appears at lag 0 ($r=-0.008$), with event-window means showing no volatility spike (pre: $0.0336$, event: $0.0308$, post: $0.0324$).
 - Cross-sectional heterogeneity is significant, but macro stress is the main channel: high-VIX regimes raise volatility most for `defi` and `centralized_exchange` (high-low gaps around $0.0129$ and $0.0128$), and VIX's relationship is stronger that EPU's in lead-lag/sensitivity checks (best VIX lag $=9$, $r=0.308$; EPU peak $|r|=0.040$).
 - Distribution and data-quality diagnostics support feasible modeling with robust inference: volatility is right-skewed with heavy tails (median $=0.0298$, 99th percentile $=0.1362$), while missingness in core variables remains low (`outcome_realized_vol_30d`: 1.51%, `control_btc_corr_30d`: 1.37%) and mostly due to initial lookback issues.
