@@ -29,11 +29,11 @@
 
 ## Data Quality Flags And M3 Mitigations
 
-- Missingness is concentrated in rolling-window measures: `outcome_realized_vol_30d` missing share is 1.51% and `control_btc_corr_30d` is 1.37%, mostly from initial lookback periods.
-- Planned mitigation: Use listwise deletion for baseline models and run robustness checks with balanced-sample windows.
-- Volatility shows heavy tails and outlier episodes (99th percentile far above median), implying non-constant variance.
-- Planned mitigation: Use heteroskedasticity-robust standard errors and test winsorized robustness.
-- Several controls are materially correlated with each other and with the outcome (for example, market-cap/volume transforms vs. rates), creating multicollinearity risk.
-- Planned mitigation: Check VIF, avoid redundant controls, and report sensitivity to alternative control sets.
+- Missingness is mainly found because of initial lookback windows: `outcome_realized_vol_30d` missing share is 1.51% and `control_btc_corr_30d` is 1.37%.
+- M3 Mitigation: Use list-based elimination for baseline models and run robustness checks using balanced sample windows.
+- Volatility shows heavy tails and outliers (99th percentile far above median), proving non-constant variance.
+- M3 Mitigation: Use heteroskedasticity-robust standard errors and test winsorized robustness.
+- Some controls are correlated with each other as well as with the outcome (for instance, market-cap/volume transforms v. rates), creating multicollinearity risk.
+- M3 Mitigation: Check VIF, avoid redundant controls, and report sensitivity to other control sets.
 - Relationship magnitudes for SEC-event effects are small in unconditional correlations.
-- Planned mitigation: prioritize conditional models with lags, interactions, and fixed effects rather than relying on bivariate interpretation.
+- M3 Mitigation: prioritize conditional models with lags, interactions, and fixed effects rather than relying too much on bivariate interpretation.
