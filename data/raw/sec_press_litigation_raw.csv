@@ -1,51 +1,776 @@
 source_type,event_date,release_id,title,url,raw_date_text,ingested_at_utc
-sec_press_release,2025-12-17,,Joshua T. White Named SEC Chief Economist,https://www.sec.gov/newsroom/press-releases/2025-143-joshua-t-white-named-sec-chief-economist,"Wed, 17 Dec 2025 15:00:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2025-12-17,,SEC Office of the Investor Advocate Delivers to Congress Report on Activities for Fiscal Year 2025,https://www.sec.gov/newsroom/press-releases/2025-142-sec-office-investor-advocate-delivers-congress-report-activities-fiscal-year-2025,"Wed, 17 Dec 2025 13:05:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2025-12-22,,SEC Charges Three Purported Crypto Asset Trading Platforms and Four Investment Clubs with Scheme That Targeted Retail Investors on Social Media,https://www.sec.gov/newsroom/press-releases/2025-144-sec-charges-three-purported-crypto-asset-trading-platforms-four-investment-clubs-scheme-targeted,"Mon, 22 Dec 2025 15:00:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2025-12-29,,Deputy Director of Enforcement Nekia Hackworth Jones Concludes Her Tenure at the SEC,https://www.sec.gov/newsroom/press-releases/2025-146-deputy-director-enforcement-nekia-hackworth-jones-concludes-her-tenure-sec,"Mon, 29 Dec 2025 13:36:34 -0500",2026-02-26T00:02:08Z
-sec_press_release,2025-12-29,,SEC Announces Retirement of Division of Corporation Finance Deputy Director Cicely LaMothe,https://www.sec.gov/newsroom/press-releases/2025-145-sec-announces-retirement-division-corporation-finance-deputy-director-cicely-lamothe,"Mon, 29 Dec 2025 11:45:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-07,,SEC Proposes Amendments to the Small Entity Definitions for Investment Companies and Investment Advisers for Purposes of the Regulatory Flexibility Act,https://www.sec.gov/newsroom/press-releases/2026-1-sec-proposes-amendments-small-entity-definitions-investment-companies-investment-advisers-purposes,"Wed, 07 Jan 2026 16:57:35 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-08,,SEC Publishes Staff Report on Capital-Raising Dynamics,https://www.sec.gov/newsroom/press-releases/2026-2-sec-publishes-staff-report-capital-raising-dynamics,"Thu, 08 Jan 2026 17:45:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-09,,SEC to Host Hybrid Event on Regulation S-P for Small Firms,https://www.sec.gov/newsroom/press-releases/2026-3-sec-host-hybrid-event-regulation-s-p-small-firms,"Fri, 09 Jan 2026 11:33:41 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-12,,Paul Tzur and David Morrell Named Deputy Directors of the Division of Enforcement,https://www.sec.gov/newsroom/press-releases/2026-4-paul-tzur-david-morrell-named-deputy-directors-division-enforcement,"Mon, 12 Jan 2026 13:56:42 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-15,,J. Russell McGranahan Named SEC General Counsel,https://www.sec.gov/newsroom/press-releases/2026-5-j-russell-mcgranahan-named-sec-general-counsel,"Thu, 15 Jan 2026 10:00:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-20,,Christina M. Thomas to Rejoin the Division of Corporation Finance as Deputy Director,https://www.sec.gov/newsroom/press-releases/2026-7-christina-m-thomas-rejoin-division-corporation-finance-deputy-director,"Tue, 20 Jan 2026 14:42:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-20,,Division of Corporation Finance Names Senior Staff,https://www.sec.gov/newsroom/press-releases/2026-8-division-corporation-finance-names-senior-staff,"Tue, 20 Jan 2026 15:07:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-20,,Keith E. Cassidy Named Director of the Division of Examinations,https://www.sec.gov/newsroom/press-releases/2026-6-keith-e-cassidy-named-director-division-examinations,"Tue, 20 Jan 2026 07:15:48 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-21,,SEC Seeks Candidates for Small Business Capital Formation Advisory Committee,https://www.sec.gov/newsroom/press-releases/2026-9-sec-seeks-candidates-small-business-capital-formation-advisory-committee,"Wed, 21 Jan 2026 08:30:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-22,,SEC Approves 2026 PCAOB Budget and Accounting Support Fee,https://www.sec.gov/newsroom/press-releases/2026-11-sec-approves-2026-pcaob-budget-accounting-support-fee,"Thu, 22 Jan 2026 11:52:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-22,,SEC Seeks Candidates for Membership on the Investor Advisory Committee,https://www.sec.gov/newsroom/press-releases/2026-10-sec-seeks-candidates-membership-investor-advisory-committee,"Thu, 22 Jan 2026 08:58:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-22,,SEC Small Business Advisory Committee to Continue Discussion on Regulatory Framework for Finders and Begin Exploring the Private Secondary Market,https://www.sec.gov/newsroom/press-releases/2026-12-sec-small-business-advisory-committee-continue-discussion-regulatory-framework-finders-begin,"Thu, 22 Jan 2026 14:25:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-22,,"SEC and CFTC to Hold Joint Event on Harmonization, U.S. Financial Leadership in the Crypto Era",https://www.sec.gov/newsroom/press-releases/2026-13,"Thu, 22 Jan 2026 15:50:56 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-26,,"SEC and CFTC Reschedule Joint Event on Harmonization, U.S. Financial Leadership in the Crypto Era",https://www.sec.gov/newsroom/press-releases/2026-14-sec-cftc-reschedule-joint-event-harmonization-us-financial-leadership-crypto-era,"Mon, 26 Jan 2026 10:12:31 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-01-27,LR-26469,"Anil Mathews; Rahul Agarwal; Kenneth M. Harlan; and MobileFuse, LLC",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26469,"Tue, 27 Jan 2026 16:47:17 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-01-27,LR-26468,"Shannon Illingworth and GP Solutions, Inc.",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26468,"Tue, 27 Jan 2026 16:10:44 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-01-27,LR-26470,Vikram Luthar,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26470,"Tue, 27 Jan 2026 18:12:54 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-27,,SEC Charges ADM and Three Former Executives with Accounting and Disclosure Fraud,https://www.sec.gov/newsroom/press-releases/2026-15-sec-charges-adm-three-former-executives-accounting-disclosure-fraud,"Tue, 27 Jan 2026 16:38:34 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-01-29,LR-26471,Dale Swanberg,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26471,"Thu, 29 Jan 2026 17:24:14 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-01-29,LR-26472,Satish Appalakutty; Lorven Funds; Lorven Advisors LLC; Vistalytics Inc.,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26472,"Thu, 29 Jan 2026 17:36:29 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-01-30,LR-26473,Kevin A. Van de Grift,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26473,"Fri, 30 Jan 2026 15:36:21 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-01-30,,SEC Appoints New Chairman and Board Members to PCAOB,https://www.sec.gov/newsroom/press-releases/2026-16-sec-appoints-new-chairman-board-members-pcaob,"Fri, 30 Jan 2026 15:59:00 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-04,LR-26475,"Brett Rosen; Deborah Braun; David M. Massey; RB Capital Partners, Inc.",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26475,"Wed, 04 Feb 2026 17:38:11 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-04,LR-26474,Ejiro Ode Okuma,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26474,"Wed, 04 Feb 2026 16:47:39 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-05,LR-26477,Gerald Shvartsman; Michael Shvartsman; Rocket One Capital LLC,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26477,"Thu, 05 Feb 2026 16:13:32 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-05,LR-26476,Marat Likhtenstein,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26476,"Thu, 05 Feb 2026 15:04:31 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-05,LR-26478,Ryan Squillante,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26478,"Thu, 05 Feb 2026 16:27:31 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-02-05,,"SEC Publishes Data on Exchange Traded Funds and Fund Mergers; Updated Statistics on Municipal Advisors, Transfer Agents, and Security-Based Swap Dealers",https://www.sec.gov/newsroom/press-releases/2026-17-sec-publishes-data-exchange-traded-funds-fund-mergers-updated-statistics-municipal-advisors-transfer,"Thu, 05 Feb 2026 13:45:00 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-06,LR-26479,"CBA Pharma, Inc., Wayne Michael Putnam, Louis A. Carmichael",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26479,"Fri, 06 Feb 2026 14:13:23 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-10,LR-26480,"Barrington Asset Management, Inc.; Gregory David Paris",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26480,"Tue, 10 Feb 2026 12:15:41 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-11,LR-26481,John David Gessin et al.,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26481,"Wed, 11 Feb 2026 12:40:56 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-11,LR-26482,Nicholas Bowerman,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26482,"Wed, 11 Feb 2026 13:16:51 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-02-13,,SEC Announces 45th Annual Small Business Forum to Improve Capital-Raising Policy,https://www.sec.gov/newsroom/press-releases/2026-18-sec-announces-45th-annual-small-business-forum-improve-capital-raising-policy,"Fri, 13 Feb 2026 10:45:00 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-02-18,,SEC Proposes Amendments to Reduce Burdens in Reporting of Fund Portfolio Holdings,https://www.sec.gov/newsroom/press-releases/2026-19-sec-proposes-amendments-reduce-burdens-reporting-fund-portfolio-holdings,"Wed, 18 Feb 2026 14:30:00 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-19,LR-26484,Bluesky Eagle Capital Management Ltd.,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26484,"Thu, 19 Feb 2026 14:49:23 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-19,LR-26485,"Cutter Financial Group, LLC and Jeffrey Cutter",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26485,"Thu, 19 Feb 2026 15:11:50 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-19,LR-26483,"Saumil Thakkar, Poorvesh Thakkar, et al.",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26483,"Thu, 19 Feb 2026 13:41:23 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-20,LR-26486,"C-Hear, Inc.; Adena Harmon",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26486,"Fri, 20 Feb 2026 16:45:25 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-23,LR-26487,Christopher B. Ferguson and Brian P. McFadden,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26487,"Mon, 23 Feb 2026 16:02:13 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-24,LR-26488,Ian G. Bell,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26488,"Tue, 24 Feb 2026 09:55:35 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-24,LR-26490,Joel Castellanos,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26490,"Tue, 24 Feb 2026 17:03:49 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-24,LR-26489,"Joseph C. Lewis, Carolyn W. Carter, Patrick J. O’Connor, and Bryan L. Waugh",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26489,"Tue, 24 Feb 2026 12:19:27 -0500",2026-02-26T00:02:08Z
-sec_press_release,2026-02-24,,SEC’s Division of Enforcement Announces Updates to Enforcement Manual,https://www.sec.gov/newsroom/press-releases/2026-20-secs-division-enforcement-announces-updates-enforcement-manual,"Tue, 24 Feb 2026 08:55:52 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-25,LR-26492,"Charles T. Lawrence and Landes Prive, LLC",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26492,"Wed, 25 Feb 2026 16:41:20 -0500",2026-02-26T00:02:08Z
-sec_litigation_release,2026-02-25,LR-26491,"Western Sierra Resource Corporation, Roger Johnson, and Dennis Atkins",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26491,"Wed, 25 Feb 2026 16:11:28 -0500",2026-02-26T00:02:08Z
+sec_press_release,2020-12-16,2020-320,SEC Adopts Clearing Agency Rule to Limit Potential for Overlapping or Duplicative Regulation,https://www.sec.gov/newsroom/press-releases/2020-320,"Dec. 16, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-17,2020-322,SEC Approves 2021 PCAOB Budget and Accounting Support Fee,https://www.sec.gov/newsroom/press-releases/2020-322,"Dec. 17, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-17,2020-321,SEC Charges Robinhood Financial With Misleading Customers About Revenue Sources and Failing to Satisfy Duty of Best Execution,https://www.sec.gov/newsroom/press-releases/2020-321,"Dec. 17, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-18,2020-323,"SEC Announces the Creation of the Security-Based Swaps Joint Venture, Led by Division of Examinations and Division of Trading and Markets",https://www.sec.gov/newsroom/press-releases/2020-323,"Dec. 18, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-18,2020-327,SEC Charges Biotech Company and CEO With Fraud Concerning COVID-19 Blood Testing Device,https://www.sec.gov/newsroom/press-releases/2020-327,"Dec. 18, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-18,2020-325,SEC Issues Multiple Whistleblower Awards Totaling Over $3.6 Million,https://www.sec.gov/newsroom/press-releases/2020-325,"Dec. 18, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-18,2020-326,SEC Releases 2020 Office of Credit Rating Reports,https://www.sec.gov/newsroom/press-releases/2020-326,"Dec. 18, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-18,2020-324,Small Business Advocate Releases Annual Report for Fiscal Year 2020,https://www.sec.gov/newsroom/press-releases/2020-324,"Dec. 18, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-21,2020-328,S.P. Kothari to Conclude Tenure As SEC Chief Economist and Division of Economic and Risk Analysis Director,https://www.sec.gov/newsroom/press-releases/2020-328,"Dec. 21, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-21,2020-329,SEC Charges Company and CEO for $119 Million Securities Fraud Targeting Members of the South Asian American Community,https://www.sec.gov/newsroom/press-releases/2020-329,"Dec. 21, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-21,2020-330,SEC Names John Moses as Deputy Director of Office of Investor Education and Advocacy,https://www.sec.gov/newsroom/press-releases/2020-330,"Dec. 21, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-22,2020-337,Charles Koretke Named Managing Executive of Division of Examinations,https://www.sec.gov/newsroom/press-releases/2020-337,"Dec. 22, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-22,2020-335,Dalia Blass to Conclude Tenure as Director of the Division of Investment Management,https://www.sec.gov/newsroom/press-releases/2020-335,"Dec. 22, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-22,2020-334,SEC Adopts Modernized Marketing Rule for Investment Advisers,https://www.sec.gov/newsroom/press-releases/2020-334,"Dec. 22, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-22,2020-333,SEC Awards Over $1.6 Million to Whistleblower,https://www.sec.gov/newsroom/press-releases/2020-333,"Dec. 22, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-22,2020-338,SEC Charges Ripple and Two Executives with Conducting $1.3 Billion Unregistered Securities Offering,https://www.sec.gov/newsroom/press-releases/2020-338,"Dec. 22, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-22,2020-332,SEC Issues Substituted Compliance Order for Germany and Notice of Substituted Compliance Application and Proposed Substituted Compliance Order for France,https://www.sec.gov/newsroom/press-releases/2020-332,"Dec. 22, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-22,2020-336,SEC Proposes Amendments to Rule 144 and Form 144,https://www.sec.gov/newsroom/press-releases/2020-336,"Dec. 22, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-22,2020-331,SEC and CONSOB Sign New Supervisory Cooperation Arrangement,https://www.sec.gov/newsroom/press-releases/2020-331,"Dec. 22, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-23,2020-339,SEC Chief of Staff Sean Memon Announces Plans to Conclude Tenure,https://www.sec.gov/newsroom/press-releases/2020-339,"Dec. 23, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-23,2020-340,SEC Issues Statement and Requests Comment Regarding the Custody of Digital Asset Securities by Special Purpose Broker-Dealers,https://www.sec.gov/newsroom/press-releases/2020-340,"Dec. 23, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-28,2020-342,Elad Roisman Named Acting Chairman of the SEC,https://www.sec.gov/newsroom/press-releases/2020-342,"Dec. 28, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-28,2020-341,"SEC Obtains Emergency Asset Freeze, Charges Crypto Fund Manager with Fraud",https://www.sec.gov/newsroom/press-releases/2020-341,"Dec. 28, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-30,2020-344,Jed Hickman Named SEC’s EDGAR Business Office Director,https://www.sec.gov/newsroom/press-releases/2020-344,"Dec. 30, 2020",2026-03-24T00:56:40Z
+sec_press_release,2020-12-30,2020-343,SEC Charges Jewelry Wholesaler with Fraudulent Securities Offering Targeting Current and Retired Police Officers and Firefighters,https://www.sec.gov/newsroom/press-releases/202-343,"Dec. 30, 2020",2026-03-24T00:56:40Z
+sec_press_release,2021-11-29,2021-246,"SEC Staff Issues Accounting Guidance on ""Spring-Loaded"" Compensation Awards to Executives",https://www.sec.gov/newsroom/press-releases/2021-246,"Nov. 29, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-01,2021-247,SEC Updates List of Firms Using Inaccurate Information to Solicit Investors,https://www.sec.gov/newsroom/press-releases/2021-247,"Dec. 1, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-02,2021-250,SEC Adopts Amendments to Finalize Rules Relating to the Holding Foreign Companies Accountable Act,https://www.sec.gov/newsroom/press-releases/2021-250,"Dec. 2, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-02,2021-248,SEC Charges Latvian Citizen With Digital Asset Fraud,https://www.sec.gov/newsroom/press-releases/2021-248,"Dec. 2, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-02,2021-249,SEC Charges Pharma CFO and Former Partner with Insider Trading,https://www.sec.gov/newsroom/press-releases/2021-249,"Dec. 2, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-03,2021-251,Ernesto A. Lanza Named Acting Director of SEC Office of Municipal Securities,https://www.sec.gov/newsroom/press-releases/2021-251,"Dec. 3, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-06,2021-252,SEC Charges Dialysis Provider and Three Former Senior Executives with Revenue Manipulation Scheme,https://www.sec.gov/newsroom/press-releases/2021-252,"Dec. 6, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-06,2021-253,SEC Issues Whistleblower Nearly $5 Million Award,https://www.sec.gov/newsroom/press-releases/2021-253,"Dec. 6, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-09,2021-254,Report From SEC Small Business Advocate Details Capital Raising During Past Year,https://www.sec.gov/newsroom/press-releases/2021-254,"Dec. 9, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-10,2021-255,SEC Charges Three Canadian Citizens in Fraudulent Penny Stock Scheme,https://www.sec.gov/newsroom/press-releases/2021-255,"Dec. 10, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-15,2021-260,SEC Approves 2022 PCAOB Budget and Accounting Support Fee,https://www.sec.gov/newsroom/press-releases/2021-260,"Dec. 15, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-15,2021-256,SEC Proposes Amendments Regarding Rule 10b5-1 Insider Trading Plans and Related Disclosures,https://www.sec.gov/newsroom/press-releases/2021-256,"Dec. 15, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-15,2021-258,SEC Proposes Amendments to Money Market Fund Rules,https://www.sec.gov/newsroom/press-releases/2021-258,"Dec. 15, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-15,2021-257,SEC Proposes New Share Repurchase Disclosure Rules,https://www.sec.gov/newsroom/press-releases/2021-257,"Dec. 15, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-15,2021-259,"SEC Proposes Rules to Prevent Fraud in Connection With Security-Based Swaps Transactions, to Prevent Undue Influence over CCOs and to Require Reporting of Large Security-Based Swap Positions",https://www.sec.gov/newsroom/press-releases/2021-259,"Dec. 15, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-15,2021-261,Wedbush Securities Charged with Unregistered Sales of Microcap Securities and Failing to Report Suspicious Transactions,https://www.sec.gov/newsroom/press-releases/2021-261,"Dec. 15, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-17,2021-262,JPMorgan Admits to Widespread Recordkeeping Failures and Agrees to Pay $125 Million Penalty to Resolve SEC Charges,https://www.sec.gov/newsroom/press-releases/2021-262,"Dec. 17, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-17,2021-263,James E. Grimes Named Chief Administrative Law Judge at SEC,https://www.sec.gov/newsroom/press-releases/2021-263,"Dec. 17, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-20,2021-264,SEC Charges Clinical Drug Trial Investigator with Insider Trading,https://www.sec.gov/newsroom/press-releases/2021-264,"Dec. 20, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-20,2021-265,SEC Charges Five Russians in $80 Million Hacking and Trading Scheme,https://www.sec.gov/newsroom/press-releases/2021-265,"Dec. 20, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-20,2021-266,SEC Charges Private Equity Fund Adviser with Fee and Expense Disclosure Failures,https://www.sec.gov/newsroom/press-releases/2021-266,"Dec. 20, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-21,2021-267,Nikola Corporation to Pay $125 Million to Resolve Fraud Charges,https://www.sec.gov/newsroom/press-releases/2021-267,"Dec. 21, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-21,2021-268,William Birdthistle Named Director of Division of Investment Management,https://www.sec.gov/newsroom/press-releases/2021-268,"Dec. 21, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-29,2021-269,SEC Charges Financial Company and Its President with Engaging in Fraudulent Schemes to Boost Stock Price,https://www.sec.gov/newsroom/press-releases/2021-269,"Dec. 29, 2021",2026-03-24T00:56:40Z
+sec_press_release,2021-12-30,2021-270,Chair Gensler Announces Additions to Executive Staff,https://www.sec.gov/newsroom/press-releases/2021-270,"Dec. 30, 2021",2026-03-24T00:56:40Z
+sec_press_release,2022-12-01,2022-213,"SEC Investor Advisory Committee to Discuss Investor Account Statements, Corporate Tax Transparency, and Single-Stock ETFs on Dec 8",https://www.sec.gov/newsroom/press-releases/2022-213,"Dec. 1, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-03,2022-214,ABB Settles SEC Charges That It Engaged in Bribery Scheme in South Africa,https://www.sec.gov/newsroom/press-releases/2022-214,"Dec. 3, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-05,2022-215,AT&T Settles SEC Charge of Selectively Disclosing Material Information to Wall St. Analysts,https://www.sec.gov/newsroom/press-releases/2022-215,"Dec. 5, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-07,2022-217,SEC Charges Vika Ventures and its CEO in $6 Million Fraudulent Offering,https://www.sec.gov/newsroom/press-releases/2022-217,"Dec. 7, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-07,2022-216,SEC Reopens Comment Period for Proposed Rule on Share Repurchase Disclosure Modernization,https://www.sec.gov/newsroom/press-releases/2022-216,"Dec. 7, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-12,2022-218,SEC Awards More Than $20 Million to Whistleblower,https://www.sec.gov/newsroom/press-releases/2022-218,"Dec. 12, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-13,2022-220,SEC Charges Danske Bank with Fraud for Misleading Investors about Its Anti-Money Laundering Compliance Failures in Estonia,https://www.sec.gov/newsroom/press-releases/2022-220,"Dec. 13, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-13,2022-219,SEC Charges Samuel Bankman-Fried with Defrauding Investors in Crypto Asset Trading Platform FTX,https://www.sec.gov/newsroom/press-releases/2022-219,"Dec. 13, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-14,2022-222,SEC Adopts Amendments to Modernize Rule 10b5-1 Insider Trading Plans and Related Disclosures,https://www.sec.gov/newsroom/press-releases/2022-222,"Dec. 14, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-14,2022-221,SEC Charges Eight Social Media Influencers in $100 Million Stock Manipulation Scheme Promoted on Discord and Twitter,https://www.sec.gov/newsroom/press-releases/2022-221,"Dec. 14, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-14,2022-228,SEC Charges Financial Services Professional and Associate in $47 Million Front-Running Scheme,https://www.sec.gov/newsroom/press-releases/2022-228,"Dec. 14, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-14,2022-227,SEC Charges Four Individuals in Crypto Pyramid Scheme that Targeted Spanish-Speaking Communities,https://www.sec.gov/newsroom/press-releases/2022-227,"Dec. 14, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-14,2022-223,SEC Proposes Amendments to Enhance Disclosure of Order Execution Information,https://www.sec.gov/newsroom/press-releases/2022-223,"Dec. 14, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-14,2022-226,SEC Proposes Regulation Best Execution,https://www.sec.gov/newsroom/press-releases/2022-226,"Dec. 14, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-14,2022-225,SEC Proposes Rule to Enhance Competition for Individual Investor Order Execution,https://www.sec.gov/newsroom/press-releases/2022-225,"Dec. 14, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-14,2022-224,SEC Proposes Rules to Amend Minimum Pricing Increments and Access Fee Caps and to Enhance the Transparency of Better Priced Orders,https://www.sec.gov/newsroom/press-releases/2022-224,"Dec. 14, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-16,2022-229,SEC Small Business Advocacy Office Releases Annual Report on Capital Raising,https://www.sec.gov/newsroom/press-releases/2022-229,"Dec. 16, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-19,2022-231,SEC Awards More Than $37 Million to Whistleblower,https://www.sec.gov/newsroom/press-releases/2022-231,"Dec. 19, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-19,2022-230,SEC Charges Honeywell with Bribery Schemes in Algeria and Brazil,https://www.sec.gov/newsroom/press-releases/2022-230,"Dec. 19, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-20,2022-232,"SEC Charges Former CEO of Biotech Company CytoDyn with Fraud, Insider Trading",https://www.sec.gov/newsroom/press-releases/2022-232,"Dec. 20, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-21,2022-234,SEC Charges Caroline Ellison and Gary Wang with Defrauding Investors in Crypto Asset Trading Platform FTX,https://www.sec.gov/newsroom/press-releases/2022-234,"Dec. 21, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-21,2022-233,Sarah ten Siethoff Named Deputy Director of the Division of Investment Management,https://www.sec.gov/newsroom/press-releases/2022-233,"Dec. 21, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-22,2022-235,SEC Announces Departure of Dan Berkovitz; Megan Barbero Named General Counsel,https://www.sec.gov/newsroom/press-releases/2022-235,"Dec. 22, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-23,2022-236,SEC Approves the 2023 Public Company Accounting Oversight Board Budget and Accounting Support Fee,https://www.sec.gov/newsroom/press-releases/2022-236,"Dec. 23, 2022",2026-03-24T00:56:40Z
+sec_press_release,2022-12-27,2022-237,Antonia Apps Named Director of New York Regional Office,https://www.sec.gov/newsroom/press-releases/2022-237,"Dec. 27, 2022",2026-03-24T00:56:40Z
+sec_press_release,2023-11-14,2023-235,Charter Communications to Pay $25 Million Penalty for Stock Buyback Controls Violations,https://www.sec.gov/newsroom/press-releases/2023-235,"Nov. 14, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-11-16,2023-236,SEC Adopts Rules to Improve Clearing Agency Governance and Mitigate Conflicts of Interest,https://www.sec.gov/newsroom/press-releases/2023-236,"Nov. 16, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-11-20,2023-237,"SEC Charges Kraken for Operating as an Unregistered Securities Exchange, Broker, Dealer, and Clearing Agency",https://www.sec.gov/newsroom/press-releases/2023-237,"Nov. 20, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-11-21,2023-238,SEC Charges New York Businessman with Fraud and Unregistered Sales of Securities to Investors Seeking Permanent Residency in the U.S.,https://www.sec.gov/newsroom/press-releases/2023-238,"Nov. 21, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-11-22,2023-239,SEC Small Business Advisory Committee to Discuss the Accredited Investor Definition and the Role of Diversity in the Investment Process,https://www.sec.gov/newsroom/press-releases/2023-239,"Nov. 22, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-11-27,2023-240,SEC Adopts Rule to Prohibit Conflicts of Interest in Certain Securitizations,https://www.sec.gov/newsroom/press-releases/2023-240,"Nov. 27, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-11-29,2023-242,SEC Charges Phoenix-Area Real Estate Fund Adviser Jonathan Larmore with $35 Million Fraud,https://www.sec.gov/newsroom/press-releases/2023-242,"Nov. 29, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-11-29,2023-241,SEC Names Kate E. Zoladz as Regional Director of Los Angeles Office,https://www.sec.gov/newsroom/press-releases/2023-241,"Nov. 29, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-11-30,2023-243,SEC Investor Advisory Committee to Examine Use of Complex Investment Products and Strategies by Self-Directed Investors and Discuss Practical Applications for Enhancing Financial Literacy at December 7 Meeting,https://www.sec.gov/newsroom/press-releases/2023-243,"Nov. 30, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-05,2023-244,SEC Office of the Investor Advocate Publishes Its Policy Recommendations on Mandatory Arbitration and Registered Index-Linked Annuities Research,https://www.sec.gov/newsroom/press-releases/2023-244,"Dec. 5, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-07,2023-246,"Daniel R. Gregus, Director of the Chicago Regional Office, to Depart the SEC",https://www.sec.gov/newsroom/press-releases/2023-246,"Dec. 7, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-07,2023-245,"SEC Charges Five Unregistered Brokers, Four Companies in Widespread Pre-IPO Fraud Scheme",https://www.sec.gov/newsroom/press-releases/2023-245,"Dec. 7, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-13,2023-249,Credit Suisse Entities to Pay $10 Million for Providing Prohibited Mutual Fund Services,https://www.sec.gov/newsroom/press-releases/2023-249,"Dec. 13, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-13,2023-247,SEC Adopts Rules to Improve Risk Management in Clearance and Settlement and Facilitate Additional Central Clearing for the U.S. Treasury Market,https://www.sec.gov/newsroom/press-releases/2023-247,"Dec. 13, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-13,2023-248,SEC Approves 2024 PCAOB Budget and Accounting Support Fee,https://www.sec.gov/newsroom/press-releases/2023-248,"Dec. 13, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-14,2023-251,SEC Charges Titanium Capital and Founder Henry Abdo with Operating Ponzi Scheme,https://www.sec.gov/newsroom/press-releases/2023-251,"Dec. 14, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-14,2023-250,SEC Obtains Emergency Relief to Halt $191 Million Cattle Ponzi Scheme,https://www.sec.gov/newsroom/press-releases/2023-250,"Dec. 14, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-14,2023-252,SEC Small Business Advocacy Office Delivers Report to Congress on Capital Raising from Startups to Small Public Companies,https://www.sec.gov/newsroom/press-releases/2023-252,"Dec. 14, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-15,2023-253,SEC Issues Staff Report on Accredited Investor Definition,https://www.sec.gov/newsroom/press-releases/2023-253,"Dec. 15, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-19,2023-255,SEC Charges Former CEO of Medical Device Startup Stimwave with $41 Million Fraud,https://www.sec.gov/newsroom/press-releases/2023-255,"Dec. 19, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-19,2023-254,"SEC Charges Tingo Mobile Founder, Three Companies with Massive Fraud and Obtains Emergency Relief",https://www.sec.gov/newsroom/press-releases/2023-254,"Dec. 19, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-22,2023-258,BarnBridge DAO Agrees to Stop Unregistered Offer and Sale of Structured Finance Crypto Product,https://www.sec.gov/newsroom/press-releases/2023-258,"Dec. 22, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-22,2023-259,Dean C. Metry Named Chief Administrative Law Judge at SEC,https://www.sec.gov/newsroom/press-releases/2023-259,"Dec. 22, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-22,2023-257,SEC Awards More Than $28 Million to Seven Whistleblowers,https://www.sec.gov/newsroom/press-releases/2023-257,"Dec. 22, 2023",2026-03-24T00:56:40Z
+sec_press_release,2023-12-22,2023-256,SEC Charges UAE-Based Brooge Energy and Former Executives with Fraud,https://www.sec.gov/newsroom/press-releases/2023-256,"Dec. 22, 2023",2026-03-24T00:56:40Z
+sec_press_release,2024-11-27,2024-188,SEC Updates List of Firms Using Inaccurate Information to Solicit Investors,https://www.sec.gov/newsroom/press-releases/2024-188,"Nov. 27, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-03,2024-189,SEC Charges Kiromic BioPharma and Two Former C-Suite Executives with Misleading Investors about Status of FDA Reviews,https://www.sec.gov/newsroom/press-releases/2024-189,"Dec. 3, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-03,2024-190,SEC Investor Advisory Committee to Examine Mandatory Arbitration Clauses in Adviser Agreements and Alternative Assets and Retail Investors at December 10 Meeting,https://www.sec.gov/newsroom/press-releases/2024-190,"Dec. 3, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-09,2024-191,SEC Announces Departure of Trading and Markets Division Director Haoxiang Zhu,https://www.sec.gov/newsroom/press-releases/2024-191,"Dec. 9, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-09,2024-192,SEC Charges Ian Bell with Defrauding Professional Athletes and Others in Fraudulent Day-Trading Scheme,https://www.sec.gov/newsroom/press-releases/2024-192,"Dec. 9, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-09,2024-193,SEC Charges Morgan Stanley Smith Barney for Policy Deficiencies that Resulted in Failure to Prevent and Detect its Financial Advisors’ Theft of Investor Funds,https://www.sec.gov/newsroom/press-releases/2024-193,"Dec. 9, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-11,2024-195,"SEC Charges Ken Peterman, Former Comtech CEO, with Insider Trading in Advance of Negative Earnings Announcement",https://www.sec.gov/newsroom/press-releases/2024-195,"Dec. 11, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-11,2024-194,SEC Charges Three Individuals with Impersonating Financial Professionals in Fraud Scheme Targeting Retail Investors,https://www.sec.gov/newsroom/press-releases/2024-194,"Dec. 11, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-12,2024-199,SEC Charges Cantor Fitzgerald Over Misleading SPAC Disclosures,https://www.sec.gov/newsroom/press-releases/2024-199,"Dec. 12, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-12,2024-198,SEC Charges Former Representative of Advisory Firm SeaCrest with Cherry-Picking,https://www.sec.gov/newsroom/press-releases/2024-198,"Dec. 12, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-12,2024-196,SEC Office of the Investor Advocate Issues Report on Nationally Representative Survey of Investors and Continues Focus on Investment Fraud,https://www.sec.gov/newsroom/press-releases/2024-196,"Dec. 12, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-12,2024-197,SEC Small Business Advocacy Office Delivers Report to Congress on Capital Raising for Startups to Small Public Companies,https://www.sec.gov/newsroom/press-releases/2024-197,"Dec. 12, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-13,2024-200,SEC Announces Departure of Corporation Finance Division Director Erik Gerding,https://www.sec.gov/newsroom/press-releases/2024-200,"Dec. 13, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-16,2024-201,Becton Dickinson to Pay $175 Million for Misleading Investors About Alaris Infusion Pump,https://www.sec.gov/newsroom/press-releases/2024-201,"Dec. 16, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-16,2024-202,"SEC Modernizes the Submission of Certain Forms, Filings, and Materials Under the Securities Exchange Act of 1934",https://www.sec.gov/newsroom/press-releases/2024-202,"Dec. 16, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-17,2024-203,"SEC Charges Express, Inc. with Failing to Disclose Nearly $1 Million in Perks Provided to Former CEO",https://www.sec.gov/newsroom/press-releases/2024-203,"Dec. 17, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-18,2024-204,SEC Approves 2025 PCAOB Budget and Accounting Support Fee,https://www.sec.gov/newsroom/press-releases/2024-204,"Dec. 18, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-19,2024-205,Global Aerospace Company AAR and Former Executive of its Subsidiary Settle Charges for Bribing Nepalese and South African Officials,https://www.sec.gov/newsroom/press-releases/2024-205,"Dec. 19, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-20,2024-208,Deutsche Bank Subsidiary to Pay $4 Million for Untimely Filing Certain Suspicious Activity Reports,https://www.sec.gov/newsroom/press-releases/2024-208,"Dec. 20, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-20,2024-211,SEC Adopts Rule Amendments to the Broker-Dealer Customer Protection Rule,https://www.sec.gov/newsroom/press-releases/2024-211,"Dec. 20, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-20,2024-209,SEC Charges Silver Point Capital with Policy Failures Regarding Receipt of Material Nonpublic Information About Bonds Issued by Puerto Rico,https://www.sec.gov/newsroom/press-releases/2024-209,"Dec. 20, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-20,2024-206,SEC Charges Utility Company Entergy Corp. with Internal Accounting Controls Violations,https://www.sec.gov/newsroom/press-releases/2024-206,"Dec. 20, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-20,2024-210,SEC Files Settled Charges Against Multiple Entities for Failing to Timely File Forms D in Connection With Securities Offerings,https://www.sec.gov/newsroom/press-releases/2024-210,"Dec. 20, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-20,2024-212,Tai Mo Shan to Pay $123 Million for Negligently Misleading Investors About Stability of Terra USD,https://www.sec.gov/newsroom/press-releases/2024-212,"Dec. 20, 2024",2026-03-24T00:56:40Z
+sec_press_release,2024-12-20,2024-207,Wells Fargo and LPL Financial Charged for Submitting Deficient Trading Data to SEC,https://www.sec.gov/newsroom/press-releases/2024-207,"Dec. 20, 2024",2026-03-24T00:56:40Z
+sec_press_release,2025-10-31,2025-130,SEC Issues Exemptive Order Regarding Compliance with Certain Rules Under Regulation NMS,https://www.sec.gov/newsroom/press-releases/2025-130-sec-issues-exemptive-order-regarding-compliance-certain-rules-under-regulation-nms,"Oct. 31, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-11-13,2025-131,Deputy Director of Enforcement Antonia M. Apps to Conclude Her Tenure at the SEC,https://www.sec.gov/newsroom/press-releases/2025-131-deputy-director-enforcement-antonia-m-apps-conclude-her-tenure-sec,"Nov. 13, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-11-17,2025-132,SEC Division of Examinations Announces 2026 Priorities,https://www.sec.gov/newsroom/press-releases/2025-132-sec-division-examinations-announces-2026-priorities,"Nov. 17, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-11-21,2025-134,SEC Announces New Date and Time for Roundtable on Financial Surveillance and Privacy,https://www.sec.gov/newsroom/press-releases/2025-134-sec-announces-new-date-time-roundtable-financial-surveillance-privacy,"Nov. 21, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-11-21,2025-133,SEC Announces Roundtable on Rule 611 of Regulation NMS at the University of Austin,https://www.sec.gov/newsroom/press-releases/2025-133-sec-announces-roundtable-rule-611-regulation-nms-university-austin,"Nov. 21, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-11-25,2025-136,Cristina Martin Firvida to Conclude Tenure as Investor Advocate,https://www.sec.gov/newsroom/press-releases/2025-136-cristina-martin-firvida-conclude-tenure-investor-advocate,"Nov. 25, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-11-25,2025-135,"SEC Investor Advisory Committee to Host Dec. 4 Meeting on Regulatory Changes in Corporate Governance, the Tokenization of Equity Securities",https://www.sec.gov/newsroom/press-releases/2025-135-sec-investor-advisory-committee-host-dec-4-meeting-regulatory-changes-corporate-governance,"Nov. 25, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-05,2025-138,SEC Announces Agenda and Panelists for Roundtable on Financial Surveillance and Privacy,https://www.sec.gov/newsroom/press-releases/2025-138-sec-announces-agenda-panelists-roundtable-financial-surveillance-privacy,"Dec. 5, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-05,2025-137,SEC to Host Webinar for Transfer Agents on Regulation S-P,https://www.sec.gov/newsroom/press-releases/2025-137-sec-host-webinar-transfer-agents-regulation-s-p,"Dec. 5, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-08,2025-139,SEC Announces Departure of OIEA Director Lori J. Schock,https://www.sec.gov/newsroom/press-releases/2025-139-sec-announces-departure-oiea-director-lori-j-schock,"Dec. 8, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-10,2025-140,SEC Announces Agenda and Panelists for Roundtable on Rule 611 of Regulation NMS,https://www.sec.gov/newsroom/press-releases/2025-140-sec-announces-agenda-panelists-roundtable-rule-611-regulation-nms,"Dec. 10, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-10,2025-141,SEC Charges Canadian Citizen With Fraud Schemes That Targeted Retail Investors on Discord,https://www.sec.gov/newsroom/press-releases/2025-141-sec-charges-canadian-citizen-fraud-schemes-targeted-retail-investors-discord,"Dec. 10, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-17,2025-143,Joshua T. White Named SEC Chief Economist,https://www.sec.gov/newsroom/press-releases/2025-143-joshua-t-white-named-sec-chief-economist,"Dec. 17, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-17,2025-142,SEC Office of the Investor Advocate Delivers to Congress Report on Activities for Fiscal Year 2025,https://www.sec.gov/newsroom/press-releases/2025-142-sec-office-investor-advocate-delivers-congress-report-activities-fiscal-year-2025,"Dec. 17, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-22,2025-144,SEC Charges Three Purported Crypto Asset Trading Platforms and Four Investment Clubs with Scheme That Targeted Retail Investors on Social Media,https://www.sec.gov/newsroom/press-releases/2025-144-sec-charges-three-purported-crypto-asset-trading-platforms-four-investment-clubs-scheme-targeted,"Dec. 22, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-29,2025-146,Deputy Director of Enforcement Nekia Hackworth Jones Concludes Her Tenure at the SEC,https://www.sec.gov/newsroom/press-releases/2025-146-deputy-director-enforcement-nekia-hackworth-jones-concludes-her-tenure-sec,"Dec. 29, 2025",2026-03-24T00:56:40Z
+sec_press_release,2025-12-29,2025-145,SEC Announces Retirement of Division of Corporation Finance Deputy Director Cicely LaMothe,https://www.sec.gov/newsroom/press-releases/2025-145-sec-announces-retirement-division-corporation-finance-deputy-director-cicely-lamothe,"Dec. 29, 2025",2026-03-24T00:56:40Z
+sec_press_release,2026-01-20,,Christina M. Thomas to Rejoin the Division of Corporation Finance as Deputy Director,https://www.sec.gov/newsroom/press-releases/2026-7-christina-m-thomas-rejoin-division-corporation-finance-deputy-director,"Tue, 20 Jan 2026 14:42:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-20,,Division of Corporation Finance Names Senior Staff,https://www.sec.gov/newsroom/press-releases/2026-8-division-corporation-finance-names-senior-staff,"Tue, 20 Jan 2026 15:07:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-20,,Keith E. Cassidy Named Director of the Division of Examinations,https://www.sec.gov/newsroom/press-releases/2026-6-keith-e-cassidy-named-director-division-examinations,"Tue, 20 Jan 2026 07:15:48 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-21,,SEC Seeks Candidates for Small Business Capital Formation Advisory Committee,https://www.sec.gov/newsroom/press-releases/2026-9-sec-seeks-candidates-small-business-capital-formation-advisory-committee,"Wed, 21 Jan 2026 08:30:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-22,,SEC Approves 2026 PCAOB Budget and Accounting Support Fee,https://www.sec.gov/newsroom/press-releases/2026-11-sec-approves-2026-pcaob-budget-accounting-support-fee,"Thu, 22 Jan 2026 11:52:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-22,,SEC Seeks Candidates for Membership on the Investor Advisory Committee,https://www.sec.gov/newsroom/press-releases/2026-10-sec-seeks-candidates-membership-investor-advisory-committee,"Thu, 22 Jan 2026 08:58:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-22,,SEC Small Business Advisory Committee to Continue Discussion on Regulatory Framework for Finders and Begin Exploring the Private Secondary Market,https://www.sec.gov/newsroom/press-releases/2026-12-sec-small-business-advisory-committee-continue-discussion-regulatory-framework-finders-begin,"Thu, 22 Jan 2026 14:25:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-22,,"SEC and CFTC to Hold Joint Event on Harmonization, U.S. Financial Leadership in the Crypto Era",https://www.sec.gov/newsroom/press-releases/2026-13,"Thu, 22 Jan 2026 15:50:56 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-26,,"SEC and CFTC Reschedule Joint Event on Harmonization, U.S. Financial Leadership in the Crypto Era",https://www.sec.gov/newsroom/press-releases/2026-14-sec-cftc-reschedule-joint-event-harmonization-us-financial-leadership-crypto-era,"Mon, 26 Jan 2026 10:12:31 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-27,,SEC Charges ADM and Three Former Executives with Accounting and Disclosure Fraud,https://www.sec.gov/newsroom/press-releases/2026-15-sec-charges-adm-three-former-executives-accounting-disclosure-fraud,"Tue, 27 Jan 2026 16:38:34 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-01-30,,SEC Appoints New Chairman and Board Members to PCAOB,https://www.sec.gov/newsroom/press-releases/2026-16-sec-appoints-new-chairman-board-members-pcaob,"Fri, 30 Jan 2026 15:59:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-02-05,,"SEC Publishes Data on Exchange Traded Funds and Fund Mergers; Updated Statistics on Municipal Advisors, Transfer Agents, and Security-Based Swap Dealers",https://www.sec.gov/newsroom/press-releases/2026-17-sec-publishes-data-exchange-traded-funds-fund-mergers-updated-statistics-municipal-advisors-transfer,"Thu, 05 Feb 2026 13:45:00 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-10,LR-26480,"Barrington Asset Management, Inc.; Gregory David Paris",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26480,"Tue, 10 Feb 2026 12:15:41 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-11,LR-26482,Nicholas Bowerman,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26482,"Wed, 11 Feb 2026 13:16:51 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-11,LR-26481,John David Gessin et al.,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26481,"Wed, 11 Feb 2026 12:40:56 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-02-13,,SEC Announces 45th Annual Small Business Forum to Improve Capital-Raising Policy,https://www.sec.gov/newsroom/press-releases/2026-18-sec-announces-45th-annual-small-business-forum-improve-capital-raising-policy,"Fri, 13 Feb 2026 10:45:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-02-18,,SEC Proposes Amendments to Reduce Burdens in Reporting of Fund Portfolio Holdings,https://www.sec.gov/newsroom/press-releases/2026-19-sec-proposes-amendments-reduce-burdens-reporting-fund-portfolio-holdings,"Wed, 18 Feb 2026 14:30:00 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-19,LR-26485,"Cutter Financial Group, LLC and Jeffrey Cutter",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26485,"Thu, 19 Feb 2026 15:11:50 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-19,LR-26484,Bluesky Eagle Capital Management Ltd.,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26484,"Thu, 19 Feb 2026 14:49:23 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-19,LR-26483,"Saumil Thakkar, Poorvesh Thakkar, et al.",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26483,"Thu, 19 Feb 2026 13:41:23 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-20,LR-26486,"C-Hear, Inc.; Adena Harmon",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26486,"Fri, 20 Feb 2026 16:45:25 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-23,LR-26487,Christopher B. Ferguson and Brian P. McFadden,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26487,"Mon, 23 Feb 2026 16:02:13 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-24,LR-26490,Joel Castellanos,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26490,"Tue, 24 Feb 2026 17:03:49 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-24,LR-26489,"Joseph C. Lewis, Carolyn W. Carter, Patrick J. O’Connor, and Bryan L. Waugh",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26489,"Tue, 24 Feb 2026 12:19:27 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-24,LR-26488,Ian G. Bell,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26488,"Tue, 24 Feb 2026 09:55:35 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-02-24,,SEC’s Division of Enforcement Announces Updates to Enforcement Manual,https://www.sec.gov/newsroom/press-releases/2026-20-secs-division-enforcement-announces-updates-enforcement-manual,"Tue, 24 Feb 2026 08:55:52 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-25,LR-26492,"Charles T. Lawrence and Landes Prive, LLC",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26492,"Wed, 25 Feb 2026 16:41:20 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-25,LR-26491,"Western Sierra Resource Corporation, Roger Johnson, and Dennis Atkins",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26491,"Wed, 25 Feb 2026 16:11:28 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-26,LR-26493,Fernando Passos,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26493,"Thu, 26 Feb 2026 09:09:52 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-02-26,,SEC Announces Roundtable on Private Markets Valuation As Retail Investor Access Accelerates,https://www.sec.gov/newsroom/press-releases/2026-21-sec-announces-roundtable-private-markets-valuation-retail-investor-access-accelerates,"Thu, 26 Feb 2026 09:38:00 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-27,LR-26495,Vidul Prakash,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26495,"Fri, 27 Feb 2026 17:29:49 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-02-27,LR-26494,Ofer Abarbanel,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26494,"Fri, 27 Feb 2026 13:19:21 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-02-27,,SEC Adopts Final Rules for the Holding Foreign Insiders Accountable Act,https://www.sec.gov/newsroom/press-releases/2026-23-sec-adopts-final-rules-holding-foreign-insiders-accountable-act,"Fri, 27 Feb 2026 11:00:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-02-27,,"SEC, FSA Hold Spring Financial Regulatory Dialogue",https://www.sec.gov/newsroom/press-releases/2026-22-sec-fsa-hold-spring-financial-regulatory-dialogue,"Fri, 27 Feb 2026 09:55:00 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-05,LR-26496,"Justin Sun, Tron Foundation Limited, BitTorrent Foundation Ltd., Rainberry, Inc., and DeAndre Cortez Way",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26496,"Thu, 05 Mar 2026 16:49:41 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-03-05,,SEC Announces Roundtable on Options Market Structure Reform,https://www.sec.gov/newsroom/press-releases/2026-24-sec-announces-roundtable-options-market-structure-reform,"Thu, 05 Mar 2026 10:09:00 -0500",2026-03-24T00:56:40Z
+sec_press_release,2026-03-05,,SEC Investor Advisory Committee to Host March 12 Meeting,https://www.sec.gov/newsroom/press-releases/2026-25-sec-investor-advisory-committee-host-march-12-meeting,"Thu, 05 Mar 2026 10:30:07 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-06,LR-26497,"Matthew J. Werthe, dba HSR Wealth Management",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26497,"Fri, 06 Mar 2026 14:05:12 -0500",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-09,LR-26498,Randall J. Miller; Chad J. Miller; Jeffrey De Laveaga; Jeffrey Puzzullo,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26498,"Mon, 09 Mar 2026 17:57:25 -0400",2026-03-24T00:56:40Z
+sec_press_release,2026-03-11,,SEC and CFTC Announce Historic Memorandum of Understanding Between Agencies,https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies,"Wed, 11 Mar 2026 15:30:00 -0400",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-12,LR-26499,"Nader Al-Naji, Buse Desticioğlu Al-Naji, Joumana Bahouth Al-Naji, Intangible Holdings, LLC, Firestorm Media, LLC, Viridian City, LLC, and DeSo Foundation",https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26499,"Thu, 12 Mar 2026 17:40:23 -0400",2026-03-24T00:56:40Z
+sec_press_release,2026-03-16,,SEC Announces Enforcement Division Director Judge Margaret A. Ryan Has Resigned From Agency,https://www.sec.gov/newsroom/press-releases/2026-27-sec-announces-enforcement-division-director-judge-margaret-ryan-has-resigned-agency,"Mon, 16 Mar 2026 14:09:04 -0400",2026-03-24T00:56:40Z
+sec_press_release,2026-03-16,,SEC Proposes Amendments to Exchange Act Rule 15c2-11,https://www.sec.gov/newsroom/press-releases/2026-28-sec-proposes-amendments-exchange-act-rule-15c2-11,"Mon, 16 Mar 2026 15:15:00 -0400",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-17,LR- 26502,J. Bernard Rice,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26502,"Tue, 17 Mar 2026 14:04:20 -0400",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-17,LR-26501,Paul W. Jorgensen,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26501,"Tue, 17 Mar 2026 13:53:38 -0400",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-17,LR-26500,Bin Hao and Qidian LLC,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26500,"Tue, 17 Mar 2026 13:41:07 -0400",2026-03-24T00:56:40Z
+sec_press_release,2026-03-17,,SEC Clarifies the Application of Federal Securities Laws to Crypto Assets,https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets,"Tue, 17 Mar 2026 15:45:25 -0400",2026-03-24T00:56:40Z
+sec_press_release,2026-03-17,,"SEC Publishes Data on Public and Private Offerings, Municipal Advisors, Transfer Agents, and Securities-Based Swap Dealers",https://www.sec.gov/newsroom/press-releases/2026-29-sec-publishes-data-public-private-offerings-municipal-advisors-transfer-agents-securities-based-swap,"Tue, 17 Mar 2026 15:13:00 -0400",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-18,LR-26503,Kenneth A. Welsh,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26503,"Wed, 18 Mar 2026 15:16:54 -0400",2026-03-24T00:56:40Z
+sec_litigation_release,2026-03-23,LR-26504,Kevan Sadigh,https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26504,"Mon, 23 Mar 2026 14:34:35 -0400",2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2020&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25003,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp25003.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25002,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp25002.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25001,Final Judgment - Thompson,https://www.sec.gov/files/litigation/litreleases/2020/judgment25001-thompson.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25000,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-343.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24999,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2020/judgment24999.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24998,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24998.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24997,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24997.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24995,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24995.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24994,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2020/judgment24994.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24996,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24996.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24993,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24993.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24992,SEC Complaint - Capsource,https://www.sec.gov/files/litigation/complaints/2020/comp24992-capsource.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24991,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24991.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24990,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24990.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24989,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24989.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24988,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2020/judgment24988.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24987,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-319.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24985,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24985.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24986,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24986.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24983,Roger Dobrovodsky,https://www.sec.gov/files/litigation/complaints/2020/comp24983-dobrovodsky.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24982,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24982.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24981,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24981.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24980,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24980.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24978,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24978.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24977,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24977.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24973,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24973.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24975,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-299.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24972,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-298.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24970,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24970.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24969,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24969.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24968,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-291.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24967,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24967.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24963,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24963.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24964,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24964.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24961,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24961.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24958,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24958.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24954,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24954.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24952,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24952.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24953,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24953.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24949,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24949.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24946,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2020/judgment24946.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24945,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2020/judgment24945.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24944,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24944.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24943,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24943.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24942,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24942.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24930,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24930.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24929,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24929.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24940,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24940.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24938,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24938.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24937,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24937.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24936,SEC Complaint - Baquerizo and Cardenas,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-234-baquerizo-cardenas.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24935,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24935.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24934,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24934.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24933,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24933.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24932,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24932.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24931,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24931.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24928,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-236.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24927,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24927.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24926,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24926.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24925,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24925.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24920,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24920.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24924,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24924.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24923,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24923.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24922,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24922.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24919,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24919.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24917,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24917.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24916,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24916.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24915,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-221.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24914,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24914.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24913,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24913.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24912,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24912.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24911,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24911.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24909,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-217.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24910,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24910.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24908,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24908.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24907,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24907.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24906,Final Judgment - Dennis J. Verderosa,https://www.sec.gov/files/litigation/litreleases/2020/24906-judgment-verderosa.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24905,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24905.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-24903,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2020/comp24903.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2020%3Fpage%3D1&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2021&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25297,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25297.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25296,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25296.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25295,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp-pr2021-265.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25293,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25293.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25292,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25292.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25291,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp-pr2021-264.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25290,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25290.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25288,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25288.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25287,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25287.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25285,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25285.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25284,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25284.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25282,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp-pr2021-252.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25278,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2021/judgment25278.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25277,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25277.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25281,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25281.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25280,Order,https://www.sec.gov/files/litigation/litreleases/2021/order25280.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25276,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25276.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25275,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25275.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25274,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25274.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25273,Final Judgment - Jimerson,https://www.sec.gov/files/litigation/litreleases/2021/judgment25273-jimerson.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25267,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2021/judgment25267.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25271,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp-pr2021-237.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25270,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25270.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25268,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25268.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25266,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25266.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25265,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25265.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25263,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25263.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25260,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25260.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25255,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25255.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25257,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25257.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25254,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25254.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25253,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25253.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25252,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25252.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25251,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25251.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25250,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25250.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25249,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25249.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25248,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25248.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25247,Judgment,https://www.sec.gov/files/litigation/litreleases/2021/judgment25247.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25246,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25246.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25245,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25245.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25244,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25244.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25241,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25241.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25240,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp-pr2021-208.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25239,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp-pr2021-205.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25238,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25238.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25237,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25237.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25235,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25235.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25236,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25236.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25234,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25234.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25233,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25233.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25232,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25232.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25231,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25231.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25230,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp-pr2021-200.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25229,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25229.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25223,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25223.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25228,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25228.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25227,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25227.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25225,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25225.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25224,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp-pr2021-195.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25222,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25222.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25220,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25220.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25219,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25219.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25218,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25218.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25217,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25217.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25216,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25216.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25215,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25215.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25214,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25214.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25213,Judgment,https://www.sec.gov/files/litigation/litreleases/2021/judg25213.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25211,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25211.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25210,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25210.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25209,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25209.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25208,Order,https://www.sec.gov/files/litigation/litreleases/2021/order25208.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25207,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25207.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25206,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25206.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25205,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25205.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25204,Judgment,https://www.sec.gov/files/litigation/litreleases/2021/judgment25204.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25203,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25203.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25202,Judgment,https://www.sec.gov/files/litigation/litreleases/2021/judgment25202.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25199,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25199.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25198,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2021/comp25198.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25196,et al.,https://www.sec.gov/files/litigation/complaints/2021/comp25196.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2021%3Fpage%3D1&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2022&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25603,Judgment,https://www.sec.gov/files/litigation/litreleases/2022/judg25603.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25601,Court Order imposing Injunctions Against Randall Goulding,https://www.sec.gov/files/litigation/litreleases/2022/order25601.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25602,Judgment,https://www.sec.gov/files/litigation/litreleases/2022/judge25602.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25598,Judgment,https://www.sec.gov/files/litigation/litreleases/2022/judg25598.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25599,SEC Complaint - Matthew Moravec,https://www.sec.gov/files/litigation/complaints/2022/comp25599-moravec.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25600,Judgment - Roger Knox,https://www.sec.gov/files/litigation/litreleases/2022/judg25600-knox.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25595,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25595.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25596,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-232.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25597,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25597.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25594,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25594.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25593,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25593.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25592,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25592.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25590,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25590.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25588,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25588.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25589,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25589.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25587,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25587.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25586,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25586.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25585,Application for Order to Show Cause,https://www.sec.gov/files/litigation/litreleases/2022/order25585.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25583,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25583.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25584,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25584.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25581,Judgment,https://www.sec.gov/files/litigation/litreleases/2022/judg25581.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25580,Judgment,https://www.sec.gov/files/litigation/litreleases/2022/judg25580-rojas.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25579,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp-pr2002-207.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25577,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25577.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25575,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25575.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25576,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25576.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25571,SEC Complaint - Jonathan Tetreault,https://www.sec.gov/files/litigation/complaints/2022/comp25571-tetreault.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25569,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25569.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25567,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-197.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25565,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25565.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25564,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25564.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25563,Memorandum And Order,https://www.sec.gov/files/litigation/litreleases/2022/order25563.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25560,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25560.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25562,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25562.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25559,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25559.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25558,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-188.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25551,Judgment,https://www.sec.gov/files/litigation/litreleases/2022/judg25551.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25552,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-178.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25553,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25553.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25550,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25550.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25547,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25547.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25548,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-181.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25539,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25539.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25540,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25540.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25541,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp-pr2022-182.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25537,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25537.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25538,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25538.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25542,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25542.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25543,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25543.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25544,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25544.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25545,SEC Complaint - Charles Rustin Holzer,https://www.sec.gov/files/litigation/complaints/2022/comp25545-holzer.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25546,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25546.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25535,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25535.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25536,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25536.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25531,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25531.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25532,Final Judgment,https://www.sec.gov/files/litigation/complaints/2022/comp25532.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25533,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25533.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25528,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25528.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25524,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25524.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25525,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25525.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25526,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25526.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25527,SEC Complaint-Garcia,https://www.sec.gov/files/litigation/complaints/2022/comp25527-mjfunding-taxes-garcia.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25522,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25522.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25523,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25523.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25521,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25521.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25517,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25517.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25518,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25518.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25519,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25519.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25520,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25520.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25515,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25515.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25516,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25516.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25513,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25513.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25514,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25514.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25512,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25512.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25511,Judgment,https://www.sec.gov/files/litigation/litreleases/2022/judg25511.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25507,SEC Complaint - Granite Construction Incorporated,https://www.sec.gov/files/litigation/complaints/2022/comp25507-granite.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25508,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25508.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25509,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25509.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25506,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25506.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25502,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25502.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25503,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2022/comp25503.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2022%3Fpage%3D1&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2023&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25918,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25918.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25917,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25917.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25916,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-255.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25915,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25913.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25914,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-250.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25912,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-251.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25911,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25911.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25909,Order Appointing Receiver and Imposing Litigation Injunction,https://www.sec.gov/files/litigation/litreleases/2023/order25909.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25908,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25908.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25907,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-245.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25906,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25906.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25904,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25904.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25903,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25903.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25902,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25902.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25901,Final Judgment - Vern A. Breland,https://www.sec.gov/files/litigation/litreleases/2023/judg25901-breland.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25900,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25900.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25897,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-238.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25896,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-237.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25895,Final Judgment,https://www.sec.gov/files/litigation/complaints/2023/judg25895.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25893,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25893.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25892,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25892.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25891,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25891.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25890,Final Judgment - Jeremy Shor,https://www.sec.gov/files/litigation/litreleases/2023/judg25890.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25889,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-231.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25888,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-229.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25887,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-227.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25886,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25886.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25885,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25885.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25884,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2023/judg25884.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25882,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25882.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25881,Judgment,https://www.sec.gov/files/litigation/litreleases/2023/judg25881.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25880,Application,https://www.sec.gov/files/litigation/litreleases/2023/application25880.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25879,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25879.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25878,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25878.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25877,"SEC Complaint - ABFP Income Fund Parallel, LLC, et al.",https://www.sec.gov/files/litigation/complaints/2023/comp25877-abfp.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25876,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25876.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25875,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25875.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25874,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25874.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25873,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25873.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25872,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25872.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25871,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25871.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25870,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25870.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25869,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25869.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25868,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25868.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25867,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25867.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25866,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-207.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25865,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25865.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25864,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25864.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25863,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25863.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25862,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-203.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25861,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-204-1.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25860,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-205-1.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25859,Judgment,https://www.sec.gov/files/litigation/litreleases/2023/judg25859.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25858,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25858.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25857,SEC Complaint - Adam E. Levin,https://www.sec.gov/files/litigation/complaints/2023/comp25857-levin.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25856,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25856.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25855,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-200-01.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25854,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25854.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25853,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25853.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25852,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25852.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25851,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25851.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25850,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25850.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25849,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25849.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25848,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25848.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25847,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25847.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25846,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25846.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25845,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25845.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25844,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2023/judg25844.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25843,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25843.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25842,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25842.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25840,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-190_0.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25841,Judgment,https://www.sec.gov/files/litigation/litreleases/2023/judg25841.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25839,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25839.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25838,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-187.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25837,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-186.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25836,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25836.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25835,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25835.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25834,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25834.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25833,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25833.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25832,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25832.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25831,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25831.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25830,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25830.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25829,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25829.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25828,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25828.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25827,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-176.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25826,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25826.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25825,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25825.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25824,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2023/judg25824.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25823,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25823.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25822,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25822.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25820,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25820.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-25819,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25819.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2023%3Fpage%3D1&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2024&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26206,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26206.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26204,Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26204.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26203,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26203.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26202,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-209.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26201,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26201.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26200,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26200.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26199,Final Judgment - Petar Dimitrov Mihaylov,https://www.sec.gov/files/litigation/litreleases/2024/judg26199.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26198,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26198.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26197,Sec Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26197.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26196,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26196.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26195,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26195.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26194,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-194.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26193,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26193.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26192,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26192.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26189,Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-192.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26188,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26188.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26187,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26187.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26185,"Final Judgment - Dow Rockwell, LLC",https://www.sec.gov/files/litigation/litreleases/2024/judg26185-dow-rockwell-llc.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26184,Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-189.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26183,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-187.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26182,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26182.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26181,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26181.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26180,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2024/judg26180.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26179,Judgment,https://www.sec.gov/files/litigation/litreleases/2024/judg26179.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26178,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26178.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26177,SEC Complaint - Gautam Adani and Sagar Adani,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-181.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26176,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-183.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26175,Order of Preliminary Injunction,https://www.sec.gov/files/litigation/litreleases/2024/inj26175.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26174,Judgment,https://www.sec.gov/files/litigation/litreleases/2024/judg26174.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26172,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26172.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26173,Sec Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26173.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26171,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26171.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26170,Final Judgment - Richard Brown,https://www.sec.gov/files/litigation/litreleases/2024/judg26170.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26167,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26167.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26166,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26166.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26165,Order to Compel,https://www.sec.gov/files/litigation/litreleases/2024/order-compel-26165.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26164,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26164.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26162,SEC Complaint,https://www.sec.gov/files/litigation/admin/2024/comp26162.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26161,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26161.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26160,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26160.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26159,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26159.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26158,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-166-zm-quant.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26157,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26157.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26156,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-166-gotbit.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26155,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-166-saitama.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26154,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-166-cls.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26153,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-166-pham.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26152,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26152.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26151,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-168.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26150,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-165.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26149,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-159.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26148,Final Judgment - Jai Bhavnani,https://www.sec.gov/files/litigation/litreleases/2024/judg26148-bhavnani.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26145,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-161.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26144,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26144.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26143,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-157.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26142,Judgment,https://www.sec.gov/files/litigation/litreleases/2024/judg26142.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26141,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-153.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26140,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-154.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26139,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26139.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26138,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26138.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26137,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26137.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26136,Final Judgment - Marco Babini,https://www.sec.gov/files/litigation/litreleases/2024/judg26136.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26135,SEC Complaint - William D. Carlton,https://www.sec.gov/files/litigation/complaints/2024/comp26135-carlton.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26134,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26134.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26133,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26133.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26132,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-151.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26130,SEC Complaint - Leonela M. Duarte,https://www.sec.gov/files/litigation/complaints/2024/comp26130-duarte.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26129,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26129.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26128,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2024/judg26128.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26127,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26127.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26126,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-145.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26125,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-146.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26124,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26124.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26123,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26123.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26122,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26122.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26121,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26121.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26119,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26119.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26118,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26118.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26117,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26117.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26116,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26116.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26115,Judgment,https://www.sec.gov/files/litigation/litreleases/2024/judg26115.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26114,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26114.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26113,SEC Complaint,https://www.sec.gov/files/litigation/complaints/comp26113.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26112,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-133.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26111,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-134-coinw6.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26110,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp-pr2024-134-nanobit.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26109,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26109.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26108,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2024/comp26108.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26107,SEC Complaint - Paul D. Roberts,https://www.sec.gov/files/litigation/complaints/2024/comp26107.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2024%3Fpage%3D1&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2025&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26456,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26456.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26455,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26455.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26454,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26454.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26453,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp-pr2025-144.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26451,Final Judgment - Scott J. Mason,https://www.sec.gov/files/litigation/litreleases/2025/judg26451-scott-j-mason.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26449,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26449.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26448,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26448.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26447,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26447.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26446,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26446.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26445,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26445.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26443,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26443.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26442,SEC Complaint - David P. Ortiz,https://www.sec.gov/files/litigation/complaints/2025/comp26442-dortiz.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26441,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26441.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26440,SEC Complaint - Kevin L. Jefferson,https://www.sec.gov/files/litigation/complaints/2025/comp26440-jefferson.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26439,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26439.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26437,"Final Judgment - Rapid Therapeutic Science Laboratories, Inc.",https://www.sec.gov/files/litigation/litreleases/2025/judg26437-rtsl.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26434,Notice - Bear Stearns,https://www.sec.gov/files/litigation/litreleases/2025/notice26434-bear-stearns.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26433,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26433.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26432,Final Judgment - Tournant,https://www.sec.gov/files/litigation/litreleases/2025/judg26432-tournant.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26431,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26431.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26430,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26430.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26429,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26429.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26428,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26428.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26427,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26427.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26426,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26426.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26425,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26425.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26424,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26424.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26423,Joint Stipulation to Dismiss and Release,https://www.sec.gov/files/litigation/complaints/2025/comp26423.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26422,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26422.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26421,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26421.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26420,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26420.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26419,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26419.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26418,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26418.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26416,SEC Complaint - Adamant Stone Limited,https://www.sec.gov/files/litigation/complaints/2025/comp26416-adamant-stone-limited.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26415,Final Judgment - Agridime,https://www.sec.gov/files/litigation/litreleases/2025/judg26415-agridime.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26414,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26414.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26413,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26413.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26412,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26412.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26411,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26411.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26410,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26410.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26409,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26409.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26408,Final Judgment - Robert Quattrocchi,https://www.sec.gov/files/litigation/litreleases/2025/judg26408-quattrocchi.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26407,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26407.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26406,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26406.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26405,Motion for Dismissal of Claims,https://www.sec.gov/files/litigation/litreleases/2025/motionlr26405.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26404,Joint Stipulation to Dismiss and Releases,https://www.sec.gov/files/litigation/litreleases/2025/stip26404.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26403,"Joint Stipulation to Dismiss and Releases - Carlos R. Watson, Jr.",https://www.sec.gov/files/litigation/litreleases/2025/stip26403-watson.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26402,Final Judgment - Justin R. Kimbrough,https://www.sec.gov/files/litigation/litreleases/2025/judg26402-kimbrough.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26401,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26401.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26400,Final Judgment - Justin D. Smith,https://www.sec.gov/files/litigation/litreleases/2025/judg26400-smith.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26399,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26399.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26398,SEC Complaint,https://www.sec.gov/files/litigation/briefs/2025/comp26398.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26397,Joint Stipulation to Dismiss and Release,https://www.sec.gov/files/litigation/litreleases/2025/joint-stipulation-26397.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26395,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26395.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26394,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26394.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26393,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26393.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26392,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26392.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26391,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26391.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26390,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26390.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26389,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26389.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26388,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26388.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26387,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp-pr2025-111.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26386,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26386.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26384,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26384.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26383,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26383.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26382,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26382.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26381,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26381.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26380,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26380.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26379,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26379.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26378,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26378.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26377,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26377.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26376,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26376.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26375,"SEC Complaint - Ryan R. Wear, Water Station Management LLC, and Creative Technologies, Inc.",https://www.sec.gov/files/litigation/complaints/2025/comp-pr-2025-107-wear.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26374,Amended Complaint,https://www.sec.gov/files/litigation/complaints/2023/comp25809-amended.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26373,Final Judgment - Olayinka Oyebola & Co,https://www.sec.gov/files/litigation/litreleases/2025/judg26373-ooco.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26372,Order - Garrett W. Moretz,https://www.sec.gov/files/litigation/litreleases/2025/order-moretz.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26371,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26371.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26370,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26370.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26369,Joint Stipulation of Dismissal,https://www.sec.gov/files/litigation/complaints/2025/26369-joint-stipulation.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26368,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26368.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26367,Final Judgment - Doron A. Tavlin,https://www.sec.gov/files/litigation/litreleases/2025/judg26367-tavlin.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26366,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26366.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26365,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26365.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26364,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26364.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26363,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26363.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26362,Filed Application,https://www.sec.gov/files/litigation/litreleases/2025/app26362.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26361,Final Judgment - Brendan H. Church,https://www.sec.gov/files/litigation/litreleases/2025/judg26361-brendan-church.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26360,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26360.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26359,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26359.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26358,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2025/comp26358.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26357,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26357-guess-final-judgment.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26356,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2025/judg26356.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2025%3Fpage%3D1&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2026&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26504,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26504.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26503,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26503.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26502.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26501,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26501.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26500,Final Judgment - Bin Hao,https://www.sec.gov/files/litigation/litreleases/2026/judg26500-hao.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26499,Joint Stipulation of Dismissal,https://www.sec.gov/files/litigation/litreleases/2026/stip26499.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26498,Final Judgment - Jeffrey Puzzullo,https://www.sec.gov/files/litigation/litreleases/2026/judg26498-puzzullo.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26497,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26497.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26496,Amended Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26496.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26495,Joint Stipulation for Voluntary Dismissal and Releases,https://www.sec.gov/files/litigation/litreleases/2026/stip26495.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26494,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26494.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26493,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26493.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26492,Final Judgment - Charles T. Lawrence,https://www.sec.gov/files/litigation/litreleases/2026/judg26492-lawrence.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26490,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26490.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26489,Final Judgment - Joseph C. Lewis,https://www.sec.gov/files/litigation/litreleases/2026/judg26489-lewis.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26488,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26488.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26487,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26487.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26486,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26486.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26485,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26485.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26484,Default Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26484.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26483,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26483.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26482,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26482.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26481,Final Judgment - Ice Fleet LLC,https://www.sec.gov/files/litigation/litreleases/judg26481-icefleetllc.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26480,Order Instituting Proceedings,https://www.sec.gov/files/litigation/admin/2026/34-104793.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26479,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26479.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26478,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26478.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26477,Final Judgment - Gerald Shvartsman,https://www.sec.gov/files/litigation/litreleases/2026/judg26477-gerald-shvartsman.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26476,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26476.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26475,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26475.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26474,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26474.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26473,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26473.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26472,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26472.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26471,Joint Stipulation for Voluntary Dismissal and Releases,https://www.sec.gov/files/litigation/litreleases/2026/stip26471.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26470,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp-pr2026-15.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26469,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26469.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26468,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26468.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26467,Final Judgment - Saeid Jaberian,https://www.sec.gov/files/litigation/litreleases/2026/judg26467-jaberian.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26466,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26466.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26465,Joint Stipulation to Dismiss and Releases,https://www.sec.gov/files/litigation/litreleases/2026/joint26465.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26464,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26464.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26463,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26463.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26462,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26462.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26461,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26461.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26460,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26460.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26459,Joint Stipulation to Dismiss and Release,https://www.sec.gov/files/litigation/litreleases/2026/joint-stipulation-dismiss-guy-elliot-010926.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26458,SEC Complaint,https://www.sec.gov/files/litigation/complaints/2026/comp26458.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,LR-26457,Final Judgment,https://www.sec.gov/files/litigation/litreleases/2026/judg26457.pdf,,2026-03-24T00:56:40Z
+sec_litigation_release,,,Date Sort descending,?year=2026%3Fpage%3D1&amp;populate=&amp;month=All&amp;order=field_publish_date&amp;sort=asc,,2026-03-24T00:56:40Z
+sec_press_release,,2025-123,Jon Kroeper Named Deputy Director of the Division of Trading and Markets,https://www.sec.gov/newsroom/press-releases/2025-123-jon-kroeper-named-deputy-director-division-trading-markets,"Sept. 24, 2025",2026-03-24T00:56:40Z
+sec_press_release,,2025-124,"SEC Announces Agenda, Panelists for SEC-CFTC Roundtable on Regulatory Harmonization Efforts",https://www.sec.gov/newsroom/press-releases/2025-124-sec-announces-agenda-panelists-sec-cftc-roundtable-regulatory-harmonization-efforts,"Sept. 24, 2025",2026-03-24T00:56:40Z
+sec_press_release,,2025-125,SEC Announces Departure of Chief Operating Officer Ken Johnson,https://www.sec.gov/newsroom/press-releases/2025-125-sec-announces-departure-chief-operating-officer-ken-johnson,"Sept. 24, 2025",2026-03-24T00:56:40Z
+sec_press_release,,2025-129,SEC Announces Departure of Director of Office of the Advocate for Small Business Capital Formation Stacey Bowers,https://www.sec.gov/newsroom/press-releases/2025-129-sec-announces-departure-director-office-advocate-small-business-capital-formation-stacey-bowers,"Sept. 30, 2025",2026-03-24T00:56:40Z
+sec_press_release,,2025-128,SEC Continues Efforts to Assist Market Participants During Implementation of Treasury Clearing Rules,https://www.sec.gov/newsroom/press-releases/2025-128-sec-continues-efforts-assist-market-participants-during-implementation-treasury-clearing-rules,"Sept. 30, 2025",2026-03-24T00:56:40Z
+sec_press_release,,2025-127,SEC Issues Order to Reduce Operating Costs of Consolidated Audit Trail,https://www.sec.gov/newsroom/press-releases/2025-127-sec-issues-order-reduce-operating-costs-consolidated-audit-trail,"Sept. 30, 2025",2026-03-24T00:56:40Z
+sec_press_release,,2025-126,SEC Seeks Public Comment to Improve Rules on Residential Mortgage-Backed Securities and Asset-Backed Securities,https://www.sec.gov/newsroom/press-releases/2025-126-sec-seeks-public-comment-improve-rules-residential-mortgage-backed-securities-asset-backed,"Sept. 26, 2025",2026-03-24T00:56:40Z
+sec_press_release,,2025-122,Small Business Forum Report to Congress Highlights Recommendations to Improve Capital Raising,https://www.sec.gov/newsroom/press-releases/2025-122-small-business-forum-report-congress-highlights-recommendations-improve-capital-raising,"Sept. 22, 2025",2026-03-24T00:56:40Z

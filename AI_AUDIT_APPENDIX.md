@@ -171,6 +171,92 @@
   - Manual checklist against assignment requirements.
   - Checks between reported data and CSV/script outputs.
 
+## M2 (EDA Dashboard Stage)
+
+- **Task (Plot 1: Correlation Heatmap):** Create heatmap using the final panel and specific variables.
+- **Prompt:** "for plot 1, use `data/final/crypto_analysis_panel.csv` and create a heatmap with `outcome_realized_vol_30d`, `driver_sec_event_indicator`, `control_market_cap`, `control_total_volume`, `control_btc_corr_30d`, `vix`, `ffeffective_rate`, and `epu_index`"
+- **AI Output:** It added Plot 1 code in `capstone_eda.ipynb`, computing all correlations and exporting `results/figures/M2_plot1_correlation_heatmap.png`.
+- **Verification:** Confirmed all the values were located where needed and the figure exported at 300 DPI.
+- **Critique:** Correlation is basically descriptive.
+
+- **Task (Plot 2: Outcome Time Series):** Create outcome-over-time graph from the final panel.
+- **Prompt:** "for plot 2, use `outcome_realized_vol_30d` from `crypto_analysis_panel.csv` and then plot average volatility over time"
+- **AI Output:** It added Plot 2 code in `capstone_eda.ipynb`, grouping by `date`, computing `outcome_mean`, and exporting `results/figures/M2_plot2_outcome_time_series.png`.
+- **Verification:** Confirmed the date aggregation and that the export was successful.
+- **Critique:** Does not isolate causal drivers.
+
+- **Task (Plot 3: Dual-Axis Outcome vs Driver):** Create dual-axis plot using the SEC-event driver.
+- **Prompt:** "for plot 3, use `outcome_realized_vol_30d` and `driver_sec_event_indicator` from `crypto_analysis_panel.csv` showing daily events and include timing context"
+- **AI Output:** It created a dual-axis panel with outcome line, event-day bars, 30-day driver. It also created an event-days panel and exported `results/figures/M2_plot3_dual_axis_outcome_driver.png`.
+- **Verification:** Confirmed that the plot updated after adding some SEC data and that the labels reflect what they are supposed to.
+- **Critique:** Dual-axis charts can be more difficult to read, hence understand.
+
+- **Task (Plot 4: Lagged Effect Analysis):** Create lag-correlation test for the SEC-event driver.
+- **Prompt:** "for plot 4, use `driver_sec_event_indicator` as the driver and test lags 0, 1, 2, 3, 6, 12 with `groupby('coin_symbol').shift(lag)` against `outcome_realized_vol_30d`"
+- **AI Output:** It added lag-correlation bar chart in `capstone_eda.ipynb` and exported `results/figures/M2_plot4_lagged_effects.png`.
+- **Verification:** Confirmed there is no leakage in lag construction.
+- **Critique:** Correlations are small and not really significant.
+
+- **Task (Plot 5: Group Box Plots):** Create distribution comparison by token group from the final panel.
+- **Prompt:** "for plot 5, use `token_group` and `outcome_realized_vol_30d` from `crypto_analysis_panel.csv` and produce box plots"
+- **AI Output:** It created group box plots and exported `results/figures/M2_plot5_group_boxplot.png`.
+- **Verification:** Confirmed all three groups are present and plotted with their corresponding labels.
+- **Critique:** Large outliers, eventhough they are expected in crypto volatility.
+
+- **Task (Plot 6: Group Sensitivity):** Compute group-specific sensitivity to SEC-event drivers.
+- **Prompt:** "for plot 6, compute group correlations of `outcome_realized_vol_30d` with `driver_sec_event_indicator` by `token_group` & plot horizontal bars"
+- **AI Output:** It computed group sensitivity and created the bar chart. Then, it exported `results/figures/M2_plot6_group_sensitivity.png`.
+- **Verification:** Confirmed stablecoin/centralized_exchange/defi group correlations stem from the correct panel.
+- **Critique:** Group-level correlations can be kind of trivial if there are lots of sparse event days.
+
+- **Task (Plot 7: Control Scatter Plots):** Create outcome v. control scatter relationships.
+- **Prompt:** "for plot 7, use `outcome_realized_vol_30d` v. `control_total_volume` and v. `epu_index` with trend lines"
+- **AI Output:** It created two panels with scatter/trendline figures and exported `results/figures/M2_plot7_control_scatterplots.png`.
+- **Verification:** Confirmed everything matches the requested fields/data.
+- **Critique:** Omitted-variable bias may still apply.
+
+- **Task (Plot 8: Time Series Decomposition):** Create trend/seasonal/residual decomposition from aggregated outcome series.
+- **Prompt:** "for Plot 8, aggregate `outcome_realized_vol_30d` by date, add daily frequency, and decompose into observed/trend/seasonal/residual"
+- **AI Output:** It created four decomposition plots and exported `results/figures/M2_plot8_time_series_decomposition.png`.
+- **Verification:** Confirmed all four components exported successfully.
+- **Critique:** Decomposition should be analyzed before modeling.
+
+- **Task (Plot 9: SEC Event-Window Volatility Profile):** Create inference-oriented event-window comparison.
+- **Prompt:** "for plot 9, use SEC event dates and create an event-window volatility profile"
+- **AI Output:** It added Plot 9 code in `capstone_eda.ipynb`, aligned SEC event dates to panel dates, computed mean `outcome_realized_vol_30d` by relative event day, and exported `results/figures/M2_plot9_event_window_volatility_profile.png`.
+- **Verification:** Confirmed the table was built correctly.
+- **Critique:** Event-window averages should be followed by controlled M3 estimation.
+
+- **Task (Plot 10: VIX Regime Group Comparison):** Compare volatility across low/mid/high VIX regimes by token group.
+- **Prompt:** "for plot 10, split `vix` into low/mid/high regimes and compare `outcome_realized_vol_30d` by `token_group` in bar chart"
+- **AI Output:** It added Plot 10 code in `capstone_eda.ipynb`, formed VIX groups, added mean volatility by regime and `token_group`, and exported `results/figures/M2_plot10_vix_regime_group_comparison.png`.
+- **Verification:** Confirmed all token groups were included and high-VIX means were highest for `defi` and `centralized_exchange`, as expected.
+- **Critique:** Regime comparisons are somehow non-causal.
+
+- **Task (Plot 11: Macro Lead-Lag Profile):** Compare lead-lag correlation structure of volatility with VIX and EPU.
+- **Prompt:** "for plot 11, compute lead-lag correlations between daily average `outcome_realized_vol_30d` and `vix` and `epu_index`"
+- **AI Output:** It added Plot 11 code in `capstone_eda.ipynb`, calculated lagged correlations for `vix` and `epu_index` against daily mean volatility, and exported `results/figures/M2_plot11_macro_lead_lag_profile.png`.
+- **Verification:** Confirmed the VIX peaks around lag 9 and EPU correlations stay smaller.
+- **Critique:** Lead-lag correlations should be double-checked with fixed-effects models.
+
+- **Task (Plot 12: Coin-Level Macro Sensitivity Betas):** Compare standardized VIX and EPU sensitivities coin by coin.
+- **Prompt:** "for plot 12, estimate coin-by-coin standardized sensitivities of `outcome_realized_vol_30d` to `vix` and `epu_index` using OLS"
+- **AI Output:** It added Plot 12 code in `capstone_eda.ipynb`, ran per-coin standardized regressions for `vix` and `epu_index`, and exported `results/figures/M2_plot12_coin_macro_sensitivity_betas.png`.
+- **Verification:** Confirmed all cryptos were plotted and that VIX sensitivity exceeded EPU.
+- **Critique:** Linear assumptions may hide nonlinear responses.
+
+- **Task (Plot 13: Event vs Non-Event Volatility by Coin):** Compare mean volatility on SEC event days v. non-event days for each coin.
+- **Prompt:** "for plot 13, compare event-day v non-event-day mean `outcome_realized_vol_30d` for each crypto, in dumbbell plot"
+- **AI Output:** It added Plot 13 code in `capstone_eda.ipynb`, computed coin-level event and non-event mean volatility, built dumbbell comparison figure, and exported `results/figures/M2_plot13_event_vs_nonevent_coin_dumbbell.png`.
+- **Verification:** Confirmed event and non-event means were mapped correctly.
+- **Critique:** Event v. non-event comparisons should be tested with additional controls in M3.
+
+- **Task (M2 Narrative Summary):** Polish M2 summary using accurate terminology while keeping it aligned to group ideas and findings.
+- **Prompt:** "we wrote our M2 summary. now help polish the wording to reinforce findings, hypotheses, and data-quality mitigations"
+- **AI Output:** It updated `M2_EDA_summary.md` and `results/reports/M2_EDA_summary.md` with more accurate terminology, keeping our already written ideas.
+- **Verification:** Double-checked that findings in summary files are aligned with plot outputs and metrics.
+- **Critique:** None.
+
 ## Responsibility Statement
 
 All outputs are our team’s responsibility.

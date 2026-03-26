@@ -19,8 +19,8 @@
 - Tokens: 10 (bnb, btc, doge, eth, figr_heloc, sol, trx, usdc, usdt, xrp)
 - Groups present: centralized_exchange, defi, stablecoin
 - Date range: 2020-02-19 to 2026-02-18
-- Unique SEC action dates in input: 4
-- Panel rows flagged with SEC indicator = 1: 40
+- Unique SEC action dates in input: 17
+- Panel rows flagged with SEC indicator = 1: 147
 
 ## Missing-Value Decisions
 - Outcome/control fields are carried from upstream processed files.
