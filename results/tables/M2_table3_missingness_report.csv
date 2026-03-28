@@ -1,0 +1,16 @@
+variable,missing_count,missing_pct
+outcome_realized_vol_30d,300,1.5112
+control_btc_corr_30d,271,1.3651
+date,0,0.0
+coin_symbol,0,0.0
+coin_name,0,0.0
+coin_rank,0,0.0
+token_group,0,0.0
+driver_sec_event_indicator,0,0.0
+control_market_cap,0,0.0
+control_total_volume,0,0.0
+vix,0,0.0
+ffeffective_rate,0,0.0
+epu_index,0,0.0
+outcome_vol_blank_reason,0,0.0
+btc_corr_blank_reason,0,0.0
