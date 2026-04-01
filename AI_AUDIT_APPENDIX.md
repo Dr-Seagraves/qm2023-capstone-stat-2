@@ -175,7 +175,7 @@
 
 - **Task (Plot 1: Correlation Heatmap):** Create heatmap using the final panel and specific variables.
 - **Prompt:** "for plot 1, use `data/final/crypto_analysis_panel.csv` and create a heatmap with `outcome_realized_vol_30d`, `driver_sec_event_indicator`, `control_market_cap`, `control_total_volume`, `control_btc_corr_30d`, `vix`, `ffeffective_rate`, and `epu_index`"
-- **AI Output:** It added Plot 1 code in `capstone_eda.ipynb`, computing all correlations and exporting `results/figures/M2_plot1_correlation_heatmap.png`.
+- **AI Output:** It added Plot 1 code in `capstone_eda.ipynb`, computing all correlations, applying readable axis names (for example, `outcome_realized_vol_30d` -> "30D Realized Volatility"), and exporting `results/figures/M2_plot1_correlation_heatmap.png`.
 - **Verification:** Confirmed all the values were located where needed and the figure exported at 300 DPI.
 - **Critique:** Correlation is basically descriptive.
 
@@ -188,31 +188,31 @@
 - **Task (Plot 3: Dual-Axis Outcome vs Driver):** Create dual-axis plot using the SEC-event driver.
 - **Prompt:** "for plot 3, use `outcome_realized_vol_30d` and `driver_sec_event_indicator` from `crypto_analysis_panel.csv` showing daily events and include timing context"
 - **AI Output:** It created a dual-axis panel with outcome line, event-day bars, 30-day driver. It also created an event-days panel and exported `results/figures/M2_plot3_dual_axis_outcome_driver.png`.
-- **Verification:** Confirmed that the plot updated after adding some SEC data and that the labels reflect what they are supposed to.
+- **Verification:** Confirmed that the plot updated after adding some SEC data and that labels now read clearly (for example, "Average 30-day realized volatility" and "SEC event share (0 to 1)").
 - **Critique:** Dual-axis charts can be more difficult to read, hence understand.
 
 - **Task (Plot 4: Lagged Effect Analysis):** Create lag-correlation test for the SEC-event driver.
 - **Prompt:** "for plot 4, use `driver_sec_event_indicator` as the driver and test lags 0, 1, 2, 3, 6, 12 with `groupby('coin_symbol').shift(lag)` against `outcome_realized_vol_30d`"
 - **AI Output:** It added lag-correlation bar chart in `capstone_eda.ipynb` and exported `results/figures/M2_plot4_lagged_effects.png`.
-- **Verification:** Confirmed there is no leakage in lag construction.
+- **Verification:** Confirmed there is no leakage in lag construction. Updated y-axis label to "Correlation with realized volatility" (simplified from "Pearson correlation" terminology).
 - **Critique:** Correlations are small and not really significant.
 
 - **Task (Plot 5: Group Box Plots):** Create distribution comparison by token group from the final panel.
 - **Prompt:** "for plot 5, use `token_group` and `outcome_realized_vol_30d` from `crypto_analysis_panel.csv` and produce box plots"
 - **AI Output:** It created group box plots and exported `results/figures/M2_plot5_group_boxplot.png`.
-- **Verification:** Confirmed all three groups are present and plotted with their corresponding labels.
+- **Verification:** Confirmed all three groups are present and plotted with clear labels (x-axis: "Token Group", y-axis: "30-day realized volatility").
 - **Critique:** Large outliers, eventhough they are expected in crypto volatility.
 
 - **Task (Plot 6: Group Sensitivity):** Compute group-specific sensitivity to SEC-event drivers.
 - **Prompt:** "for plot 6, compute group correlations of `outcome_realized_vol_30d` with `driver_sec_event_indicator` by `token_group` & plot horizontal bars"
 - **AI Output:** It computed group sensitivity and created the bar chart. Then, it exported `results/figures/M2_plot6_group_sensitivity.png`.
-- **Verification:** Confirmed stablecoin/centralized_exchange/defi group correlations stem from the correct panel.
+- **Verification:** Confirmed stablecoin/centralized_exchange/defi group correlations stem from the correct panel. Updated x-axis label to "Correlation: realized volatility vs SEC event indicator" for readability.
 - **Critique:** Group-level correlations can be kind of trivial if there are lots of sparse event days.
 
 - **Task (Plot 7: Control Scatter Plots):** Create outcome v. control scatter relationships.
 - **Prompt:** "for plot 7, use `outcome_realized_vol_30d` v. `control_total_volume` and v. `epu_index` with trend lines"
 - **AI Output:** It created two panels with scatter/trendline figures and exported `results/figures/M2_plot7_control_scatterplots.png`.
-- **Verification:** Confirmed everything matches the requested fields/data.
+- **Verification:** Confirmed everything matches the requested fields/data. Updated plot titles and x-axis labels to use "(Scaled)" notation instead of logarithmic formulas for accessibility.
 - **Critique:** Omitted-variable bias may still apply.
 
 - **Task (Plot 8: Time Series Decomposition):** Create trend/seasonal/residual decomposition from aggregated outcome series.
@@ -236,13 +236,13 @@
 - **Task (Plot 11: Macro Lead-Lag Profile):** Compare lead-lag correlation structure of volatility with VIX and EPU.
 - **Prompt:** "for plot 11, compute lead-lag correlations between daily average `outcome_realized_vol_30d` and `vix` and `epu_index`"
 - **AI Output:** It added Plot 11 code in `capstone_eda.ipynb`, calculated lagged correlations for `vix` and `epu_index` against daily mean volatility, and exported `results/figures/M2_plot11_macro_lead_lag_profile.png`.
-- **Verification:** Confirmed the VIX peaks around lag 9 and EPU correlations stay smaller.
+- **Verification:** Confirmed the VIX peaks around lag 9 and EPU correlations stay smaller. Simplified axis labels to "Lag (days)" and "Correlation" for clarity (removed mathematical formula notation).
 - **Critique:** Lead-lag correlations should be double-checked with fixed-effects models.
 
 - **Task (Plot 12: Coin-Level Macro Sensitivity Betas):** Compare standardized VIX and EPU sensitivities coin by coin.
 - **Prompt:** "for plot 12, estimate coin-by-coin standardized sensitivities of `outcome_realized_vol_30d` to `vix` and `epu_index` using OLS"
 - **AI Output:** It added Plot 12 code in `capstone_eda.ipynb`, ran per-coin standardized regressions for `vix` and `epu_index`, and exported `results/figures/M2_plot12_coin_macro_sensitivity_betas.png`.
-- **Verification:** Confirmed all cryptos were plotted and that VIX sensitivity exceeded EPU.
+- **Verification:** Confirmed all cryptos were plotted and that VIX sensitivity exceeded EPU. Updated y-axis label to "Sensitivity score" for accessibility (simplified from "Standardized beta coefficient").
 - **Critique:** Linear assumptions may hide nonlinear responses.
 
 - **Task (Plot 13: Event vs Non-Event Volatility by Coin):** Compare mean volatility on SEC event days v. non-event days for each coin.
