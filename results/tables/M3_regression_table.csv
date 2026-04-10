@@ -1,0 +1,6 @@
+term,Model_1_FE_Standard,Model_2_FE_Clustered,Model_3_FE_Trimmed
+control_btc_corr_30d,-0.017461*** (0.000914),-0.017461 (0.010905),-0.012494* (0.006929)
+driver_sec_event_indicator_lag0_x_grp_defi,0.002691 (0.006005),0.002691 (0.003584),0.004706* (0.002516)
+driver_sec_event_indicator_lag0_x_grp_stablecoin,0.007431 (0.006823),0.007431*** (0.001509),0.005889*** (0.001082)
+log_market_cap,-0.007823*** (0.000388),-0.007823*** (0.003000),-0.006280** (0.002803)
+log_total_volume,0.007996*** (0.000300),0.007996*** (0.002309),0.005155** (0.002440)

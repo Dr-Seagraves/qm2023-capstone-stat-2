@@ -259,6 +259,82 @@
 
 ## M3 (Econometric Models Stage)
 
+- **Task (Prompt 1: Model A specification design):** Select the exact Model A setup for this crypto panel.
+- **Prompt:** "Help me choose the exact Model A specification for this crypto panel, including outcome, driver lag, controls, entity FE, and time FE."
+- **AI Output:** Implemented a production Model A setup in `capstone_models.py` with:
+  - Outcome: `outcome_realized_vol_30d`.
+  - Driver construction: `driver_sec_event_indicator` with lag variants 0, 1, 2, 3.
+  - FE structure: `entity_effects=True` and `time_effects=True` for baseline models.
+  - Controls included in estimation matrix: `log_market_cap`, `log_total_volume`, `control_btc_corr_30d`.
+  - Interaction strategy for identification under two-way FE when the driver is date-common.
+- **Verification:** Confirmed the implemented variables and model structure in `capstone_models.py` and verified model output generation.
+- **Critique:** Correct for this dataset structure; direct time-common effects are absorbed under time FE, so interaction-based identification is required.
+
+- **Task (Prompt 2: End-to-end Model A script section):** Create and run a complete Model A section.
+- **Prompt:** "Write a clean Model A section for my script that runs end to end and saves outputs."
+- **AI Output:** Added full Model A pipeline in `capstone_models.py` and ensured it saves outputs to required M3 folders:
+  - `results/tables/M3_modelA_coefficients_long.csv`
+  - `results/tables/M3_modelA_regression_table.csv`
+  - `results/tables/M3_regression_table.csv`
+  - `results/tables/M3_modelA_breusch_pagan.csv`
+  - `results/tables/M3_modelA_vif.csv`
+  - `results/tables/M3_modelA_robustness_lags.csv`
+  - `results/tables/M3_modelA_robustness_outlier_trim.csv`
+  - `results/tables/M3_modelA_robustness_group_subsamples.csv`
+  - `results/figures/M3_residuals_vs_fitted.png`
+  - `results/figures/M3_qq_plot.png`
+- **Verification:** Re-ran script and confirmed successful completion plus regeneration of all listed artifacts.
+- **Critique:** Correct and reproducible for Model A requirements.
+
+- **Task (Prompt 3: absorbed variable diagnosis):** Explain and fix absorption issue under two-way FE.
+- **Prompt:** "Explain why my main driver gets absorbed in two way fixed effects and show how to fix identification."
+- **AI Output:** Addressed absorption by creating group interaction terms for the driver (`driver_sec_event_indicator_lagX_x_grp_*`) so differential effects remain identified under date FE.
+- **Verification:** Confirmed model estimation no longer fails due to missing absorbed driver coefficient in baseline table, and interaction coefficients appear in `M3_modelA_coefficients_long.csv`.
+- **Critique:** Correct econometric handling for date-common policy/event drivers in panel FE context.
+
+- **Task (Prompt 4: clustered v. unadjusted SE comparison):** Add robust-SE comparison.
+- **Prompt:** "Add clustered standard errors and compare them against unadjusted standard errors in one table."
+- **AI Output:** Added both model versions:
+  - `FE_standard_SE` (unadjusted)
+  - `FE_clustered_SE` (clustered by entity)
+  And exported side-by-side comparisons in `results/tables/M3_modelA_regression_table.csv`.
+- **Verification:** Confirmed table includes both model columns and coefficient/SE formats with significance stars.
+- **Critique:** Correctly satisfies robust-standard-error comparison requirement.
+
+- **Task (Prompt 5: required diagnostics):** Add BP, VIF, and residual diagnostics.
+- **Prompt:** "Add Breusch Pagan, VIF, residuals vs fitted, and Q Q diagnostics for Model A."
+- **AI Output:** Implemented diagnostics in `capstone_models.py` and exported:
+  - `results/tables/M3_modelA_breusch_pagan.csv`
+  - `results/tables/M3_modelA_vif.csv`
+  - `results/figures/M3_residuals_vs_fitted.png`
+  - `results/figures/M3_qq_plot.png`
+- **Verification:** Confirmed all files exist and contain expected diagnostic outputs/plots.
+- **Critique:** Correct; diagnostics were computed from fitted model residual structures and documented.
+
+- **Task (Prompt 8: publication-style regression table):** Build a deliverable-ready Model A table.
+- **Prompt:** "Build a publication style regression table from my FE results with stars and standard errors."
+- **AI Output:** Added formatted export for key FE models with stars and parenthetical SE values in:
+  - `results/tables/M3_modelA_regression_table.csv`
+  - `results/tables/M3_regression_table.csv`
+- **Verification:** Checked table layout and entries match required readability standards for M3 submission.
+- **Critique:** Correct; table is concise and submission-ready for Model A section.
+
+- **Task (Prompt 9: interpretation memo drafting from results):** Create Model A interpretation memo using actual estimates.
+- **Prompt:** "Generate a Model A interpretation memo from my actual coefficients and p values."
+- **AI Output:** Drafted `M3_interpretation.md` using computed outputs from Model A files, including:
+  - headline effect statements,
+  - diagnostics interpretation,
+  - robustness summary,
+  - caveats.
+- **Verification:** Cross-checked numbers and significance references against `results/tables/M3_modelA_coefficients_long.csv` and other diagnostic/robustness exports.
+- **Critique:** Correct and evidence-based; tied directly to generated model artifacts.
+
+- **Task (Prompt 11: completeness check against rubric):** Validate whether Model A deliverables are complete.
+- **Prompt:** "Check whether my current Model A deliverables satisfy the milestone rubric and list any missing items."
+- **AI Output:** Completed checklist review against Model A requirements in `README(3).md`, confirming model estimation, diagnostics, robustness checks, table exports, figures, and memo file.
+- **Verification:** Re-ran `capstone_models.py`, confirmed all required Model A artifacts regenerate, and identified one caveat in subgroup robustness (`centralized_exchange` row with divide-by-zero error in `M3_modelA_robustness_group_subsamples.csv`).
+- **Critique:** Correct assessment; Model A is substantively complete with one subgroup-spec caveat flagged transparently.
+
 - **Task (Model B Option 3: Random Forest vs OLS):** Use Machine Learning comparison for Milestone 3.
 - **Prompt:** "for model B, create the code for option 3"
 - **AI Output:** It created the code in `capstone_models.py` for Model B Option 3, creating the following outputs: `results/tables/M3_modelB_option3_metrics.csv`, `results/tables/M3_modelB_option3_feature_importance.csv`, `results/tables/M3_modelB_option3_ols_coefficients.csv`, `results/tables/M3_modelB_option3_predictions.csv` `results/figures/M3_modelB_option3_actual_vs_predicted.png`

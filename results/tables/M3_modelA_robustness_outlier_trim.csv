@@ -1,0 +1,3 @@
+specification,driver_variable,coef,std_error,p_value,nobs,r2_within
+baseline_clustered,driver_sec_event_indicator_lag0_x_grp_defi,0.00269072054882692,0.0035837366867487548,0.45277462353650844,19552,0.12979561107690063
+trimmed_top1pct_clustered,driver_sec_event_indicator_lag0_x_grp_defi,0.0047060948131915645,0.0025163746993885423,0.06147464934152036,19356,0.14108872604530776
