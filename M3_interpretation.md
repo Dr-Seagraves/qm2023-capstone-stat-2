@@ -1,8 +1,4 @@
-# M3 Interpretation Memo (Model A Only)
-
-## Scope Note
-
-This memo intentionally covers only Model A (Fixed Effects), per team task split. Model B is being completed by other teammates.
+# M3 Interpretation Memo
 
 ## Model A Headline
 
@@ -18,6 +14,14 @@ Main table source: `results/tables/M3_modelA_coefficients_long.csv`.
 1. Differential sensitivity by token class appears stronger for stablecoins than for DeFi in this sample period, conditional on coin and date fixed effects.
 2. The positive sign on stablecoin interaction can reflect re pricing and liquidity fragmentation channels around regulatory headlines, where "stability" narratives are challenged and short-horizon variance rises.
 3. In contrast, DeFi exposure appears noisier and less precisely estimated after conditioning on within-coin and common-time shocks.
+
+## Model B Summary
+
+Model B: Machine Learning Comparison (Random Forest vs. OLS)
+
+Results: OLS achieved higher predictive accuracy on the test set (R² = 0.163, RMSE = 0.036) compared to Random Forest (R² = 0.108, RMSE = 0.038). Feature importance from Random Forest highlights token group (stablecoin: 34%, DeFi: 1%) and macroeconomic variables (Fed Funds rate: 18%, BTC correlation: 16%) as key predictors, while the SEC event indicator has negligible importance (0.001%). OLS coefficients show the SEC event indicator is insignificant (coeff = 0.0003, p = 0.88).
+
+Key Takeaway: Despite Random Forest's ability to capture nonlinearities, OLS provides better out-of-sample predictions and interpretability. The SEC event indicator has minimal predictive power for realized volatility, suggesting regulatory events do not strongly drive short-term volatility beyond what is captured by token characteristics and macro controls.
 
 ## Diagnostics (Required)
 
