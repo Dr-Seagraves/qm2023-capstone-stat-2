@@ -335,7 +335,7 @@
 - **Verification:** Re-ran `capstone_models.py`, confirmed all required Model A artifacts regenerate, and identified one caveat in subgroup robustness (`centralized_exchange` row with divide-by-zero error in `M3_modelA_robustness_group_subsamples.csv`).
 - **Critique:** Correct assessment; Model A is substantively complete with one subgroup-spec caveat flagged transparently.
 
-- **Task (Model B Option 3: Random Forest vs OLS):** Use Machine Learning comparison for Milestone 3.
+- **Task (Model B Option 3: Random Forest vs OLS):** Use Machine Learning comparison for M3 option 3.
 - **Prompt:** "for model B, create the code for option 3"
 - **AI Output:** It created the code in `capstone_models.py` for Model B Option 3, creating the following outputs: `results/tables/M3_modelB_option3_metrics.csv`, `results/tables/M3_modelB_option3_feature_importance.csv`, `results/tables/M3_modelB_option3_ols_coefficients.csv`, `results/tables/M3_modelB_option3_predictions.csv` `results/figures/M3_modelB_option3_actual_vs_predicted.png`
 - **Verification:** Confirmed the script location, name, and labels match M3 deliverable expectations in the README file. Confirmed the code is the one needed if we follow Option 3 in Model B.
