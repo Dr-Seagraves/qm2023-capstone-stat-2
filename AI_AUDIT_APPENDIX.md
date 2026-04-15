@@ -1,4 +1,4 @@
-# AI Audit Appendix (M1 Capstone Work)
+# AI Audit Appendix (Capstone Work)
 
 ## AI Tools Used
 - GitHub Copilot

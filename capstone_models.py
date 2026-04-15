@@ -7,10 +7,11 @@ Date: 04/24/2026
 
 Current scope in this file:
 - Model A: Fixed Effects panel regression (required)
+- Model B (Option 3): Machine Learning comparison (Random Forest vs. OLS)
 
 This script loads the final crypto panel, estimates Model A with entity and
-time fixed effects, runs required diagnostics, and saves robustness checks and
-publication-ready tables/figures for Milestone 3.
+time fixed effects (plus diagnostics and robustness checks), then estimates
+Model B Option 3 on a chronological train/test split.
 """
 
 from __future__ import annotations
@@ -22,6 +23,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from linearmodels.panel import PanelOLS
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, r2_score
 from scipy import stats
 import statsmodels.api as sm
 from statsmodels.stats.diagnostic import het_breuschpagan
@@ -61,6 +64,7 @@ NUMERIC_INPUTS = [
     "control_btc_corr_30d",
     "vix",
     "ffeffective_rate",
+    "epu_index",
 ]
 
 
@@ -152,6 +156,118 @@ def result_to_publishable_column(result, model_name: str) -> pd.DataFrame:
         pval = float(result.pvalues[term])
         data.append({"term": term, model_name: f"{coef:.6f}{stars(pval)} ({se:.6f})"})
     return pd.DataFrame(data)
+
+
+def build_model_b_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series, pd.Series]:
+    features = [
+        "driver_sec_event_indicator",
+        "control_market_cap",
+        "control_total_volume",
+        "control_btc_corr_30d",
+        "vix",
+        "ffeffective_rate",
+        "epu_index",
+        GROUP_COL,
+    ]
+    required = [TIME_COL, TARGET, *features]
+    model_df = df[required].dropna().sort_values(TIME_COL).reset_index(drop=True)
+
+    X = pd.get_dummies(model_df[features], columns=[GROUP_COL], drop_first=True).astype(float)
+    y = model_df[TARGET].astype(float)
+    dates = model_df[TIME_COL]
+    return X, y, dates
+
+
+def run_model_b_option3(df: pd.DataFrame) -> None:
+    X, y, dates = build_model_b_data(df)
+
+    split_idx = int(len(X) * 0.8)
+    if split_idx <= 0 or split_idx >= len(X):
+        raise ValueError("Insufficient rows after cleaning for train/test split.")
+
+    X_train = X.iloc[:split_idx].copy()
+    X_test = X.iloc[split_idx:].copy()
+    y_train = y.iloc[:split_idx].copy()
+    y_test = y.iloc[split_idx:].copy()
+    test_dates = dates.iloc[split_idx:].copy()
+
+    X_train_ols = sm.add_constant(X_train, has_constant="add")
+    X_test_ols = sm.add_constant(X_test, has_constant="add")
+    ols_model = sm.OLS(y_train, X_train_ols).fit()
+    ols_pred = ols_model.predict(X_test_ols)
+
+    rf_model = RandomForestRegressor(
+        n_estimators=500,
+        max_depth=12,
+        min_samples_leaf=5,
+        random_state=42,
+        n_jobs=-1,
+    )
+    rf_model.fit(X_train, y_train)
+    rf_pred = rf_model.predict(X_test)
+
+    metrics = pd.DataFrame(
+        {
+            "model": ["OLS", "RandomForest"],
+            "r2_test": [r2_score(y_test, ols_pred), r2_score(y_test, rf_pred)],
+            "rmse_test": [
+                float(np.sqrt(mean_squared_error(y_test, ols_pred))),
+                float(np.sqrt(mean_squared_error(y_test, rf_pred))),
+            ],
+            "train_rows": [len(X_train), len(X_train)],
+            "test_rows": [len(X_test), len(X_test)],
+        }
+    )
+
+    feature_importance = pd.DataFrame(
+        {
+            "feature": X.columns,
+            "rf_importance": rf_model.feature_importances_,
+        }
+    ).sort_values("rf_importance", ascending=False)
+
+    ols_coefficients = (
+        ols_model.params.rename("coefficient")
+        .to_frame()
+        .join(ols_model.pvalues.rename("p_value"))
+        .reset_index()
+        .rename(columns={"index": "term"})
+    )
+
+    comparison_series = pd.DataFrame(
+        {
+            "date": test_dates,
+            "actual": y_test.values,
+            "ols_pred": ols_pred.values,
+            "rf_pred": rf_pred,
+        }
+    )
+
+    metrics.to_csv(TABLES_DIR / "M3_modelB_option3_metrics.csv", index=False)
+    feature_importance.to_csv(TABLES_DIR / "M3_modelB_option3_feature_importance.csv", index=False)
+    ols_coefficients.to_csv(TABLES_DIR / "M3_modelB_option3_ols_coefficients.csv", index=False)
+    comparison_series.to_csv(TABLES_DIR / "M3_modelB_option3_predictions.csv", index=False)
+
+    plt.figure(figsize=(10, 6))
+    plt.scatter(y_test, ols_pred, alpha=0.25, label="OLS", s=20)
+    plt.scatter(y_test, rf_pred, alpha=0.25, label="Random Forest", s=20)
+    y_min = min(float(y_test.min()), float(ols_pred.min()), float(np.min(rf_pred)))
+    y_max = max(float(y_test.max()), float(ols_pred.max()), float(np.max(rf_pred)))
+    plt.plot([y_min, y_max], [y_min, y_max], linestyle="--", linewidth=1)
+    plt.xlabel("Actual realized volatility")
+    plt.ylabel("Predicted realized volatility")
+    plt.title("Model B Option 3: OLS vs Random Forest (Test Set)")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(FIGURES_DIR / "M3_modelB_option3_actual_vs_predicted.png", dpi=300)
+    plt.close()
+
+    print("Saved Model B Option 3 outputs:")
+    print(f"- {TABLES_DIR / 'M3_modelB_option3_metrics.csv'}")
+    print(f"- {TABLES_DIR / 'M3_modelB_option3_feature_importance.csv'}")
+    print(f"- {TABLES_DIR / 'M3_modelB_option3_ols_coefficients.csv'}")
+    print(f"- {TABLES_DIR / 'M3_modelB_option3_predictions.csv'}")
+    print(f"- {FIGURES_DIR / 'M3_modelB_option3_actual_vs_predicted.png'}")
 
 
 def run_model_a() -> None:
@@ -266,40 +382,43 @@ def run_model_a() -> None:
     # 3) Group subsamples
     group_rows = []
     for grp, grp_df in df.groupby(GROUP_COL, observed=True):
-        try:
-            grp_model_df = grp_df[[ENTITY_COL, TIME_COL, TARGET, baseline_driver, *CONTROLS]].dropna().copy()
-            grp_panel = grp_model_df.set_index([ENTITY_COL, TIME_COL]).sort_index()
-            y_grp = grp_panel[TARGET]
-            X_grp = grp_panel[[baseline_driver, *CONTROLS]]
+        grp_model_df = grp_df[[ENTITY_COL, TIME_COL, TARGET, baseline_driver, *CONTROLS]].dropna().copy()
+        grp_panel = grp_model_df.set_index([ENTITY_COL, TIME_COL]).sort_index()
+        y_grp = grp_panel[TARGET]
+        X_grp = grp_panel[[baseline_driver, *CONTROLS]]
 
-            # Subsample robustness uses entity FE only to keep a time-common driver identifiable.
+        # Subsample robustness uses entity FE only to keep a time-common driver identifiable.
+        cov_label = "clustered"
+        spec_label = "entity_FE_only"
+        try:
             grp_model = fit_fe_model(y_grp, X_grp, clustered=True, time_effects=False)
-            group_rows.append(
-                {
-                    "token_group": grp,
-                    "driver_variable": baseline_driver,
-                    "coef": float(grp_model.params[baseline_driver]),
-                    "std_error": float(grp_model.std_errors[baseline_driver]),
-                    "p_value": float(grp_model.pvalues[baseline_driver]),
-                    "nobs": int(grp_model.nobs),
-                    "r2_within": float(grp_model.rsquared_within),
-                    "spec": "entity_FE_only",
-                }
-            )
-        except Exception as exc:  # noqa: BLE001
-            group_rows.append(
-                {
-                    "token_group": grp,
-                    "driver_variable": baseline_driver,
-                    "coef": np.nan,
-                    "std_error": np.nan,
-                    "p_value": np.nan,
-                    "nobs": 0,
-                    "r2_within": np.nan,
-                    "spec": "entity_FE_only",
-                    "error": str(exc),
-                }
-            )
+        except Exception:
+            # Fall back to unadjusted SEs when clustered covariance is singular in small subsamples.
+            try:
+                grp_model = fit_fe_model(y_grp, X_grp, clustered=False, time_effects=False)
+                cov_label = "unadjusted_fallback"
+            except Exception:
+                # Final fallback for degenerate groups where FE is not identified.
+                X_grp_ols = sm.add_constant(X_grp, has_constant="add")
+                grp_model = sm.OLS(y_grp, X_grp_ols).fit()
+                cov_label = "ols_fallback"
+                spec_label = "pooled_OLS_fallback"
+
+        se_series = grp_model.std_errors if hasattr(grp_model, "std_errors") else grp_model.bse
+
+        group_rows.append(
+            {
+                "token_group": grp,
+                "driver_variable": baseline_driver,
+                "coef": float(grp_model.params[baseline_driver]),
+            "std_error": float(se_series[baseline_driver]),
+                "p_value": float(grp_model.pvalues[baseline_driver]),
+                "nobs": int(grp_model.nobs),
+                "r2_within": float(getattr(grp_model, "rsquared_within", np.nan)),
+                "spec": spec_label,
+                "covariance": cov_label,
+            }
+        )
     group_robustness = pd.DataFrame(group_rows)
 
     # Section 7: Save regression tables and diagnostic plots
@@ -328,7 +447,9 @@ def run_model_a() -> None:
 
 
 def main() -> None:
+    df = load_and_prepare_data()
     run_model_a()
+    run_model_b_option3(df)
 
 
 if __name__ == "__main__":

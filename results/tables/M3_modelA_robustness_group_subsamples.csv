@@ -1,4 +1,4 @@
-token_group,driver_variable,coef,std_error,p_value,nobs,r2_within,spec,error
-centralized_exchange,driver_sec_event_indicator_lag0,,,,0,,entity_FE_only,float division by zero
-defi,driver_sec_event_indicator_lag0,-0.006489189102674922,0.003718120830362671,0.08095839654111736,13066,0.1711983782198706,entity_FE_only,
-stablecoin,driver_sec_event_indicator_lag0,-0.00041484277309750025,5.522987956689407e-05,7.083222897108499e-14,4324,0.20581763675854237,entity_FE_only,
+token_group,driver_variable,coef,std_error,p_value,nobs,r2_within,spec,covariance
+centralized_exchange,driver_sec_event_indicator_lag0,-0.006962647303232848,0.004688433086782466,0.13767163212862044,2162,,pooled_OLS_fallback,ols_fallback
+defi,driver_sec_event_indicator_lag0,-0.006489189102674922,0.003718120830362671,0.08095839654111736,13066,0.1711983782198706,entity_FE_only,clustered
+stablecoin,driver_sec_event_indicator_lag0,-0.00041484277309750025,5.522987956689407e-05,7.083222897108499e-14,4324,0.20581763675854237,entity_FE_only,clustered
