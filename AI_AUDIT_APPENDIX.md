@@ -17,7 +17,7 @@
   - Checked file consistency and logic.
 - **Critique:**
   - Correct: merge logic and output structure were appropriate for M1.
-  - Limitation: `coin_id` can be blank under fallback metadata retrieval (we clarified that by explaining that getting APIs meant to pay for them, so we fixed that by importing the data one by one, manually).
+  - Limitation: `coin_id` can be blank under fallback metadata retrieval; we documented this limitation and used manual data import where needed.
 
 - **Task:** Cleaning merged data (last 6 years + quality checks).
 - **Prompt:** "clean the merged CoinGecko panel by dropping missing core market fields, converting date types, keeping only the last 6 years, and saving to processed data"
@@ -71,7 +71,7 @@
   - Cross-checked counts and date range against the processed CSV and script logic.
 - **Critique:**
   - Correct: structure and required sections were complete.
-  - Limitation identified: `coin_id` is 100% missing in the current processed data; retained and flagged transparently (we clarified that by explaining that getting APIs meant to pay for them, so we fixed that by importing the data one by one, manually).
+  - Limitation identified: `coin_id` is 100% missing in the current processed data; this was retained and flagged transparently.
 
 - **Task:** Create `M1_data_quality_report.md` with all required sections for M1.
 - **Prompt:** "i need help creating a Data Quality Report... Required sections: Data Sources, Data Cleaning Decisions, Merge Strategy, Final Dataset Summary, Reproducibility Checklist, Ethical Considerations"
@@ -159,6 +159,7 @@
 ## Summary
 
 - **Total AI use in this assignment stage:** 11 major uses (merge pipeline support, cleaning pipeline support, VIX/Fed macro cleaning, VIX/Fed macro merge, data dictionary, data quality report, final dataset export without blank `coin_id`, EPU data cleaning and integration, M1 assignment alignment, repository format adapted to M1 structure, final panel standardization).
+- **Total AI use in M1 stage:** 11 major uses (merge pipeline support, cleaning pipeline support, VIX/Fed macro cleaning, VIX/Fed macro merge, data dictionary, data quality report, final dataset export without blank `coin_id`, EPU data cleaning and integration, M1 assignment alignment, repository format adapted to M1 structure, final panel standardization).
 - **Primary use cases:**
   1. Data engineering support (multi-file merge into one raw panel).
   2. Data cleaning pipeline support (missingness/date filter/type handling).
@@ -202,6 +203,7 @@
 - **AI Output:** It created group box plots and exported `results/figures/M2_plot5_group_boxplot.png`.
 - **Verification:** Confirmed all three groups are present and plotted with clear labels (x-axis: "Token Group", y-axis: "30-day realized volatility").
 - **Critique:** Large outliers, eventhough they are expected in crypto volatility.
+- **Critique:** Large outliers are expected in crypto volatility, but they still require robust inference and sensitivity checks.
 
 - **Task (Plot 6: Group Sensitivity):** Compute group-specific sensitivity to SEC-event drivers.
 - **Prompt:** "for plot 6, compute group correlations of `outcome_realized_vol_30d` with `driver_sec_event_indicator` by `token_group` & plot horizontal bars"
@@ -346,6 +348,32 @@
 - **AI Output:** Updated M3_interpretation.md by adding the Model B Summary section, including results from the ML comparison (OLS vs. Random Forest metrics, feature importance, OLS coefficients, and key takeaway). Also updated the title from "M3 Interpretation Memo (Model A Only)" to "M3 Interpretation Memo" and removed the scope note to reflect coverage of both models.
 - **Verification:** Confirmed the memo now includes all required sections as per README(3).md, with the Model B summary providing key results and takeaway from the ML comparison.
 - **Critique:** Correct; completes the memo for full M3 compliance without altering existing content.
+
+## M4 (Final Memo and Submission Stage)
+
+- **Task:** Build a rubric-aligned submission checklist and identify remaining completion items.
+- **Prompt:** "what needs to be done"
+- **AI Output:** Produced a milestone completion checklist in `results/reports/M4_submission_checklist.md` covering reproducibility, structure/clarity, results/interpretation, recommendations/caveats, and final packaging.
+- **Verification:** Cross-checked checklist against `Rubric.md` and existing artifacts under `results/tables/` and `results/figures/`.
+- **Critique:** Correctly mapped grading criteria to actionable remaining tasks.
+
+- **Task:** Draft a complete final investment memo from M2 and M3 outputs.
+- **Prompt:** "yes go ahead and do all that"
+- **AI Output:** Created `results/reports/M4_investment_memo_draft.md` with all required sections (Executive Summary, Methodology, Results, Conclusions/Recommendations, References, AI audit note), populated using repository outputs and model metrics.
+- **Verification:** Checked memo values against `results/tables/M3_modelA_coefficients_long.csv`, `results/tables/M3_modelA_regression_table.csv`, and `results/tables/M3_modelB_option3_metrics.csv`.
+- **Critique:** Draft is complete and evidence-based; final PDF formatting and any instructor-specific language edits remain a team step.
+
+- **Task:** Perform reproducibility verification for final submission.
+- **Prompt:** "yes go ahead and do all that"
+- **AI Output:** Ran `/bin/python3 -m unittest -v tests/test_project_smoke.py` and `/bin/python3 code/run_all.py`, then documented outcomes in `results/reports/M4_reproducibility_check.md`.
+- **Verification:** Confirmed smoke tests passed (3/3) and full pipeline completed successfully with regenerated final outputs.
+- **Critique:** Reproducibility is strong in current environment; rerun should be done once more immediately before final PDF submission if any values change.
+
+- **Task:** Complete AI audit and fill remaining team-deliverable blanks.
+- **Prompt:** "can you complete my ai audit and anything that needs to be filled out"
+- **AI Output:** Finalized and polished `AI_AUDIT_APPENDIX.md`, and scanned non-template deliverable markdown files for unresolved placeholders.
+- **Verification:** Placeholder scan on deliverables returned no unresolved fields.
+- **Critique:** Team-level documentation is complete; individual addendum details still require each student's personal inputs (name, hours, defended decision, reflection).
 
 ## Responsibility Statement
 
