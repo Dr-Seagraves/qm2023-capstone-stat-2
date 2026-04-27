@@ -2,7 +2,7 @@
 # MEMORANDUM
 
 **TO:** Investment Committee / Risk Committee  
-**FROM:** Luke Birdseye, Ben Brown, Katie Koonts, James Gawey, Dani Gamboa  
+**FROM:** Stat 2 - Luke Birdseye, Ben Brown, Katie Koonts, James Gawey, Dani Gamboa  
 **DATE:** May 1st, 2026  
 **RE:** Cryptocurrency Regulatory Risk and Portfolio Allocation Recommendation
 
