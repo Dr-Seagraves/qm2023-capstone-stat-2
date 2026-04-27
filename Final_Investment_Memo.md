@@ -11,7 +11,7 @@
 ## PAGE 1 OF 6
 ## Executive Summary (0.5 page, no tables/figures)
 
-This memo analyzes how regulatory events are associated with cryptocurrency returns and volatility using a panel of assets and macro controls. In our main specification, a one-unit increase in regulatory pressure is associated with a [X]-percentage-point change in next-period returns, controlling for asset fixed effects and time effects. The effect is statistically [significant/not significant] at the [1%/5%/10%] level and is economically meaningful in the context of recent enforcement cycles.
+This final investment memo analyzes how regulatory events such as SEC events, FED policy, or market sentiment are associated with cryptocurrency returns and volatility. We have used a panel of assets and macro indicators. In our main specification, a one-unit increase in regulatory pressure is associated with a [X]-percentage-point change in next-period returns, controlling for asset fixed effects and time effects. The effect is statistically [significant/not significant] at the [1%/5%/10%] level and is economically meaningful in the context of recent enforcement cycles.
 
 We find heterogeneity across asset groups: [Group A] shows the largest downside response to adverse events, while [Group B] is more resilient. Robustness checks using lag alternatives, subsample windows, and outlier trimming show [consistent/mixed] estimates around the main effect.
 
