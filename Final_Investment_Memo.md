@@ -11,7 +11,7 @@
 ## PAGE 1 OF 6
 ## Executive Summary (0.5 page, no tables/figures)
 
-This final investment memo analyzes how regulatory events such as SEC events, FED policy, or market sentiment are associated with cryptocurrency returns and volatility. We have used a panel of assets and macro indicators. In our main specification, a one-unit increase in regulatory pressure is associated with a [X]-percentage-point change in next-period returns, controlling for asset fixed effects and time effects. The effect is statistically [significant/not significant] at the [1%/5%/10%] level and is economically meaningful in the context of recent enforcement cycles.
+This final investment memo analyzes how regulatory events such as SEC events, FED policy changes, or market sentiment are associated with cryptocurrency returns and volatility. We have used a panel of assets and macro indicators. In our main specification, a one-unit increase in regulatory pressure is associated with a [X]-percentage-point change in next-period returns, controlling for asset fixed effects and time effects. The effect is statistically [significant/not significant] at the [1%/5%/10%] level and is economically meaningful in the context of recent enforcement cycles.
 
 We find heterogeneity across asset groups: [Group A] shows the largest downside response to adverse events, while [Group B] is more resilient. Robustness checks using lag alternatives, subsample windows, and outlier trimming show [consistent/mixed] estimates around the main effect.
 
@@ -99,6 +99,14 @@ The coefficient on the lagged regulatory variable ([beta1]=[ ], p=[ ]) implies t
 Economic mechanism paragraph template:
 The estimated effect is consistent with three channels: (1) liquidity contraction during enforcement episodes, (2) increased compliance uncertainty and risk premia, and (3) shifts from high-risk tokens to benchmark assets.
 
+### 2.1.1 Control Variable Interpretation
+
+Use this space to briefly interpret 1-2 control variables that are economically meaningful.
+
+- **[Control variable 1]:** [Explain what the coefficient means in plain language and whether it is significant.]
+- **[Control variable 2]:** [Explain what the coefficient means in plain language and whether it is significant.]
+- If controls are purely technical, note that they are included for model adjustment and skip substantive interpretation.
+
 ### 2.2 Table 2: Alternative Specification Results
 
 | Variable / Metric | Estimate |
@@ -122,17 +130,17 @@ Insert figure path and caption:
 - Figure file: results/figures/[figure1_filename].png
 - Caption: [Outcome] moves [inversely/positively] with regulatory pressure, especially in [period]. This visual pattern aligns with the estimated coefficient from Model A.
 
-### 2.4 Figure 2: Group Heterogeneity (or key cross-section)
+### 2.4 Figure 2: Diagnostic Plot (Residuals vs Fitted)
 
 Insert figure path and caption:
 - Figure file: results/figures/[figure2_filename].png
-- Caption: [Group A] and [Group B] are most sensitive to regulatory changes, while [Group C] is comparatively resilient.
+- Caption: Residuals are centered around zero with [no clear / some] structure; robust clustered errors are used to address heteroskedasticity concerns.
 
-### 2.5 Figure 3: Diagnostic Plot (Residuals vs Fitted)
+### 2.5 Figure 3: Group Heterogeneity (or key cross-section)
 
 Insert figure path and caption:
 - Figure file: results/figures/[figure3_filename].png
-- Caption: Residuals are centered around zero with [no clear / some] structure; robust clustered errors are used to address heteroskedasticity concerns.
+- Caption: [Group A] and [Group B] are most sensitive to regulatory changes, while [Group C] is comparatively resilient.
 
 ### 2.6 Robustness Summary
 
@@ -229,6 +237,10 @@ Verification example for M3/M4:
 - Output used: [summary]
 - Verification: [cross-check with model outputs/tables]
 - Critique: [final edits and judgment]
+
+## Responsibility Statement
+
+All code and analysis in this memo has been verified by our team. We used AI as a productivity tool, not as a substitute for understanding. We take full responsibility for any errors and do not claim "the AI did it" as an excuse.
 
 
 **END OF MEMO**
