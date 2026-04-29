@@ -1,8 +1,4 @@
-# M3 Interpretation Memo (Model A Only)
-
-## Scope Note
-
-This memo intentionally covers only Model A (Fixed Effects), per team task split. Model B is being completed by other teammates.
+# M3 Interpretation Memo
 
 ## Model A Headline
 
@@ -18,6 +14,14 @@ Main table source: `results/tables/M3_modelA_coefficients_long.csv`.
 1. Differential sensitivity by token class appears stronger for stablecoins than for DeFi in this sample period, conditional on coin and date fixed effects.
 2. The positive sign on stablecoin interaction can reflect re pricing and liquidity fragmentation channels around regulatory headlines, where "stability" narratives are challenged and short-horizon variance rises.
 3. In contrast, DeFi exposure appears noisier and less precisely estimated after conditioning on within-coin and common-time shocks.
+
+## Model B Summary
+
+Model B: Machine Learning Comparison (Random Forest vs. OLS)
+
+Results: OLS achieved higher predictive accuracy on the test set (R² = 0.163, RMSE = 0.036) compared to Random Forest (R² = 0.109, RMSE = 0.038). Feature importance from Random Forest highlights token group (stablecoin: 34%, DeFi: 1%) and macroeconomic variables (Fed Funds rate: 18%, BTC correlation: 16%) as key predictors, while the SEC event indicator has negligible importance (0.001%). OLS coefficients show the SEC event indicator is insignificant (coeff = 0.0003, p = 0.88).
+
+Key Takeaway: Despite Random Forest's ability to capture nonlinearities, OLS provides better out-of-sample predictions and interpretability. The SEC event indicator has minimal predictive power for realized volatility, suggesting regulatory events do not strongly drive short-term volatility beyond what is captured by token characteristics and macro controls.
 
 ## Diagnostics (Required)
 
@@ -80,10 +84,11 @@ Interpretation: effect magnitude increases and approaches conventional significa
 
 Source: `results/tables/M3_modelA_robustness_outlier_trim.csv`.
 
-### 4. Group Subsamples (Entity FE Only)
+### 4. Group Subsamples
 
 Subsample models were estimated with entity FE only so a time-common SEC event driver remains identifiable within each group.
 
+- Centralized exchange: -0.006963 (p = 0.138, pooled OLS fallback due subgroup FE singularity)
 - DeFi: -0.006489 (p = 0.081)
 - Stablecoin: -0.000415 (p < 0.001)
 
@@ -93,5 +98,6 @@ Source: `results/tables/M3_modelA_robustness_group_subsamples.csv`.
 
 1. The SEC event indicator is common by date, so in two-way FE it is identified only through interactions with cross-sectional group structure, not as a standalone level effect.
 2. High VIF among `log_market_cap` and `log_total_volume` suggests unstable individual control coefficients.
-3. External validity is limited to this token universe and sample window.
-4. Results are conditional associations under FE assumptions; omitted time-varying confounders at the coin level may still bias estimates.
+3. One subgroup (centralized_exchange) required a pooled OLS fallback in robustness estimation because FE estimation became singular in that slice.
+4. External validity is limited to this token universe and sample window.
+5. Results are conditional associations under FE assumptions; omitted time-varying confounders at the coin level may still bias estimates.
