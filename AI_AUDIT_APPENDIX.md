@@ -349,6 +349,7 @@
 - **Verification:** Confirmed the memo now includes all required sections as per README(3).md, with the Model B summary providing key results and takeaway from the ML comparison.
 - **Critique:** Correct; completes the memo for full M3 compliance without altering existing content.
 
+<<<<<<< HEAD
 ## M4 (Final Memo and Submission Stage)
 
 - **Task:** Build a rubric-aligned submission checklist and identify remaining completion items.
@@ -374,6 +375,17 @@
 - **AI Output:** Finalized and polished `AI_AUDIT_APPENDIX.md`, and scanned non-template deliverable markdown files for unresolved placeholders.
 - **Verification:** Placeholder scan on deliverables returned no unresolved fields.
 - **Critique:** Team-level documentation is complete; individual addendum details still require each student's personal inputs (name, hours, defended decision, reflection).
+
+## M4 (Figures, References, AI Audit Lead)
+
+- **Task:** Document the final figure selections, references, and audit verification steps for Milestone 4.
+- **Prompt:** "Document the final figure selections, caption text, reference URLs, and audit verification steps for Milestone 4. Use existing M3 outputs and keep the text aligned with actual repo outputs."
+- **AI Output:** Created the M4 documentation section and selected two publication-ready figures from `results/figures/`:
+  - `results/figures/M3_modelB_option3_actual_vs_predicted.png`
+  - `results/figures/M3_residuals_vs_fitted.png`
+  It also drafted reference entries for CoinGecko and FRED sources and added verification notes showing the captions and reference list were checked against actual repo files.
+- **Verification:** Confirmed the selected figure files exist in `results/figures/`, and the reference URLs correspond to actual data sources used in the project.
+- **Critique:** Correct; the M4 section documents figure/references/audit lead work without changing the underlying analysis data.
 
 ## Responsibility Statement
 
