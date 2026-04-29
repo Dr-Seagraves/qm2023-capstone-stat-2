@@ -1,10 +1,11 @@
 {
   "version": 1,
   "skills": {
-    "powerpoint": {
-      "source": "igorwarzocha/opencode-workflows",
+    "pptx": {
+      "source": "anthropics/skills",
       "sourceType": "github",
-      "computedHash": "a16d52363f95bf9030a173b75282017319ddb0b8466ed11cd8b77a760030ed37"
+      "skillPath": "skills/pptx/SKILL.md",
+      "computedHash": "6b8b859d26f93aa059c9870d1ab76b44ab69e3d6757ce4a03cc94cb760888073"
     }
   }
 }
