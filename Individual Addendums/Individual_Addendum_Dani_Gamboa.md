@@ -18,7 +18,7 @@ Date: 05/01/2026
   - **M4:**
   - Wrote the Executive Summary and the Conclusions and Recommendations points while reviewing all the final investment memo's information aligns with the group's conclusions. (2 hours)
 
-Total hours: 10 hours, 20 minutes  |  Estimated team workload share: 40%  
+Total hours: 10 hours, 20 minutes  |  Estimated team workload share: 32.5%  
 Role(s): Data pipeline & cleaning, EDA & visualization, modeling (ML comparison), and report/memo writing.
 
 ### 2. One Defended Methodological Decision (2-4 sentences)
