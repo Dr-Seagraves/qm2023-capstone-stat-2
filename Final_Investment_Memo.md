@@ -11,11 +11,11 @@
 ## PAGE 1 OF 6
 ## Executive Summary (0.5 page, no tables/figures)
 
-This final investment memo analyzes how regulatory events such as SEC events, FED policy changes, or market sentiment are associated with cryptocurrency returns and volatility. We have used a panel of assets and macro indicators. In our main specification, a one-unit increase in regulatory pressure is associated with a [X]-percentage-point change in next-period returns, controlling for asset fixed effects and time effects. The effect is statistically [significant/not significant] at the [1%/5%/10%] level and is economically meaningful in the context of recent enforcement cycles.
+This final investment memo analyzes how regulatory events such as SEC press events and litigation actions influence realized cryptocurrency volatility. Using our merged, clean panel of 19,852 coin-date observations that includes the top 10 major tokens from 2020 to 2026. We have used a two-way fixed-effects specification to identify regulatory sensitivity for each token group: stablecoins, DeFi, and base assets. The key finding has been that stablecoins are associated with lower realized 30-day volatility during and after SEC events (p < 0.001), whereas DeFi and base assets (major-cap tokens like ETH, BTC) suggest higher yet less stable volatility (p < 0.01).
 
-We find heterogeneity across asset groups: [Group A] shows the largest downside response to adverse events, while [Group B] is more resilient. Robustness checks using lag alternatives, subsample windows, and outlier trimming show [consistent/mixed] estimates around the main effect.
+We have found heterogeneity across asset groups: stablecoins show the most defensive behavior when facing regulatory pressure, while DeFi and base asset tokens have a higher elevated tail risk. Robustness checks reaffirm the stablecoin effect and show stable patterns across token types.
 
-Recommendation: in the current regulatory environment, we recommend [overweight/neutral/underweight] exposure to [group(s)] and reducing exposure to [group(s)] by [X%] relative to benchmark. Under a stricter-enforcement scenario, the model implies [expected drawdown/return impact], while a policy-clarification scenario implies [upside estimate].
+Recommendation: in the current regulatory environment, we recommend a higher exposure to stablecoins and an underweight exposure to DeFi and base asset tokens in the short term (next 3–6 months). Under this strict and uncertain scenario, stablecoins' defensive inclination preserves capital and reduces volatility exposure, while a clear and stable policy scenario would justify a gradual shift toward growth-, higher-risk tokens.
 
 \newpage
 
@@ -141,40 +141,34 @@ Short synthesis: Robustness checks (lag alternatives, top-tail trimming, subsamp
 
 ### 3.1 Portfolio Recommendation
 
-Recommended tactical allocation for the next [horizon]:
+Recommended tactical allocation for the next 3–6 months:
 
-1. Overweight [Defensive group] by [X%] versus benchmark.
-2. Keep neutral exposure in [Core group].
-3. Underweight [High-sensitivity group] by [Y%] until [trigger condition].
+1. Overweight stablecoins (USDC, USDT) exposure by +5-10%.
+2. Underweight DeFi and major-cap tokens (BTC, ETH) by −5-10% until policy conditions improve.
 
 Rationale:
-- Estimated sensitivity to regulation is lowest in [Defensive group].
-- Downside tail risk is concentrated in [High-sensitivity group].
-- Expected risk-adjusted return under base case favors [recommended mix].
+- Fixed-effects and predictive results converge: stablecoins are the strongest robust predictor of lower regulatory-associated volatility (p < 0.001).
+- DeFi and base asset tokens have higher, more unstable sensitivity in both Model A interactions and Model B feature importance, which means higher risk in enforcement episodes.
+- The recommended 5-10% shift balances a defensive strategy with liquidity and diversification for medium-term positioning.
 
 
 ### 3.2 Scenario Analysis
 
-| Scenario | Regulatory Path | Predicted Return Impact | Probability |
+| Scenario | Regulatory Path | Predicted Volatility Impact | Probability |
 |---|---|---:|---:|
-| Baseline | [ ] | [ ] | [ ] |
-| Favorable policy clarity | [ ] | [ ] | [ ] |
-| Adverse enforcement cycle | [ ] | [ ] | [ ] |
-
-Expected value calculation:
-$$
-E[R] = \sum_s p_s \cdot R_s = [calculation]
-$$
+| Baseline | Mixed enforcement; moderate SEC activity | Stablecoins: 5−10% vol, DeFi & Base Assets: 15−25% vol | 50% |
+| Favorable policy clarity | Regulatory framework clarified; reduced pressure | Stablecoins: 3−5% vol, DeFi & Base Assets: 10−15% vol | 25% |
+| Adverse policy cycle | High SEC/FED activity; major enforcement action | Stablecoins: 10−15% vol, DeFi & Base Assets: >30% vol | 25% |
 
 Decision statement:
-Given [asymmetric upside/downside], the recommended stance is [risk-on / neutral / defensive] with active monitoring of [key trigger variables].
+Given the asymmetric protection stablecoins provide and the tail-risk concentration in DeFi during adverse scenarios, the recommended stance is defensive-tilted with active monitoring of SEC press releases, federal funds rate shifts, and EPU index movements as key trigger variables for rebalancing.
 
 ### 3.3 Risks, Caveats, and Limitations
 
-1. Identification risk: [parallel trends / omitted drivers / reverse causality concern].
-2. Measurement risk: regulatory severity and event timing may be noisy.
-3. External validity risk: relationships estimated on [period] may not hold under new market regimes.
-4. Model dependence: lag structure and control set influence magnitude, even when sign is stable.
+1. Identification risk: parallel-trends assumption may be violated if market-wide shocks coincide with SEC enforcement; fixed effects absorb time-invariant differences but not time-varying confounds.
+2. Measurement risk: SEC event timing and severity are captured imperfectly by a binary indicator; qualitative differences in enforcement type are not captured.
+3. External validity risk: relationships estimated on 2020–2026 data may not hold under new crypto market structures, stablecoin competition, or regulatory regimes post-2026.
+4. Model dependence: lag structure and macro control set influence estimated magnitudes even when sign is stable; robustness checks preserve sign but magnitude uncertainty remains.
 
 ### 3.4 Future Work
 
