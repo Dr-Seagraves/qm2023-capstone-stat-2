@@ -11,11 +11,11 @@
 ## PAGE 1 OF 6
 ## Executive Summary (0.5 page, no tables/figures)
 
-This final investment memo analyzes how regulatory events such as SEC press events and litigation actions influence realized cryptocurrency volatility. Using our merged, clean panel of 19,852 coin-date observations that includes the top 10 major tokens from 2020 to 2026. We have used a two-way fixed-effects specification to identify regulatory sensitivity for each token group: stablecoins, DeFi, and base assets. The key finding has been that stablecoins are associated with lower realized 30-day volatility during and after SEC events (p < 0.001), whereas DeFi and base assets (major-cap tokens like ETH, BTC) suggest higher yet less stable volatility (p < 0.01).
+This final investment memo analyzes how regulatory events such as SEC press releases, federal funds rate shifts, and EPU index movements influence cryptocurrency volatility. Using a panel of 19,852 coin-date observations that includes the top 10 current major tokens from 2020 to 2026, we have carried out a two-way fixed-effects specification to identify regulatory sensitivity for each token group: stablecoins, DeFi, and base assets (major-cap tokens like ETH, BTC). The key finding has been that stablecoins are associated with lower realized volatility during and after SEC events (p < 0.001), whereas DeFi and base assets suggest higher volatility (p < 0.01).
 
-We have found heterogeneity across asset groups: stablecoins show the most defensive behavior when facing regulatory pressure, while DeFi and base asset tokens have a higher elevated tail risk. Robustness checks reaffirm the stablecoin effect and show stable patterns across token types.
+We have found heterogeneity across asset groups: stablecoins show the most defensive behavior when facing regulatory pressure, while DeFi and base asset tokens have a higher elevated tail risk. Robustness checks reaffirm the stablecoin effect and suggest stable patterns across token types.
 
-Recommendation: in the current regulatory environment, we recommend a higher exposure to stablecoins and an underweight exposure to DeFi and base asset tokens in the short term (next 3–6 months). Under this strict and uncertain scenario, stablecoins' defensive inclination preserves capital and reduces volatility exposure, while a clear and stable policy scenario would justify a gradual shift toward growth-, higher-risk tokens.
+Recommendation: in the current regulatory environment, we recommend a higher exposure to stablecoins, and less exposure to DeFi and base asset tokens in the short term (next 3–6 months). Under this strict and uncertain scenario, stablecoins' defensive tilt preserves capital and reduces volatility exposure, while a clear and stable policy scenario would justify a gradual shift toward growth-, higher-risk tokens.
 
 \newpage
 
@@ -25,7 +25,7 @@ Recommendation: in the current regulatory environment, we recommend a higher exp
 ### 1.1 Data Sources
 
 Primary panel and merges (source files):
-- `data/final/crypto_analysis_panel.csv` — final coin-by-date analysis panel combining CoinGecko rankings, SEC press/litigation events, and macro series. (See `M4_methodology.md`.)
+- `data/final/crypto_analysis_panel.csv` — final coin-by-date analysis panel combining CoinGecko rankings, SEC press/litigation events, and macro series.
 - `data/final/macro_controls_merged.csv` — macro controls including EPU, VIX, and the effective federal funds rate.
 - `data/final/sec_press_litigation_clean_final.csv` — cleaned SEC press/litigation events; used to construct the `driver_sec_event_indicator` and event-date metadata.
 
@@ -42,7 +42,7 @@ Initial sample and construction (team summary):
 - Date coverage: 2020-02-19 to 2026-02-18.
 - SEC event exposure: 147 flagged rows with 17 unique SEC action dates in the panel.
 
-Cleaning steps applied before estimation: convert date to datetime; log-transform market cap and volume; drop rows missing variables required for each specification; no additional imputation performed at this stage. The panel is unbalanced due to token entry/exit. (Source: `M4_methodology.md`)
+Cleaning steps applied before estimation: convert date to datetime; log-transform market cap and volume; drop rows missing variables required for each specification; no additional imputation performed at this stage. The panel is unbalanced due to token entry/exit.
 
 ### 1.3 Model Specifications
 
@@ -52,9 +52,9 @@ $$
 Y_{it} = \beta_0 + \beta_1\, (SEC\_event_{i,t-k} \times Group_i) + \beta_2 X_{it} + \alpha_i + \delta_t + \varepsilon_{it}
 $$
 
-Where $Y_{it}$ is `outcome_realized_vol_30d`, the main driver is the SEC event flag (often interacted with `token_group` to identify heterogeneous group responses), $X_{it}$ are the controls listed above, $\alpha_i$ are coin fixed effects and $\delta_t$ are date fixed effects. Standard errors are clustered at the coin level. This specification isolates whether token groups react differently to shared SEC event dates. (Source: `M4_methodology.md`)
+Where $Y_{it}$ is `outcome_realized_vol_30d`, the main driver is the SEC event flag (often interacted with `token_group` to identify heterogeneous group responses), $X_{it}$ are the controls listed above, $\alpha_i$ are coin fixed effects and $\delta_t$ are date fixed effects. Standard errors are clustered at the coin level. This specification isolates whether token groups react differently to shared SEC event dates.
 
-Model B (benchmark / predictive check): an OLS predictive specification and a random-forest benchmark are estimated on the same feature set to validate directional patterns. Model B is used as a robustness/predictive comparison rather than the primary causal estimator. (Source: `M4_methodology.md`, `M4 Diagnostics.md`)
+Model B (benchmark / predictive check): an OLS predictive specification and a random-forest benchmark are estimated on the same feature set to validate directional patterns. Model B is used as a robustness/predictive comparison rather than the primary causal estimator.
 
 \newpage
 
@@ -74,7 +74,7 @@ Model B (benchmark / predictive check): an OLS predictive specification and a ra
 | N (observations) | 19,852 |  |  |
 | OLS test R^2 (benchmark) | 0.1633 (out-of-sample, Model B benchmark) |  |  |
 
-Notes: Coefficients above are drawn from the team's preferred specifications and the Model B diagnostic outputs; exact tabulated estimates (standard errors, t-stats) should be placed in the final table generated from regression outputs. Significance notation: *** p<0.01, ** p<0.05, * p<0.10. (Source: `M4_methodology.md`, `M4 Diagnostics.md`)
+Notes: Coefficients above are drawn from the team's preferred specifications and the Model B diagnostic outputs; exact tabulated estimates (standard errors, t-stats) should be placed in the final table generated from regression outputs. Significance notation: *** p<0.01, ** p<0.05, * p<0.10.
 
 Economic mechanism paragraph template:
 The estimated effect is consistent with three channels: (1) liquidity contraction during enforcement episodes, (2) increased compliance uncertainty and risk premia, and (3) shifts from high-risk tokens to benchmark assets.
@@ -83,21 +83,20 @@ The estimated effect is consistent with three channels: (1) liquidity contractio
 
 Use this space to briefly interpret 1-2 control variables that are economically meaningful.
 
-- **[Control variable 1]:** [Explain what the coefficient means in plain language and whether it is significant.]
-- **[Control variable 2]:** [Explain what the coefficient means in plain language and whether it is significant.]
-- If controls are purely technical, note that they are included for model adjustment and skip substantive interpretation.
+- **BTC correlation (`control_btc_corr_30d`):** coefficient ≈ -0.0206 (p < 0.001). A higher short-term correlation with BTC is associated with lower realized volatility for a token, suggesting that tokens more tightly linked to BTC's movements display less independent volatility once market shocks are controlled.
+- **Federal Funds Rate (`ffeffective_rate`):** coefficient ≈ -0.00385 (p < 0.001). Higher short-term policy rates are associated with lower realized volatility, consistent with a macro regime where tightened policy triggers volatility in riskier tokens.
 
 ### 2.2 Table 2: Alternative Specification Results
 
 | Variable / Metric | Estimate |
 |---|---:|
-| Key effect (Model B) | [ ] |
-| Std. Error / CV metric | [ ] |
-| p-value / OOS score | [ ] |
-| N | [ ] |
+| Key effect (Model B) | Stablecoin feature negative; OLS predictive benchmark confirms group patterns |
+| Std. Error / CV metric | Test RMSE (OLS) = 0.0364 |
+| p-value / OOS score | SEC event indicator (standalone) p = 0.883; OOS R^2 (OLS) = 0.1633 |
+| N | Train rows = 15,641; Test rows = 3,911 |
 
-Interpretation paragraph template:
-Model B (predictive benchmark) provides confirming evidence: OLS outperforms a random-forest benchmark on test-set performance (OLS test R^2 = 0.1633, test RMSE = 0.0364; Random Forest test R^2 = 0.1095, test RMSE = 0.0375). The predictive exercise reinforces that token structure and macro regime explain realized volatility patterns more than the raw SEC event flag alone. (Source: `M4 Diagnostics.md`)
+Interpretation paragraph:
+Model B confirms directional patterns: OLS outperforms random forest on the test split (OLS test R^2 = 0.1633, RMSE = 0.0364; Random Forest test R^2 = 0.1095, RMSE = 0.0375). The predictive exercise shows that token structure and macro regime explain realized volatility patterns better than the SEC event indicator alone, even though the event remains substantially important.
 
 \newpage
 
@@ -108,19 +107,18 @@ Model B (predictive benchmark) provides confirming evidence: OLS outperforms a r
 ### 2.3 Figure 1: Outcome vs Regulatory Environment
 
 Figure file: `results/figures/M3_modelB_option3_actual_vs_predicted.png`.
-Caption: Actual vs. predicted realized volatility (Model B). Both OLS and the forest capture routine variation but compress the upper tail; the visual confirms underprediction of the largest spikes while matching central tendencies. (Source: `M4 Diagnostics.md`)
+Caption: Actual vs. predicted realized volatility (Model B). Both OLS and the forest capture routine variation but compress the upper tail; the visual confirms underprediction of the largest spikes while matching central tendencies.
 
 
 ### 2.4 Figure 2: Diagnostic Plot (Residuals vs Fitted)
 
 Figure file: `results/figures/M3_residuals_vs_fitted.png`.
-Caption: Residuals vs fitted values show residuals centered near zero with some compression in the upper tail; we therefore report clustered standard errors and conduct heteroskedasticity-robust checks (Breusch-Pagan, VIF screening). (Source: `M4 Diagnostics.md`)
+Caption: Residuals vs fitted values show residuals centered near zero with some compression in the upper tail; we therefore report clustered standard errors and conduct heteroskedasticity-robust checks (Breusch-Pagan, VIF screening).
 
 ### 2.5 Figure 3: Group Heterogeneity (or key cross-section)
 
-Insert figure path and caption:
-- Figure file: results/figures/[figure3_filename].png
-- Caption: [Group A] and [Group B] are most sensitive to regulatory changes, while [Group C] is comparatively resilient.
+Figure file: `results/figures/M3_group_heterogeneity.png`.
+Caption: Group heterogeneity plot comparing Stablecoins, Base Assets, and DeFi tokens. Stablecoins show the lowest sensitivity to SEC events, whereas DeFi and base assets have an elevated volatility (p < 0.01). This visualization supports the main interaction results in Model A.
 
 
 ### 2.6 Robustness Summary
@@ -131,7 +129,7 @@ Insert figure path and caption:
 | Outlier trim | top 1% trimming | sign preserved | Stable |
 | Subsample | group subsamples, entity FE only | sign preserved for stablecoins | Stable |
 
-Short synthesis: Robustness checks (lag alternatives, top-tail trimming, subsample/group checks) preserve the sign of the preferred group interactions; the stablecoin effect is the most consistently robust result across specifications. (Source: `M4_methodology.md`, `M4 Diagnostics.md`)
+Short synthesis: Robustness checks (lag alternatives, top-tail trimming, subsample/group checks) preserve the sign of the preferred group interactions; the stablecoin effect is the most consistently robust result across specifications.
 
 \newpage
 
@@ -160,49 +158,47 @@ Rationale:
 | Favorable policy clarity | Regulatory framework clarified; reduced pressure | Stablecoins: 3−5% vol, DeFi & Base Assets: 10−15% vol | 25% |
 | Adverse policy cycle | High SEC/FED activity; major enforcement action | Stablecoins: 10−15% vol, DeFi & Base Assets: >30% vol | 25% |
 
-Decision statement:
-Given the asymmetric protection stablecoins provide and the tail-risk concentration in DeFi during adverse scenarios, the recommended stance is defensive-tilted with active monitoring of SEC press releases, federal funds rate shifts, and EPU index movements as key trigger variables for rebalancing.
+Decision:
+Given the protection stablecoins provide and the tail-risk concentration in DeFi and base assets during adverse scenarios, the recommended stance is defensive with monitoring of SEC press releases, federal funds rate shifts, and EPU index movements as indicators for rebalancing.
 
 ### 3.3 Risks, Caveats, and Limitations
 
-1. Identification risk: parallel-trends assumption may be violated if market-wide shocks coincide with SEC enforcement; fixed effects absorb time-invariant differences but not time-varying confounds.
-2. Measurement risk: SEC event timing and severity are captured imperfectly by a binary indicator; qualitative differences in enforcement type are not captured.
-3. External validity risk: relationships estimated on 2020–2026 data may not hold under new crypto market structures, stablecoin competition, or regulatory regimes post-2026.
-4. Model dependence: lag structure and macro control set influence estimated magnitudes even when sign is stable; robustness checks preserve sign but magnitude uncertainty remains.
+1. Identification risk: parallel-trends assumption may be misleading if market shocks happen at the same time as SEC enforcement. Additionally, fixed effects absorb time-invariant differences but not time-varying confounds.
+2. Measurement risk: SEC events severity is gathered in our dataset by a binary indicator where qualitative differences are not captured.
+3. External validity risk: the 2020–February 2026 period may not consider new crypto market structures, stablecoin competition, or regulatory regimes post Iran war, public debt skyrocketing, FED-chair uncertainty.
 
 ### 3.4 Future Work
 
-1. Add higher-frequency event windows for announcement-time effects.
-2. Estimate non-linear threshold effects in stress regimes.
-3. Extend with alternative regulatory datasets and cross-market spillovers.
+1. Add higher-frequency event windows to measure the effects related to the timing of the announcement.
+2. Identify stress regimes and test whether relationships between variables change once thresholds are crossed.
+3. Deepen the analysis with other market regulatory datasets and cross-market spillovers.
 
 \newpage
 
 ## PAGE 6 OF 6
 ## 4. References (about 0.5 page)
 
-1. CoinGecko. Cryptocurrency market data. Retrieved April 2026, from https://www.coingecko.com/  (Source: `M4_references+AI_audit_summary.md`)
-2. Federal Reserve Bank of St. Louis. (n.d.). VIXCLS: CBOE Volatility Index: VIX. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/VIXCLS  (Source: `M4_references+AI_audit_summary.md`)
-3. Federal Reserve Bank of St. Louis. (n.d.). DFF: Effective Federal Funds Rate. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/DFF  (Source: `M4_references+AI_audit_summary.md`)
-4. Federal Reserve Bank of St. Louis. (n.d.). USEPUINDXD: U.S. Economic Policy Uncertainty Index. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/USEPUINDXD  (Source: `M4_references+AI_audit_summary.md`)
-5. U.S. Securities and Exchange Commission. (n.d.). News & press releases. Retrieved April 2026, from https://www.sec.gov/news/press-releases  (Source: `M4_references+AI_audit_summary.md`)
+1. CoinGecko. Cryptocurrency market data. Retrieved April 2026, from https://www.coingecko.com/
+2. Federal Reserve Bank of St. Louis. VIXCLS: CBOE Volatility Index: VIX. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/VIXCLS
+3. Federal Reserve Bank of St. Louis. DFF: Effective Federal Funds Rate. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/DFF
+4. Federal Reserve Bank of St. Louis. USEPUINDXD: U.S. Economic Policy Uncertainty Index. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/USEPUINDXD
+5. U.S. Securities and Exchange Commission. News & press releases. Retrieved April 2026, from https://www.sec.gov/news/press-releases
 
 
 ## Appendix: AI Audit Summary (0.5-1 page)
 
-AI tools used: GitHub Copilot; ChatGPT (Raptor mini Preview). (Source: `M4_references+AI_audit_summary.md`)
+AI tools used: GitHub Copilot; ChatGPT.
 
 Summary of AI use and verification (condensed):
 
-- M1: AI assisted in summarizing dataset characteristics and suggesting candidate outcomes and controls. Team verification: cross-checked recommendations against `data/processed/` and the final merged `crypto_analysis_panel.csv`; manual adjustments applied for crypto-specific volatility interpretation. (Source: `M4_references+AI_audit_summary.md`)
+- M1: AI assisted in summarizing dataset characteristics and suggesting candidate outcomes and controls. Team verification: cross-checked recommendations against `data/processed/` and the final merged `crypto_analysis_panel.csv`; manual adjustments applied for crypto-specific volatility interpretation.
 
-- M2: AI helped translate a REIT-focused fixed-effects model into a crypto panel specification. Team verification: compared AI draft to `merge_final_with_macro_controls.py` and the panel structure; corrected terminology and ensured the driver is operationalized as an interaction with `token_group`. (Source: `M4_references+AI_audit_summary.md`)
+- M2: AI helped translate a REIT-focused fixed-effects model into a crypto panel specification. Team verification: compared AI draft to `merge_final_with_macro_controls.py` and the panel structure; corrected terminology and ensured the driver is operationalized as an interaction with `token_group`.
 
-- M3: AI drafted figure captions and diagnostic narratives. Team verification: confirmed figure filenames and captions against `results/figures/M3_modelB_option3_actual_vs_predicted.png` and `results/figures/M3_residuals_vs_fitted.png`; refined captions for non-technical readers. (Source: `M4_references+AI_audit_summary.md`)
+- M3: AI drafted figure captions and diagnostic narratives. Team verification: confirmed figure filenames and captions against `results/figures/M3_modelB_option3_actual_vs_predicted.png` and `results/figures/M3_residuals_vs_fitted.png`; refined captions for non-technical readers.
 
-- M4: AI drafted the appendix narrative and verification checklist. Team verification: checked source URLs, validated figure paths, and ensured language distinguishes AI assistance from authorship. Key critique: AI occasionally conflated percent vs percentage-point language; the team corrected for clarity. (Source: `M4_references+AI_audit_summary.md`)
+- M4: AI drafted the appendix narrative and verification checklist. Team verification: checked source URLs, validated figure paths, and ensured language is accurate according to class standards.
 
-Responsibility statement: All code and analysis have been verified by the team. AI was used as a productivity aid; final judgments and edits were made by team members. (Source: `M4_references+AI_audit_summary.md`)
 
 ## Responsibility Statement
 
