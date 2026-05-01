@@ -2,14 +2,16 @@
 # MEMORANDUM
 
 **TO:** Investment Committee / Risk Committee  
+
 **FROM:** Stat 2 - Luke Birdseye, Ben Brown, Katie Koonts, James Gawey, Dani Gamboa  
+
 **DATE:** May 1st, 2026  
+
 **RE:** Cryptocurrency Regulatory Risk and Portfolio Allocation Recommendation
 
 ---
 
-## PAGE 1 OF 6
-## Executive Summary (0.5 page, no tables/figures)
+## Executive Summary
 
 This final investment memo analyzes how regulatory events such as SEC press releases, federal funds rate shifts, and EPU index movements influence cryptocurrency volatility. Using a panel of 19,852 coin-date observations that includes the top 10 current major tokens from 2020 to 2026, we have carried out a two-way fixed-effects specification to identify regulatory sensitivity for each token group: stablecoins, DeFi, and base assets (major-cap tokens like ETH, BTC). The key finding has been that stablecoins are associated with lower realized volatility during and after SEC events (p < 0.001), whereas DeFi and base assets suggest higher volatility (p < 0.01).
 
@@ -17,29 +19,37 @@ We have found heterogeneity across asset groups: stablecoins show the most defen
 
 Recommendation: in the current regulatory environment, we recommend a higher exposure to stablecoins, and less exposure to DeFi and base asset tokens in the short term (next 3–6 months). Under this strict and uncertain scenario, stablecoins' defensive tilt preserves capital and reduces volatility exposure, while a clear and stable policy scenario would justify a gradual shift toward growth-, higher-risk tokens.
 
-\newpage
 
-## PAGE 2 OF 6
-## 1. Methodology (about 1 page)
+## 1. Methodology
 
 ### 1.1 Data Sources
 
 Primary panel and merges (source files):
+
 - `data/final/crypto_analysis_panel.csv` — final coin-by-date analysis panel combining CoinGecko rankings, SEC press/litigation events, and macro series.
+
 - `data/final/macro_controls_merged.csv` — macro controls including EPU, VIX, and the effective federal funds rate.
+
 - `data/final/sec_press_litigation_clean_final.csv` — cleaned SEC press/litigation events; used to construct the `driver_sec_event_indicator` and event-date metadata.
 
 Key variables used in the analysis (paraphrased from team files):
+
 - Outcome: `outcome_realized_vol_30d` (realized 30-day volatility).
+
 - Main driver: `driver_sec_event_indicator` (SEC press/litigation exposure flag, possibly lagged).
+
 - Group labels: `token_group` (e.g., stablecoin, DeFi, baseline groups).
+
 - Controls: `log_market_cap`, `log_total_volume`, `control_btc_corr_30d`, `vix`, `ffeffective_rate` (and other macro controls from the merged file).
 
 ### 1.2 Sample Construction
 
 Initial sample and construction (team summary):
+
 - Final analysis panel: 19,852 rows across 10 tokens (bnb, btc, doge, eth, figr_heloc, sol, trx, usdc, usdt, xrp).
+
 - Date coverage: 2020-02-19 to 2026-02-18.
+
 - SEC event exposure: 147 flagged rows with 17 unique SEC action dates in the panel.
 
 Cleaning steps applied before estimation: convert date to datetime; log-transform market cap and volume; drop rows missing variables required for each specification; no additional imputation performed at this stage. The panel is unbalanced due to token entry/exit.
@@ -56,9 +66,7 @@ Where $Y_{it}$ is `outcome_realized_vol_30d`, the main driver is the SEC event f
 
 Model B (benchmark / predictive check): an OLS predictive specification and a random-forest benchmark are estimated on the same feature set to validate directional patterns. Model B is used as a robustness/predictive comparison rather than the primary causal estimator.
 
-\newpage
 
-## PAGE 3 OF 6
 ## 2. Results (part 1)
 
 
@@ -98,27 +106,22 @@ Use this space to briefly interpret 1-2 control variables that are economically 
 Interpretation paragraph:
 Model B confirms directional patterns: OLS outperforms random forest on the test split (OLS test R^2 = 0.1633, RMSE = 0.0364; Random Forest test R^2 = 0.1095, RMSE = 0.0375). The predictive exercise shows that token structure and macro regime explain realized volatility patterns better than the SEC event indicator alone, even though the event remains substantially important.
 
-\newpage
 
-## PAGE 4 OF 6
 ## 2. Results (part 2: figures + diagnostics)
 
 
 ### 2.3 Figure 1: Outcome vs Regulatory Environment
 
-Figure file: `results/figures/M3_modelB_option3_actual_vs_predicted.png`.
-Caption: Actual vs. predicted realized volatility (Model B). Both OLS and the forest capture routine variation but compress the upper tail; the visual confirms underprediction of the largest spikes while matching central tendencies.
+![Actual vs. predicted realized volatility](results/figures/M3_modelB_option3_actual_vs_predicted.png)
 
 
 ### 2.4 Figure 2: Diagnostic Plot (Residuals vs Fitted)
 
-Figure file: `results/figures/M3_residuals_vs_fitted.png`.
-Caption: Residuals vs fitted values show residuals centered near zero with some compression in the upper tail; we therefore report clustered standard errors and conduct heteroskedasticity-robust checks (Breusch-Pagan, VIF screening).
+![Residuals vs. fitted values](results/figures/M3_residuals_vs_fitted.png)
 
 ### 2.5 Figure 3: Group Heterogeneity (or key cross-section)
 
-Figure file: `results/figures/M3_group_heterogeneity.png`.
-Caption: Group heterogeneity plot comparing Stablecoins, Base Assets, and DeFi tokens. Stablecoins show the lowest sensitivity to SEC events, whereas DeFi and base assets have an elevated volatility (p < 0.01). This visualization supports the main interaction results in Model A.
+![Group-level sensitivity of volatility to SEC events](results/figures/M2_plot6_group_sensitivity.png)
 
 
 ### 2.6 Robustness Summary
@@ -131,10 +134,8 @@ Caption: Group heterogeneity plot comparing Stablecoins, Base Assets, and DeFi t
 
 Short synthesis: Robustness checks (lag alternatives, top-tail trimming, subsample/group checks) preserve the sign of the preferred group interactions; the stablecoin effect is the most consistently robust result across specifications.
 
-\newpage
 
-## PAGE 5 OF 6
-## 3. Conclusions and Recommendations (about 1 page)
+## 3. Conclusions and Recommendations
 
 
 ### 3.1 Portfolio Recommendation
@@ -142,11 +143,15 @@ Short synthesis: Robustness checks (lag alternatives, top-tail trimming, subsamp
 Recommended tactical allocation for the next 3–6 months:
 
 1. Overweight stablecoins (USDC, USDT) exposure by +5-10%.
+
 2. Underweight DeFi and major-cap tokens (BTC, ETH) by −5-10% until policy conditions improve.
 
 Rationale:
+
 - Fixed-effects and predictive results converge: stablecoins are the strongest robust predictor of lower regulatory-associated volatility (p < 0.001).
+
 - DeFi and base asset tokens have higher, more unstable sensitivity in both Model A interactions and Model B feature importance, which means higher risk in enforcement episodes.
+
 - The recommended 5-10% shift balances a defensive strategy with liquidity and diversification for medium-term positioning.
 
 
@@ -164,28 +169,34 @@ Given the protection stablecoins provide and the tail-risk concentration in DeFi
 ### 3.3 Risks, Caveats, and Limitations
 
 1. Identification risk: parallel-trends assumption may be misleading if market shocks happen at the same time as SEC enforcement. Additionally, fixed effects absorb time-invariant differences but not time-varying confounds.
+
 2. Measurement risk: SEC events severity is gathered in our dataset by a binary indicator where qualitative differences are not captured.
+
 3. External validity risk: the 2020–February 2026 period may not consider new crypto market structures, stablecoin competition, or regulatory regimes post Iran war, public debt skyrocketing, FED-chair uncertainty.
 
 ### 3.4 Future Work
 
 1. Add higher-frequency event windows to measure the effects related to the timing of the announcement.
+
 2. Identify stress regimes and test whether relationships between variables change once thresholds are crossed.
+
 3. Deepen the analysis with other market regulatory datasets and cross-market spillovers.
 
-\newpage
 
-## PAGE 6 OF 6
-## 4. References (about 0.5 page)
+## 4. References
 
 1. CoinGecko. Cryptocurrency market data. Retrieved April 2026, from https://www.coingecko.com/
+
 2. Federal Reserve Bank of St. Louis. VIXCLS: CBOE Volatility Index: VIX. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/VIXCLS
+
 3. Federal Reserve Bank of St. Louis. DFF: Effective Federal Funds Rate. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/DFF
+
 4. Federal Reserve Bank of St. Louis. USEPUINDXD: U.S. Economic Policy Uncertainty Index. FRED. Retrieved April 2026, from https://fred.stlouisfed.org/series/USEPUINDXD
+
 5. U.S. Securities and Exchange Commission. News & press releases. Retrieved April 2026, from https://www.sec.gov/news/press-releases
 
 
-## Appendix: AI Audit Summary (0.5-1 page)
+## Appendix: AI Audit Summary
 
 AI tools used: GitHub Copilot; ChatGPT.
 
@@ -208,4 +219,5 @@ All code and analysis in this memo has been verified by our team. We used AI as 
 **END OF MEMO**
 
 **TEAM MEMBERS:** Luke Birdseye, Ben Brown, Katie Koonts, James Gawey, Dani Gamboa  
+
 **DATE:** May 1st, 2026  
