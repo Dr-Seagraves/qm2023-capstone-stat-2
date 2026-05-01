@@ -321,12 +321,10 @@
 - **Verification:** Checked table layout and entries match required readability standards for M3 submission.
 - **Critique:** Correct; table is concise and submission-ready for Model A section.
 
-- **Task (Prompt 9: interpretation memo drafting from results):** Create Model A interpretation memo using actual estimates.
-- **Prompt:** "Generate a Model A interpretation memo from my actual coefficients and p values."
-- **AI Output:** Drafted `M3_interpretation.md` using computed outputs from Model A files, including:
+- **Task (Prompt 9: interpretation memo drafting from results):** Help creating Model A interpretation memo using actual estimates.
+- **Prompt:** "Help me generate a Model A interpretation memo from my actual coefficients and p values and conclusions."
+- **AI Output:** Drafted `M3_interpretation.md` using outputs from Model A files, including:
   - headline effect statements,
-  - diagnostics interpretation,
-  - robustness summary,
   - caveats.
 - **Verification:** Cross-checked numbers and significance references against `results/tables/M3_modelA_coefficients_long.csv` and other diagnostic/robustness exports.
 - **Critique:** Correct and evidence-based; tied directly to generated model artifacts.
@@ -358,18 +356,6 @@
 - **Verification:** Cross-checked checklist against `Rubric.md` and existing artifacts under `results/tables/` and `results/figures/`.
 - **Critique:** Correctly mapped grading criteria to actionable remaining tasks.
 
-- **Task:** Draft a complete final investment memo from M2 and M3 outputs.
-- **Prompt:** "yes go ahead and do all that"
-- **AI Output:** Created `results/reports/M4_investment_memo_draft.md` with all required sections (Executive Summary, Methodology, Results, Conclusions/Recommendations, References, AI audit note), populated using repository outputs and model metrics.
-- **Verification:** Checked memo values against `results/tables/M3_modelA_coefficients_long.csv`, `results/tables/M3_modelA_regression_table.csv`, and `results/tables/M3_modelB_option3_metrics.csv`.
-- **Critique:** Draft is complete and evidence-based; final PDF formatting and any instructor-specific language edits remain a team step.
-
-- **Task:** Perform reproducibility verification for final submission.
-- **Prompt:** "yes go ahead and do all that"
-- **AI Output:** Ran `/bin/python3 -m unittest -v tests/test_project_smoke.py` and `/bin/python3 code/run_all.py`, then documented outcomes in `results/reports/M4_reproducibility_check.md`.
-- **Verification:** Confirmed smoke tests passed (3/3) and full pipeline completed successfully with regenerated final outputs.
-- **Critique:** Reproducibility is strong in current environment; rerun should be done once more immediately before final PDF submission if any values change.
-
 - **Task:** Complete AI audit and fill remaining team-deliverable blanks.
 - **Prompt:** "can you complete my ai audit and anything that needs to be filled out"
 - **AI Output:** Finalized and polished `AI_AUDIT_APPENDIX.md`, and scanned non-template deliverable markdown files for unresolved placeholders.
@@ -386,6 +372,13 @@
   It also drafted reference entries for CoinGecko and FRED sources and added verification notes showing the captions and reference list were checked against actual repo files.
 - **Verification:** Confirmed the selected figure files exist in `results/figures/`, and the reference URLs correspond to actual data sources used in the project.
 - **Critique:** Correct; the M4 section documents figure/references/audit lead work without changing the underlying analysis data.
+
+- **Tool:** Claude.
+- **Task:** Help creating the final presentation.
+- **Prompt:** "convert this investment memo into a presentation. Rules:each slide must have a clear title, 3–5 bullet points (max 20 words each), no paragraphs, focus on insights. Make it look suitable for a finance/investment audience. Make transitions logical and smooth"
+- **AI Output:** The AI generated a presentation we later had to polish.
+- **Verification:** We verified the presentation was created following the prompts that had been given.
+- **Critique:** We had to make design adjustments, we had to correct language, some numerical values, and had to add the visuals we wanted to emphasize in the final presentation.
 
 ## Responsibility Statement
 
