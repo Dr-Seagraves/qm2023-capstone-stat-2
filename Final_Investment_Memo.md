@@ -208,7 +208,7 @@ Summary of AI use and verification (condensed):
 
 - M3: AI drafted figure captions and diagnostic narratives. Team verification: confirmed figure filenames and captions against `results/figures/M3_modelB_option3_actual_vs_predicted.png` and `results/figures/M3_residuals_vs_fitted.png`; refined captions for non-technical readers.
 
-- M4: AI drafted the appendix narrative and verification checklist. Team verification: checked source URLs, validated figure paths, and ensured language is accurate according to class standards.
+- M4: AI drafted the appendix narrative and verification checklist. Team verification: checked source URLs, validated figure paths, and ensured language is accurate according to class standards. Claude also helped us create the final presentation.
 
 
 ## Responsibility Statement
